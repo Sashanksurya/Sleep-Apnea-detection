@@ -1,0 +1,11 @@
+flask
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+joblib
+tensorflow
+keras
+pillow
+anthropic

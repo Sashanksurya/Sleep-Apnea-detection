@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Obtaining Reference Heart Rate Data</TITLE>
+<META NAME="description" CONTENT="Obtaining Reference Heart Rate Data">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="previous" HREF="evnode8.htm">
+<LINK REL="next" HREF="evnode10.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode10.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode8.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode10.htm">Comparing Annotation Files</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode8.htm">Obtaining Test Annotation Files</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00033000000000000000">
+Obtaining Reference Heart Rate Data</A>
+</H2>
+The final step of preparation for the evaluation is to process the
+reference annotation files to obtain reference heart rate annotation
+files.  These files must contain heart rate measurement annotations
+with the same measurement numbers assigned as for the test heart rate
+annotations; they need not necessarily contain beat or other
+annotations from the reference annotation files.  Quoting from EC38,
+<BLOCKQUOTE>
+To evaluate the accuracy of heart rate measurement, the evaluator
+shall implement and disclose a method for obtaining heart rate
+measurements using the reference annotation files (the `reference
+heart rate').  This method need not be identical to the method used by
+the device under test, but in general it will be advantageous if it
+matches that method as closely as possible.
+
+</BLOCKQUOTE>
+It will generally be in the manufacturer's interest to provide a
+program for generating reference heart rate annotation files, to avoid
+the need for an independent evaluator to do so, with a likely result
+of less than optimal agreement with the test heart rate measurements.
+The WFDB software package includes a sample implementation of such a
+program (<SPAN style="font-family:monospace">examples/refhr.c</SPAN>); note that it will need to be
+customized for each device to be tested.
+
+<P>
+Note that measurement errors are normalized by the mean value of the reference
+measurements in each record.  Be certain that this mean value cannot be
+zero!<A ID="tex2html9"
+  HREF="evfoot.htm#foot131"><SUP><SPAN CLASS="arabic">9</SPAN></SUP></A>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A
+ HREF="evnode10.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode8.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode10.htm">Comparing Annotation Files</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode8.htm">Obtaining Test Annotation Files</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode9.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

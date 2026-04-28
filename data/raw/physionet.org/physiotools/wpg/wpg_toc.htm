@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on June 10, 2022 by texi2html 1.82
+texi2html was written by: 
+            Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people.
+Send bugs and suggestions to <texi2html-bug@nongnu.org>
+-->
+<head>
+<title>WFDB Programmer's Guide: Table of Contents</title>
+
+<meta name="description" content="WFDB Programmer's Guide: Table of Contents">
+<meta name="keywords" content="WFDB Programmer's Guide: Table of Contents">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.82">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.roman {font-family:serif; font-weight:normal;}
+span.sansserif {font-family:sans-serif; font-weight:normal;}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="SEC_Contents"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1>Table of Contents</h1>
+<div class="contents">
+
+<ul class="toc">
+  <li><a name="toc-Preface" href="wpg_1.htm#Overview">Preface</a>
+  <ul class="toc">
+    <li><a name="toc-Records" href="wpg_2.htm#Concepts-1">Records</a></li>
+    <li><a name="toc-Signals_002c-Samples_002c-and-Time" href="wpg_3.htm#Concepts-2">Signals, Samples, and Time</a></li>
+    <li><a name="toc-Annotations" href="wpg_4.htm#Concepts-3">Annotations</a></li>
+    <li><a name="toc-Applications-1" href="wpg_5.htm#Applications">Applications</a></li>
+    <li><a name="toc-About-this-Guide" href="wpg_6.htm#Guide">About this Guide</a></li>
+  </ul></li>
+  <li><a name="toc-Using-the-WFDB-Library" href="wpg_7.htm#Usage">1. Using the WFDB Library</a>
+  <ul class="toc">
+    <li><a name="toc-A-Trivial-Example-Program-in-C" href="wpg_8.htm#print-samples">1.1 A Trivial Example Program in C</a></li>
+    <li><a name="toc-Compiling-a-Program-with-the-WFDB-Library" href="wpg_9.htm#compiling">1.2 Compiling a Program with the WFDB Library</a></li>
+    <li><a name="toc-Using-the-WFDB-library-with-other-languages" href="wpg_10.htm#other-languages">1.3 Using the WFDB library with other languages</a>
+    <ul class="toc">
+      <li><a name="toc-C_002b_002b-bindings" href="wpg_10.htm#C_002b_002b-bindings">C++ bindings</a></li>
+      <li><a name="toc-Fortran-wrappers" href="wpg_10.htm#Fortran-wrappers">Fortran wrappers</a></li>
+      <li><a name="toc-SWIG-wrappers-for-Java_002c-Perl_002c-Python_002c-and-other-languages" href="wpg_10.htm#SWIG-wrappers-for-Java_002c-Perl_002c-Python_002c-and-other-languages">SWIG wrappers for Java, Perl, Python, and other languages</a></li>
+      <li><a name="toc-Matlab-toolbox" href="wpg_10.htm#Matlab-toolbox">Matlab toolbox</a></li>
+    </ul></li>
+    <li><a name="toc-The-Database-Path-and-Other-Environment-Variables" href="wpg_11.htm#WFDB-path">1.4 The Database Path and Other Environment Variables</a></li>
+    <li><a name="toc-Running-the-Example-Program" href="wpg_12.htm#running-example">1.5 Running the Example Program</a></li>
+    <li><a name="toc-A-Note-on-Identifiers" href="wpg_13.htm#name-restrictions">1.6 A Note on Identifiers</a></li>
+    <li><a name="toc-More-About-the-WFDB-Path" href="wpg_14.htm#WFDB-path-syntax">1.7 More About the WFDB Path</a></li>
+    <li><a name="toc-Exercises-1" href="wpg_15.htm#exercises-1">1.8 Exercises</a></li>
+  </ul></li>
+  <li><a name="toc-WFDB-Library-Functions" href="wpg_16.htm#Functions">2. WFDB Library Functions</a>
+  <ul class="toc">
+    <li><a name="toc-About-these-functions" href="wpg_17.htm#introduction-to-functions">About these functions</a></li>
+    <li><a name="toc-Selecting-Database-Records" href="wpg_18.htm#selecting">2.1 Selecting Database Records</a>
+    <ul class="toc">
+      <li><a name="toc-annopen-1" href="wpg_18.htm#annopen">annopen</a></li>
+      <li><a name="toc-isigopen-1" href="wpg_18.htm#isigopen">isigopen</a></li>
+      <li><a name="toc-osigopen-1" href="wpg_18.htm#osigopen">osigopen</a></li>
+      <li><a name="toc-osigfopen-1" href="wpg_18.htm#osigfopen">osigfopen</a></li>
+      <li><a name="toc-wfdbinit-1" href="wpg_18.htm#wfdbinit">wfdbinit</a></li>
+    </ul></li>
+    <li><a name="toc-Special-I_002fO-Modes" href="wpg_19.htm#special-I_002fO-modes">2.2 Special I/O Modes</a>
+    <ul class="toc">
+      <li><a name="toc-setifreq-1" href="wpg_19.htm#setifreq">setifreq</a></li>
+      <li><a name="toc-getifreq-1" href="wpg_19.htm#getifreq">getifreq</a></li>
+      <li><a name="toc-setgvmode-1" href="wpg_19.htm#setgvmode">setgvmode</a></li>
+      <li><a name="toc-getgvmode-1" href="wpg_19.htm#getgvmode">getgvmode</a></li>
+      <li><a name="toc-getspf-1" href="wpg_19.htm#getspf">getspf</a></li>
+      <li><a name="toc-setiafreq-1" href="wpg_19.htm#setiafreq">setiafreq</a></li>
+      <li><a name="toc-getiafreq-1" href="wpg_19.htm#getiafreq">getiafreq</a></li>
+      <li><a name="toc-getiaorigfreq-1" href="wpg_19.htm#getiaorigfreq">getiaorigfreq</a></li>
+      <li><a name="toc-setafreq-1" href="wpg_19.htm#setafreq">setafreq</a></li>
+      <li><a name="toc-getafreq-1" href="wpg_19.htm#getafreq">getafreq</a></li>
+    </ul></li>
+    <li><a name="toc-Reading-and-Writing-Signals-and-Annotations" href="wpg_20.htm#signal-and-annotation-I_002fO">2.3 Reading and Writing Signals and Annotations</a>
+    <ul class="toc">
+      <li><a name="toc-getvec-1" href="wpg_20.htm#getvec">getvec</a></li>
+      <li><a name="toc-getframe-1" href="wpg_20.htm#getframe">getframe</a></li>
+      <li><a name="toc-putvec-1" href="wpg_20.htm#putvec">putvec</a></li>
+      <li><a name="toc-getann-1" href="wpg_20.htm#getann">getann</a></li>
+      <li><a name="toc-ungetann-1" href="wpg_20.htm#ungetann">ungetann</a></li>
+      <li><a name="toc-putann-1" href="wpg_20.htm#putann">putann</a></li>
+    </ul></li>
+    <li><a name="toc-Non_002dSequential-Access-to-WFDB-Files" href="wpg_21.htm#non_002dsequential">2.4 Non-Sequential Access to WFDB Files</a>
+    <ul class="toc">
+      <li><a name="toc-isigsettime-1" href="wpg_21.htm#isigsettime">isigsettime</a></li>
+      <li><a name="toc-isgsettime-1" href="wpg_21.htm#isgsettime">isgsettime</a></li>
+      <li><a name="toc-tnextvec-1" href="wpg_21.htm#tnextvec">tnextvec</a></li>
+      <li><a name="toc-iannsettime-1" href="wpg_21.htm#iannsettime">iannsettime</a></li>
+      <li><a name="toc-sample-and-sample_005fvalid" href="wpg_21.htm#sample">sample and sample_valid</a></li>
+    </ul></li>
+    <li><a name="toc-Conversion-Functions" href="wpg_22.htm#conversion">2.5 Conversion Functions</a>
+    <ul class="toc">
+      <li><a name="toc-annstr_002c-anndesc_002c-and-ecgstr" href="wpg_22.htm#annstr-and-strann">annstr, anndesc, and ecgstr</a></li>
+      <li><a name="toc-strann-and-strecg" href="wpg_22.htm#strann-and-strecg">strann and strecg</a></li>
+      <li><a name="toc-setannstr_002c-setanndesc_002c-and-setecgstr" href="wpg_22.htm#setannstr_002c-setanndesc_002c-and-setecgstr">setannstr, setanndesc, and setecgstr</a></li>
+      <li><a name="toc-_005bms_005dtimstr" href="wpg_22.htm#timstr-and-strtim">[ms]timstr</a></li>
+      <li><a name="toc-strtim" href="wpg_22.htm#strtim">strtim</a></li>
+      <li><a name="toc-datstr" href="wpg_22.htm#datstr-and-strdat">datstr</a></li>
+      <li><a name="toc-strdat" href="wpg_22.htm#strdat">strdat</a></li>
+      <li><a name="toc-aduphys" href="wpg_22.htm#aduphys-and-physadu">aduphys</a></li>
+      <li><a name="toc-physadu" href="wpg_22.htm#physadu">physadu</a></li>
+      <li><a name="toc-adumuv" href="wpg_22.htm#adumuv">adumuv</a></li>
+      <li><a name="toc-muvadu" href="wpg_22.htm#muvadu">muvadu</a></li>
+    </ul></li>
+    <li><a name="toc-Calibration-Functions" href="wpg_23.htm#calibration">2.6 Calibration Functions</a>
+    <ul class="toc">
+      <li><a name="toc-calopen-1" href="wpg_23.htm#calopen">calopen</a></li>
+      <li><a name="toc-getcal-1" href="wpg_23.htm#getcal">getcal</a></li>
+      <li><a name="toc-putcal-1" href="wpg_23.htm#putcal">putcal</a></li>
+      <li><a name="toc-newcal-1" href="wpg_23.htm#newcal">newcal</a></li>
+      <li><a name="toc-flushcal-1" href="wpg_23.htm#flushcal">flushcal</a></li>
+    </ul></li>
+    <li><a name="toc-Miscellaneous-WFDB-Functions" href="wpg_24.htm#miscellaneous-functions">2.7 Miscellaneous WFDB Functions</a>
+    <ul class="toc">
+      <li><a name="toc-newheader-1" href="wpg_24.htm#newheader">newheader</a></li>
+      <li><a name="toc-setheader-1" href="wpg_24.htm#setheader">setheader</a></li>
+      <li><a name="toc-setmsheader-1" href="wpg_24.htm#setmsheader">setmsheader</a></li>
+      <li><a name="toc-getseginfo-1" href="wpg_24.htm#getseginfo">getseginfo</a></li>
+      <li><a name="toc-wfdbquit-1" href="wpg_24.htm#wfdbquit">wfdbquit</a></li>
+      <li><a name="toc-iannclose" href="wpg_24.htm#iannclose-and-oannclose">iannclose</a></li>
+      <li><a name="toc-oannclose" href="wpg_24.htm#oannclose">oannclose</a></li>
+      <li><a name="toc-wfdbquiet" href="wpg_24.htm#wfdbquiet-and-wfdbverbose">wfdbquiet</a></li>
+      <li><a name="toc-wfdbverbose" href="wpg_24.htm#wfdbverbose">wfdbverbose</a></li>
+      <li><a name="toc-wfdberror-1" href="wpg_24.htm#wfdberror">wfdberror</a></li>
+      <li><a name="toc-wfdbmemerr-1" href="wpg_24.htm#wfdbmemerr">wfdbmemerr</a></li>
+      <li><a name="toc-sampfreq-1" href="wpg_24.htm#sampfreq">sampfreq</a></li>
+      <li><a name="toc-setsampfreq-1" href="wpg_24.htm#setsampfreq">setsampfreq</a></li>
+      <li><a name="toc-setbasetime-1" href="wpg_24.htm#setbasetime">setbasetime</a></li>
+      <li><a name="toc-findsig-1" href="wpg_24.htm#findsig">findsig</a></li>
+      <li><a name="toc-getcfreq" href="wpg_24.htm#counter-conversion">getcfreq</a></li>
+      <li><a name="toc-setcfreq" href="wpg_24.htm#setcfreq">setcfreq</a></li>
+      <li><a name="toc-getbasecount" href="wpg_24.htm#getbasecount">getbasecount</a></li>
+      <li><a name="toc-setbasecount" href="wpg_24.htm#setbasecount">setbasecount</a></li>
+      <li><a name="toc-setwfdb-1" href="wpg_24.htm#setwfdb">setwfdb</a></li>
+      <li><a name="toc-getwfdb-1" href="wpg_24.htm#getwfdb">getwfdb</a></li>
+      <li><a name="toc-resetwfdb-1" href="wpg_24.htm#resetwfdb">resetwfdb</a></li>
+      <li><a name="toc-wfdbfile-1" href="wpg_24.htm#wfdbfile">wfdbfile</a></li>
+      <li><a name="toc-wfdbflush-1" href="wpg_24.htm#wfdbflush">wfdbflush</a></li>
+      <li><a name="toc-getinfo-1" href="wpg_24.htm#getinfo">getinfo</a></li>
+      <li><a name="toc-putinfo-1" href="wpg_24.htm#putinfo">putinfo</a></li>
+      <li><a name="toc-setinfo-1" href="wpg_24.htm#setinfo">setinfo</a></li>
+      <li><a name="toc-wfdb_005ffreeinfo-1" href="wpg_24.htm#wfdb_005ffreeinfo">wfdb_freeinfo</a></li>
+      <li><a name="toc-setibsize-1" href="wpg_24.htm#setibsize">setibsize</a></li>
+      <li><a name="toc-setobsize-1" href="wpg_24.htm#setobsize">setobsize</a></li>
+      <li><a name="toc-wfdbgetskew-1" href="wpg_24.htm#wfdbgetskew">wfdbgetskew</a></li>
+      <li><a name="toc-wfdbsetskew-1" href="wpg_24.htm#wfdbsetskew">wfdbsetskew</a></li>
+      <li><a name="toc-wfdbgetstart-1" href="wpg_24.htm#wfdbgetstart">wfdbgetstart</a></li>
+      <li><a name="toc-wfdbsetstart-1" href="wpg_24.htm#wfdbsetstart">wfdbsetstart</a></li>
+      <li><a name="toc-wfdbputprolog-1" href="wpg_24.htm#wfdbputprolog">wfdbputprolog</a></li>
+    </ul></li>
+    <li><a name="toc-memory-allocation-macros-1" href="wpg_25.htm#memory-allocation-macros">2.8 memory allocation macros</a>
+    <ul class="toc">
+      <li><a name="toc-MEMERR-1" href="wpg_25.htm#MEMERR">MEMERR</a></li>
+      <li><a name="toc-SFREE-1" href="wpg_25.htm#SFREE">SFREE</a></li>
+      <li><a name="toc-SUALLOC-1" href="wpg_25.htm#SUALLOC">SUALLOC</a></li>
+      <li><a name="toc-SALLOC-1" href="wpg_25.htm#SALLOC">SALLOC</a></li>
+      <li><a name="toc-SREALLOC-1" href="wpg_25.htm#SREALLOC">SREALLOC</a></li>
+      <li><a name="toc-SSTRCPY-1" href="wpg_25.htm#SSTRCPY">SSTRCPY</a></li>
+    </ul>
+</li>
+  </ul></li>
+  <li><a name="toc-Data-Types-1" href="wpg_26.htm#Data-Types">3. Data Types</a>
+  <ul class="toc">
+    <li><a name="toc-Signal-Information-Structures" href="wpg_27.htm#WFDB_005fSiginfo-structures">3.1 Signal Information Structures</a></li>
+    <li><a name="toc-Calibration-Information-Structures" href="wpg_28.htm#WFDB_005fCalinfo-structures">3.2 Calibration Information Structures</a></li>
+    <li><a name="toc-Annotator-Information-Structures" href="wpg_29.htm#WFDB_005fAnninfo-structures">3.3 Annotator Information Structures</a></li>
+    <li><a name="toc-Annotation-Structures" href="wpg_30.htm#WFDB_005fAnnotation-structures">3.4 Annotation Structures</a></li>
+    <li><a name="toc-Segment-Information-Structures" href="wpg_31.htm#WFDB_005fSeginfo-structures">3.5 Segment Information Structures</a></li>
+    <li><a name="toc-Limits-of-Numeric-Types" href="wpg_32.htm#Limits-of-numeric-types">3.6 Limits of Numeric Types</a></li>
+    <li><a name="toc-Displaying-Numeric-Values" href="wpg_33.htm#Displaying-numeric-values">3.7 Displaying Numeric Values</a></li>
+    <li><a name="toc-Parsing-Numeric-Values" href="wpg_34.htm#Parsing-numeric-values">3.8 Parsing Numeric Values</a></li>
+    <li><a name="toc-Large-Time-Values" href="wpg_35.htm#Large-time-values">3.9 Large Time Values</a></li>
+  </ul></li>
+  <li><a name="toc-Annotation-Codes-1" href="wpg_36.htm#Annotation-Codes">4. Annotation Codes</a>
+  <ul class="toc">
+    <li><a name="toc-Macros-for-Mapping-Annotation-Codes" href="wpg_37.htm#Mapping-macros">4.1 Macros for Mapping Annotation Codes</a></li>
+  </ul></li>
+  <li><a name="toc-Database-Files-1" href="wpg_38.htm#Database-Files">5. Database Files</a>
+  <ul class="toc">
+    <li><a name="toc-File-Types" href="wpg_39.htm#File-Types">5.1 File Types</a>
+    <ul class="toc">
+      <li><a name="toc-Header-Files-1" href="wpg_39.htm#Header-Files">Header Files</a></li>
+      <li><a name="toc-Signal-Files-1" href="wpg_39.htm#Signal-Files">Signal Files</a></li>
+      <li><a name="toc-Annotation-Files-1" href="wpg_39.htm#Annotation-Files">Annotation Files</a></li>
+      <li><a name="toc-Calibration-Files-1" href="wpg_39.htm#Calibration-Files">Calibration Files</a></li>
+      <li><a name="toc-EDF-Files-1" href="wpg_39.htm#EDF-Files">EDF Files</a></li>
+      <li><a name="toc-AHA-Format-Files-1" href="wpg_39.htm#AHA-Format-Files">AHA Format Files</a></li>
+    </ul></li>
+    <li><a name="toc-Using-Standard-I_002fO-for-Database-Files" href="wpg_40.htm#Standard-I_002fO">5.2 Using Standard I/O for Database Files</a></li>
+    <li><a name="toc-Multiplexed-Signal-Files-1" href="wpg_41.htm#Multiplexed-Signal-Files">5.3 Multiplexed Signal Files</a></li>
+    <li><a name="toc-Multi_002dFrequency-Records-1" href="wpg_42.htm#Multi_002dFrequency-Records">5.4 Multi-Frequency Records</a></li>
+    <li><a name="toc-Multi_002dSegment-Records-1" href="wpg_43.htm#Multi_002dSegment-Records">5.5 Multi-Segment Records</a></li>
+    <li><a name="toc-Simultaneous-Access-to-Multiple-Records" href="wpg_44.htm#Multiple-Record-Access">5.6 Simultaneous Access to Multiple Records</a></li>
+    <li><a name="toc-Signals-That-Are-Not-Stored-in-Disk-Files" href="wpg_45.htm#Special-Files">5.7 Signals That Are Not Stored in Disk Files</a></li>
+    <li><a name="toc-Piped-and-Local-Records-1" href="wpg_46.htm#Piped-and-Local-Records">5.8 Piped and Local Records</a></li>
+    <li><a name="toc-NETFILES-1" href="wpg_47.htm#NETFILES">5.9 NETFILES</a></li>
+    <li><a name="toc-Annotation-Order-1" href="wpg_48.htm#Annotation-Order">5.10 Annotation Order</a></li>
+  </ul></li>
+  <li><a name="toc-Programming-Examples" href="wpg_49.htm#Examples">6. Programming Examples</a>
+  <ul class="toc">
+    <li><a name="toc-Example-1_003a-An-Annotation-Filter" href="wpg_50.htm#Example-1">Example 1: An Annotation Filter</a></li>
+    <li><a name="toc-Example-2_003a-An-Annotation-Translator" href="wpg_51.htm#Example-2">Example 2: An Annotation Translator</a></li>
+    <li><a name="toc-Example-3_003a-An-Annotation-Printer" href="wpg_52.htm#Example-3">Example 3: An Annotation Printer</a></li>
+    <li><a name="toc-Example-4_003a-Generating-an-R_002dR-Interval-Histogram" href="wpg_53.htm#Example-4">Example 4: Generating an R-R Interval Histogram</a></li>
+    <li><a name="toc-Example-5_003a-Reading-Signal-Specifications" href="wpg_54.htm#Example-5">Example 5: Reading Signal Specifications</a></li>
+    <li><a name="toc-Example-6_003a-A-Differentiator" href="wpg_55.htm#Example-6">Example 6: A Differentiator</a></li>
+    <li><a name="toc-Example-7_003a-A-General_002dPurpose-FIR-Filter" href="wpg_56.htm#Example-7">Example 7: A General-Purpose FIR Filter</a></li>
+    <li><a name="toc-Example-8_003a-Creating-a-New-Database-Record" href="wpg_57.htm#Example-8">Example 8: Creating a New Database Record</a></li>
+    <li><a name="toc-Example-9_003a-A-Signal-Averager" href="wpg_58.htm#Example-9">Example 9: A Signal Averager</a></li>
+    <li><a name="toc-Example-10_003a-A-QRS-Detector" href="wpg_59.htm#Example-10">Example 10: A QRS Detector</a></li>
+  </ul></li>
+  <li><a name="toc-Exercises-2" href="wpg_60.htm#Exercises">Exercises</a></li>
+  <li><a name="toc-Glossary-1" href="wpg_61.htm#Glossary">A. Glossary</a></li>
+  <li><a name="toc-Installing-the-WFDB-Software-Package" href="wpg_62.htm#Installation">B. Installing the WFDB Software Package</a>
+  <ul class="toc">
+    <li><a name="toc-The-WFDB-library-and-languages-other-than-C" href="wpg_63.htm#The-WFDB-library-and-languages-other-than-C">The WFDB library and languages other than C</a></li>
+  </ul></li>
+  <li><a name="toc-WFDB-Application-Programs" href="wpg_64.htm#WFDB-Applications">C. WFDB Application Programs</a>
+  <ul class="toc">
+    <li><a name="toc-How-to-use-these-programs" href="wpg_65.htm#Using">How to use these programs</a></li>
+    <li><a name="toc-Annotation-File-Processing" href="wpg_66.htm#Annotation-I_002fO">Annotation File Processing</a></li>
+    <li><a name="toc-Evaluation-of-ECG-Analyzers" href="wpg_67.htm#Evaluation">Evaluation of ECG Analyzers</a></li>
+    <li><a name="toc-Signal-Processing-Applications" href="wpg_68.htm#Signal-processing">Signal Processing Applications</a></li>
+    <li><a name="toc-Graphical-Applications" href="wpg_69.htm#Graphics">Graphical Applications</a></li>
+  </ul></li>
+  <li><a name="toc-Extensions-1" href="wpg_70.htm#Extensions">D. Extensions</a></li>
+  <li><a name="toc-Sources-1" href="wpg_71.htm#Sources">E. Sources</a></li>
+  <li><a name="toc-Answers-to-Selected-Exercises" href="wpg_72.htm#Answers">Answers to Selected Exercises</a></li>
+  <li><a name="toc-Recent-Changes-1" href="wpg_73.htm#Recent-Changes">Recent Changes</a>
+  <ul class="toc">
+    <li><a name="toc-WFDB-10_002e7" href="wpg_74.htm#WFDB-10_002e7">WFDB 10.7</a>
+    <ul class="toc">
+      <li><a name="toc-New-features-in-version-10_002e7" href="wpg_74.htm#New-features-in-version-10_002e7">New features in version 10.7</a></li>
+      <li><a name="toc-Bugs-fixed-in-version-10_002e7_002e0-_002810-June-2022_0029" href="wpg_74.htm#Bugs-fixed-in-version-10_002e7_002e0-_002810-June-2022_0029">Bugs fixed in version 10.7.0 (10 June 2022)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e6" href="wpg_75.htm#WFDB-10_002e6">WFDB 10.6</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e6_002e2-_00288-March-2019_0029" href="wpg_75.htm#Changes-in-version-10_002e6_002e2-_00288-March-2019_0029">Changes in version 10.6.2 (8 March 2019)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e6_002e1-_002828-November-2018_0029" href="wpg_75.htm#Changes-in-version-10_002e6_002e1-_002828-November-2018_0029">Changes in version 10.6.1 (28 November 2018)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e6_002e0-_002826-January-2018_0029" href="wpg_75.htm#Changes-in-version-10_002e6_002e0-_002826-January-2018_0029">Changes in version 10.6.0 (26 January 2018)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e5" href="wpg_76.htm#WFDB-10_002e5">WFDB 10.5</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e5_002e24-_002828-May-2015_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e24-_002828-May-2015_0029">Changes in version 10.5.24 (28 May 2015)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e23-_002813-March-2014_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e23-_002813-March-2014_0029">Changes in version 10.5.23 (13 March 2014)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e21-_002818-November-2013_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e21-_002818-November-2013_0029">Changes in version 10.5.21 (18 November 2013)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e20-_00282-September-2013_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e20-_00282-September-2013_0029">Changes in version 10.5.20 (2 September 2013)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e19-_002821-July-2013_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e19-_002821-July-2013_0029">Changes in version 10.5.19 (21 July 2013)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e18-_002816-February-2013_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e18-_002816-February-2013_0029">Changes in version 10.5.18 (16 February 2013)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e17-_00282-January-2013_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e17-_00282-January-2013_0029">Changes in version 10.5.17 (2 January 2013)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e16-_002827-September-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e16-_002827-September-2012_0029">Changes in version 10.5.16 (27 September 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e15-_002825-September-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e15-_002825-September-2012_0029">Changes in version 10.5.15 (25 September 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e14-_002813-August-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e14-_002813-August-2012_0029">Changes in version 10.5.14 (13 August 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e13-_002813-May-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e13-_002813-May-2012_0029">Changes in version 10.5.13 (13 May 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e12-_002825-April-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e12-_002825-April-2012_0029">Changes in version 10.5.12 (25 April 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e11-_00286-April-2012_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e11-_00286-April-2012_0029">Changes in version 10.5.11 (6 April 2012)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e10-_002815-November-2011_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e10-_002815-November-2011_0029">Changes in version 10.5.10 (15 November 2011)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e9-_002810-September-2011_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e9-_002810-September-2011_0029">Changes in version 10.5.9 (10 September 2011)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e8-_002812-March-2011_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e8-_002812-March-2011_0029">Changes in version 10.5.8 (12 March 2011)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e7-_002816-December-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e7-_002816-December-2010_0029">Changes in version 10.5.7 (16 December 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e6-_002829-November-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e6-_002829-November-2010_0029">Changes in version 10.5.6 (29 November 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e4-_002813-July-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e4-_002813-July-2010_0029">Changes in version 10.5.4 (13 July 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e3-_002822-June-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e3-_002822-June-2010_0029">Changes in version 10.5.3 (22 June 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e2-_002818-April-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e2-_002818-April-2010_0029">Changes in version 10.5.2 (18 April 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e1-_002819-March-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e1-_002819-March-2010_0029">Changes in version 10.5.1 (19 March 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e5_002e0-_002816-March-2010_0029" href="wpg_76.htm#Changes-in-version-10_002e5_002e0-_002816-March-2010_0029">Changes in version 10.5.0 (16 March 2010)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e4" href="wpg_77.htm#WFDB-10_002e4">WFDB 10.4</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e4_002e25-_002821-January-2010_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e25-_002821-January-2010_0029">Changes in version 10.4.25 (21 January 2010)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e23-_00287-August-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e23-_00287-August-2009_0029">Changes in version 10.4.23 (7 August 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e22-_002828-July-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e22-_002828-July-2009_0029">Changes in version 10.4.22 (28 July 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e21-_002814-May-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e21-_002814-May-2009_0029">Changes in version 10.4.21 (14 May 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e20-_00284-May-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e20-_00284-May-2009_0029">Changes in version 10.4.20 (4 May 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e18-_002815-March-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e18-_002815-March-2009_0029">Changes in version 10.4.18 (15 March 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e17-_00285-March-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e17-_00285-March-2009_0029">Changes in version 10.4.17 (5 March 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e16-_00283-March-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e16-_00283-March-2009_0029">Changes in version 10.4.16 (3 March 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e15-_002826-February-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e15-_002826-February-2009_0029">Changes in version 10.4.15 (26 February 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e14-_002823-February-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e14-_002823-February-2009_0029">Changes in version 10.4.14 (23 February 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e13-_002816-February-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e13-_002816-February-2009_0029">Changes in version 10.4.13 (16 February 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e12-_002820-January-2009_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e12-_002820-January-2009_0029">Changes in version 10.4.12 (20 January 2009)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e10-_002831-October-2008_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e10-_002831-October-2008_0029">Changes in version 10.4.10 (31 October 2008)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e9-_002810-October-2008_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e9-_002810-October-2008_0029">Changes in version 10.4.9 (10 October 2008)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e7-_002815-July-2008_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e7-_002815-July-2008_0029">Changes in version 10.4.7 (15 July 2008)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e6-_00289-April-2008_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e6-_00289-April-2008_0029">Changes in version 10.4.6 (9 April 2008)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e5-_00286-February-2008_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e5-_00286-February-2008_0029">Changes in version 10.4.5 (6 February 2008)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e2-_00284-May-2006_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e2-_00284-May-2006_0029">Changes in version 10.4.2 (4 May 2006)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e1-_00286-April-2006_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e1-_00286-April-2006_0029">Changes in version 10.4.1 (6 April 2006)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e4_002e0-_00282-March-2006_0029" href="wpg_77.htm#Changes-in-version-10_002e4_002e0-_00282-March-2006_0029">Changes in version 10.4.0 (2 March 2006)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e3" href="wpg_78.htm#WFDB-10_002e3">WFDB 10.3</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e3_002e17-_002820-August-2005_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e17-_002820-August-2005_0029">Changes in version 10.3.17 (20 August 2005)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e16-_002813-June-2005_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e16-_002813-June-2005_0029">Changes in version 10.3.16 (13 June 2005)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e15-_002831-January-2005_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e15-_002831-January-2005_0029">Changes in version 10.3.15 (31 January 2005)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e14-_002829-December-2004_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e14-_002829-December-2004_0029">Changes in version 10.3.14 (29 December 2004)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e13-_00285-May-2004_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e13-_00285-May-2004_0029">Changes in version 10.3.13 (5 May 2004)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e12-_00289-March-2004_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e12-_00289-March-2004_0029">Changes in version 10.3.12 (9 March 2004)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e11-_002817-October-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e11-_002817-October-2003_0029">Changes in version 10.3.11 (17 October 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e10-_00283-August-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e10-_00283-August-2003_0029">Changes in version 10.3.10 (3 August 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e9-_002816-July-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e9-_002816-July-2003_0029">Changes in version 10.3.9 (16 July 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e8-_002812-July-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e8-_002812-July-2003_0029">Changes in version 10.3.8 (12 July 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e6-_00287-April-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e6-_00287-April-2003_0029">Changes in version 10.3.6 (7 April 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e5-_002831-March-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e5-_002831-March-2003_0029">Changes in version 10.3.5 (31 March 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e2-_002825-February-2003_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e2-_002825-February-2003_0029">Changes in version 10.3.2 (25 February 2003)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e3_002e0-_002826-November-2002_0029" href="wpg_78.htm#Changes-in-version-10_002e3_002e0-_002826-November-2002_0029">Changes in version 10.3.0 (26 November 2002)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e2" href="wpg_79.htm#WFDB-10_002e2">WFDB 10.2</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e2_002e9-_002827-October-2002_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e9-_002827-October-2002_0029">Changes in version 10.2.9 (27 October 2002)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e7-_002814-October-2002_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e7-_002814-October-2002_0029">Changes in version 10.2.7 (14 October 2002)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e6-_002824-June-2002_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e6-_002824-June-2002_0029">Changes in version 10.2.6 (24 June 2002)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e5-_002810-March-2002_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e5-_002810-March-2002_0029">Changes in version 10.2.5 (10 March 2002)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e4-_002820-December-2001_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e4-_002820-December-2001_0029">Changes in version 10.2.4 (20 December 2001)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e3-_002814-December-2001_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e3-_002814-December-2001_0029">Changes in version 10.2.3 (14 December 2001)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e1-_002816-November-2001_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e1-_002816-November-2001_0029">Changes in version 10.2.1 (16 November 2001)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e2_002e0-_002815-October-2001_0029" href="wpg_79.htm#Changes-in-version-10_002e2_002e0-_002815-October-2001_0029">Changes in version 10.2.0 (15 October 2001)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e1" href="wpg_80.htm#WFDB-10_002e1">WFDB 10.1</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e1_002e6-_00281-August-2001_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e6-_00281-August-2001_0029">Changes in version 10.1.6 (1 August 2001)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e5-_002811-June-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e5-_002811-June-2000_0029">Changes in version 10.1.5 (11 June 2000)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e4-_00286-June-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e4-_00286-June-2000_0029">Changes in version 10.1.4 (6 June 2000)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e3-_002826-April-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e3-_002826-April-2000_0029">Changes in version 10.1.3 (26 April 2000)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e2-_002811-March-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e2-_002811-March-2000_0029">Changes in version 10.1.2 (11 March 2000)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e1-_002830-January-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e1-_002830-January-2000_0029">Changes in version 10.1.1 (30 January 2000)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e1_002e0-_002815-January-2000_0029" href="wpg_80.htm#Changes-in-version-10_002e1_002e0-_002815-January-2000_0029">Changes in version 10.1.0 (15 January 2000)</a></li>
+    </ul></li>
+    <li><a name="toc-WFDB-10_002e0" href="wpg_81.htm#WFDB-10_002e0">WFDB 10.0</a>
+    <ul class="toc">
+      <li><a name="toc-Changes-in-version-10_002e0_002e1-_002819-November-1999_0029" href="wpg_81.htm#Changes-in-version-10_002e0_002e1-_002819-November-1999_0029">Changes in version 10.0.1 (19 November 1999)</a></li>
+      <li><a name="toc-Changes-in-version-10_002e0_002e0-_002825-June-1999_0029" href="wpg_81.htm#Changes-in-version-10_002e0_002e0-_002825-June-1999_0029">Changes in version 10.0.0 (25 June 1999)</a></li>
+    </ul>
+</li>
+  </ul></li>
+  <li><a name="toc-Concept-Index-1" href="wpg_82.htm#Concept-Index">Concept Index</a></li>
+  <li><a name="toc-Function-and-Macro-Index-1" href="wpg_88.htm#Function-and-Macro-Index">Function and Macro Index</a></li>
+</ul>
+</div>
+<hr size="1">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<p>
+<p><address>
+<a href="mailto:wfdb@physionet.org"><em>PhysioNet
+ (<tt>wfdb@physionet.org</tt>)</em></A>
+</address>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Selecting an annotation</TITLE>
+<META NAME="description" CONTENT="Selecting an annotation">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="next" HREF="node20.htm">
+<LINK REL="previous" HREF="node18.htm">
+<LINK REL="up" HREF="node16.htm">
+<LINK REL="next" HREF="node20.htm">
+</HEAD>
+
+<BODY bgcolor="FFFFFF" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html719"
+  HREF="node20.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html713"
+  HREF="node16.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html707"
+  HREF="node18.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html715"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html717"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html720"
+  HREF="node20.htm">Changing an annotation without moving it</A>
+<B>Up:</B> <A NAME="tex2html714"
+  HREF="node16.htm">Annotation Editing</A>
+<B> Previous:</B> <A NAME="tex2html708"
+  HREF="node18.htm">The Annotation Template</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00430000000000000000"></A>
+<A NAME="sec:selecting-annotation"></A>
+<BR>
+Selecting an annotation
+</H1>
+
+<P>
+<A NAME="791"></A>
+<A NAME="792"></A>
+<A NAME="793"></A>
+In this case, we need to change an existing `<I CLASS="sans">N</I>' annotation into
+an `<I CLASS="sans">A</I>' annotation.  To do so, we must select the annotation to
+be changed.
+Annotations are selected by clicking left or right in the
+signal window.  Whenever the pointer is in the signal window, clicking
+left selects the annotation to the left of the pointer, and clicking
+right selects the annotation to the right of the pointer.  (If `Num
+Lock' is off, and the pointer is within the signal window, you can use
+the <!-- MATH
+ $\Ovalbox{\small\sf $\leftarrow$}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img47.png"
+ ALT="\Ovalbox{\small\sf $\leftarrow$}"> or <!-- MATH
+ $\Ovalbox{\small\sf $\rightarrow$}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="\Ovalbox{\small\sf $\rightarrow$}"> keys
+instead of the mouse buttons if you prefer.)  The annotation is highlighted by
+a <SPAN  CLASS="textit">selection rectangle</SPAN>
+drawn around it, and the pointer jumps to
+the center of the rectangle (see figure&nbsp;<A HREF="#fig:main-with-markers">2.6</A>).
+
+<DIV ALIGN="CENTER"><A NAME="fig:main-with-markers"></A><A NAME="802"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2.6:</STRONG>
+The main window, showing the selection rectangle and marker bars.</CAPTION>
+<TR><TD><IMG
+ WIDTH="956" HEIGHT="592" BORDER="0"
+ SRC="img49.png"
+ ALT="\begin{figure}\centerline{\epsfig{file=main-with-markers}}\index{selection rectangle}
+\index{marker bars}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+If clicking left or right would otherwise move the pointer out of the signal
+window, <I CLASS="sans">WAVE</I>  recenters the signal window on the selected annotation.
+While any of the mouse buttons is down, <SPAN  CLASS="textit">marker bars</SPAN>
+appear above and
+below the pointer to allow you to identify the pointer location with respect to
+the signals.
+
+<P>
+It is often useful, especially while editing annotations, to display marker
+bars above and below <SPAN  CLASS="textit">each</SPAN> annotation.  If you wish to do so, click left
+on <!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~View...~}$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~View...~}">, then click left on the <!-- MATH
+ $\Ovalbox{\small\sf markers}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="26" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="\Ovalbox{\small\sf markers}"> selection
+in the <I CLASS="sans">View</I> window that appears (see
+figure&nbsp;<A HREF="#fig:view-window">2.7</A>), and finally click left on
+<!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Redraw~}$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Redraw~}"> to dismiss the <I CLASS="sans">View</I> window and redraw the signal window
+with annotation marker bars (see figure&nbsp;<A HREF="#fig:main-with-markers">2.6</A>).
+
+<DIV ALIGN="CENTER"><A NAME="fig:view-window"></A><A NAME="4992"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2.7:</STRONG>
+The <I CLASS="sans">View</I> window.</CAPTION>
+<TR><TD><IMG
+ WIDTH="720" HEIGHT="228" BORDER="0"
+ SRC="img53.png"
+ ALT="\begin{figure}\centerline{\epsfig{file=view-window}}\index{View window@{\sf View} window}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+The marker bars can be turned off by repeating this procedure.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html719"
+  HREF="node20.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html713"
+  HREF="node16.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html707"
+  HREF="node18.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html715"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html717"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html720"
+  HREF="node20.htm">Changing an annotation without moving it</A>
+<B>Up:</B> <A NAME="tex2html714"
+  HREF="node16.htm">Annotation Editing</A>
+<B> Previous:</B> <A NAME="tex2html708"
+  HREF="node18.htm">The Annotation Template</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

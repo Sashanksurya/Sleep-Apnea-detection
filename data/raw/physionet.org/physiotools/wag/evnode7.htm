@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Presenting Signals to the Analyzer</TITLE>
+<META NAME="description" CONTENT="Presenting Signals to the Analyzer">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="next" HREF="evnode8.htm">
+<LINK REL="previous" HREF="evnode6.htm">
+<LINK REL="next" HREF="evnode8.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode8.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode8.htm">Obtaining Test Annotation Files</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00031000000000000000">
+Presenting Signals to the Analyzer</A>
+</H2>
+Two distinctly different types of tests are possible.  If the device can accept
+digital inputs, the reference signals can be supplied in that form (perhaps
+after resampling with <SPAN style="font-family:monospace">xform</SPAN> to convert the digitized samples to the
+expected sampling frequency and numerical range, and possibly with additional
+digital signal processing to simulate the signal conditioning normally
+performed by the device's front-end data acquisition hardware).  The primary
+advantage of testing in the digital domain is that the test is (or should be)
+strictly reproducible, since no noise or additional quantization error can be
+introduced in this way.  This method usually avoids the issue of
+synchronization of the test annotations with the reference signals discussed
+below.
+
+<P>
+Testing in the analog domain requires that analog signals be recreated from
+the digital signals.  (It should be noted that even the analog versions of the
+MIT and AHA databases that have been available in the past were recreated
+from the digitized signals by the database developers.)  The advantage of this
+approach is that it exercises the entire system, including the front-end data
+acquisition hardware.  It is often difficult, however, to establish
+synchronization between the signal source and the analyzer, needed in order to
+permit comparisons of annotations.  One way of dealing with this problem is to
+arrange for the analyzer's sampling clock to trigger the digital-to-analog
+converter used to recreate the analog signals, or to arrange for an external
+clock to trigger both D/A conversion in the playback system and A/D conversion
+in the analyzer.  Another method is to begin and end the signal generation
+process by delivering signals from the analyzer to the playback device, and
+recording the analyzer's clock time at the times of the signals; assuming that
+both the analyzer and the playback device have stable clocks, event times in
+the analyzer's frame of reference can be converted to database sample numbers
+by linear interpolation.  The WFDB software package includes a program (<SPAN style="font-family:monospace">sample</SPAN>) that uses a Microstar DAP 2400-series analog interface
+board<A ID="tex2html4"
+  HREF="evfoot.htm#foot258"><SUP><SPAN CLASS="arabic">4</SPAN></SUP></A>and an MS-DOS PC to recreate analog signals from digital database records on
+CD-ROMs or magnetic disk files.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A
+ HREF="evnode8.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode8.htm">Obtaining Test Annotation Files</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode7.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

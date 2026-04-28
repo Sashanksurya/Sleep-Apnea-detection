@@ -1,0 +1,509 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>WAVE User's Guide</TITLE>
+<META NAME="description" CONTENT="WAVE User's Guide">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="next" HREF="node1.htm">
+</HEAD>
+
+<BODY bgcolor="FFD0B0" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html157"
+  HREF="node1.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html151"
+  HREF="../manuals.shtml">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html153"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html155"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html158"
+  HREF="node1.htm">Other links of interest</A>
+<B>Up:</B> <A NAME="tex2html152"
+  HREF="../manuals.shtml">Books about PhysioToolkit</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+<A NAME="31"></A>
+<A NAME="32"></A>
+<H1 ALIGN="CENTER"><I CLASS="sans">WAVE</I>  User's Guide</H1>
+<DIV CLASS="author_info">
+
+<P ALIGN="CENTER"><STRONG>Fifth Edition</STRONG></P>
+<P ALIGN="CENTER"><I>(revised and with corrections for <I CLASS="sans">WAVE</I>  version 6.12)</I></P>
+<P ALIGN="CENTER">8 March 2019</P>
+</DIV>
+
+<P>
+
+<BR>
+Copyright &#169;1992 - 2014 George B. Moody
+
+<P>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+For information on obtaining the most recent version of <I CLASS="sans">WAVE</I> ,
+visit
+<A NAME="tex2html1"
+  HREF="http://physionet.org/">PhysioNet</A>, or write to:
+<BLOCKQUOTE>
+PhysioNet
+<BR>
+Massachusetts Institute of Technology
+<BR>
+77 Massachusetts Avenue, Room E25-505A
+<BR>
+Cambridge, MA 02139
+<BR>
+USA
+<BR>
+</BLOCKQUOTE>
+
+<P>
+A <A NAME="tex2html2"
+  HREF="wug.pdf">PDF</A>
+version of this guide is available.
+The latest version can be downloaded from
+<A NAME="tex2html3"
+  HREF="http://physionet.org/">MIT</A>.
+<BR>
+<BR>
+Permission is granted to make and distribute verbatim copies of this
+guide provided that the copyright notice and this permission notice are
+preserved on all copies.
+
+<P>
+<BR>
+<BR>
+Permission is granted to copy and distribute modified versions of this
+guide under the conditions for verbatim copying, provided also that the
+entire resulting derived work is distributed under the terms of a
+permission notice identical to this one.
+
+<P>
+<BR>
+<BR>
+Permission is granted to copy and distribute translations of this guide
+into another language, under the above conditions for modified versions.
+
+<P>
+<BR> <HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL CLASS="ChildLinks">
+<LI><UL>
+<LI><A NAME="tex2html159"
+  HREF="node1.htm">Other links of interest</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html160"
+  HREF="node2.htm">Contents</A>
+<LI><A NAME="tex2html161"
+  HREF="node3.htm">Preface</A>
+<UL>
+<LI><A NAME="tex2html162"
+  HREF="node4.htm">Notes on the third edition</A>
+<LI><A NAME="tex2html163"
+  HREF="node5.htm">Notes on the fourth edition</A>
+<LI><A NAME="tex2html164"
+  HREF="node6.htm">Notes on the fifth edition (revised)</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html165"
+  HREF="node7.htm">Introducing <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html166"
+  HREF="node8.htm">Start-up worksheet for <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html167"
+  HREF="node9.htm">Notes:</A>
+</UL>
+<LI><A NAME="tex2html168"
+  HREF="node10.htm">A quick look at <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html169"
+  HREF="node11.htm">About window managers</A>
+<LI><A NAME="tex2html170"
+  HREF="node12.htm">If you need to run <I CLASS="sans">WAVE</I>  remotely</A>
+<LI><A NAME="tex2html171"
+  HREF="node13.htm">Checking the environment and the sample record</A>
+<LI><A NAME="tex2html172"
+  HREF="node14.htm">Starting <I CLASS="sans">WAVE</I> </A>
+<LI><A NAME="tex2html173"
+  HREF="node15.htm">A Five-Minute Tour of <I CLASS="sans">WAVE</I> </A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html174"
+  HREF="node16.htm">Annotation Editing</A>
+<UL>
+<LI><A NAME="tex2html175"
+  HREF="node17.htm">Loading annotations to be edited</A>
+<LI><A NAME="tex2html176"
+  HREF="node18.htm">The <I CLASS="sans">Annotation Template</I></A>
+<LI><A NAME="tex2html177"
+  HREF="node19.htm">Selecting an annotation</A>
+<LI><A NAME="tex2html178"
+  HREF="node20.htm">Changing an annotation without moving it</A>
+<LI><A NAME="tex2html179"
+  HREF="node21.htm">Moving an annotation</A>
+<LI><A NAME="tex2html180"
+  HREF="node22.htm">Inserting an annotation</A>
+<LI><A NAME="tex2html181"
+  HREF="node23.htm">Copying an annotation</A>
+<LI><A NAME="tex2html182"
+  HREF="node24.htm">Deleting and restoring annotations</A>
+<LI><A NAME="tex2html183"
+  HREF="node25.htm">Markers</A>
+<LI><A NAME="tex2html184"
+  HREF="node26.htm">Changing the <I CLASS="sans">Annotation Template</I></A>
+<LI><A NAME="tex2html185"
+  HREF="node27.htm">Changing many annotations at once</A>
+<LI><A NAME="tex2html186"
+  HREF="node28.htm">Searching for annotations</A>
+<LI><A NAME="tex2html187"
+  HREF="node29.htm">Saving your work</A>
+<LI><A NAME="tex2html188"
+  HREF="node30.htm">Creating an annotation file manually</A>
+<LI><A NAME="tex2html189"
+  HREF="node31.htm">Multi-edit mode</A>
+<LI><A NAME="tex2html190"
+  HREF="node32.htm">About link annotations</A>
+<LI><A NAME="tex2html191"
+  HREF="node33.htm">Creating and using new annotation types</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html192"
+  HREF="node34.htm">Analyzing Data with <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html193"
+  HREF="node35.htm"><I CLASS="sans">WAVE</I> 's menu file</A>
+<LI><A NAME="tex2html194"
+  HREF="node36.htm">Defining a region of interest</A>
+<LI><A NAME="tex2html195"
+  HREF="node37.htm">Analysis example: Generating a heart rate signal</A>
+<LI><A NAME="tex2html196"
+  HREF="node38.htm">The signal list</A>
+<LI><A NAME="tex2html197"
+  HREF="node39.htm">Using a customized menu file</A>
+<LI><A NAME="tex2html198"
+  HREF="node40.htm">Using the <I CLASS="sans">Log</I> window</A>
+<LI><A NAME="tex2html199"
+  HREF="node41.htm">Using the <I CLASS="sans">Scope</I> window</A>
+<LI><A NAME="tex2html200"
+  HREF="node42.htm">Analysis example: Measuring ST deviations</A>
+<UL>
+<LI><A NAME="tex2html201"
+  HREF="node43.htm">Further work</A>
+</UL>
+<LI><A NAME="tex2html202"
+  HREF="node44.htm">Controlling <I CLASS="sans">WAVE</I>  from an external program</A>
+<LI><A NAME="tex2html203"
+  HREF="node45.htm"><I CLASS="sans">WAVE</I>  and the Web</A>
+<UL>
+<LI><A NAME="tex2html204"
+  HREF="node46.htm">Controlling <I CLASS="sans">WAVE</I>  from a web browser</A>
+<LI><A NAME="tex2html205"
+  HREF="node47.htm">Serving <TT>.xws</TT> files</A>
+<LI><A NAME="tex2html206"
+  HREF="node48.htm">Controlling a web browser from <I CLASS="sans">WAVE</I> </A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html207"
+  HREF="node49.htm">Printing from <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html208"
+  HREF="node50.htm">Standard methods for printing</A>
+<LI><A NAME="tex2html209"
+  HREF="node51.htm">Creating custom formats for printing</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html210"
+  HREF="node52.htm">Calibration</A>
+<UL>
+<LI><A NAME="tex2html211"
+  HREF="node53.htm">Signal calibration</A>
+<LI><A NAME="tex2html212"
+  HREF="node54.htm">Display calibration</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html213"
+  HREF="node55.htm">Customizing <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html214"
+  HREF="node56.htm">Using the <I CLASS="sans">View</I> window</A>
+<UL>
+<LI><A NAME="tex2html215"
+  HREF="node57.htm">Highly time-compressed displays</A>
+<LI><A NAME="tex2html216"
+  HREF="node58.htm">Low-rate records</A>
+</UL>
+<LI><A NAME="tex2html217"
+  HREF="node59.htm">Resizing the signal and <I CLASS="sans">Scope</I> windows</A>
+<LI><A NAME="tex2html218"
+  HREF="node60.htm"><I CLASS="sans">WAVE</I>&nbsp;environment variables</A>
+<LI><A NAME="tex2html219"
+  HREF="node61.htm">X11 resources for <I CLASS="sans">WAVE</I> </A>
+</UL>
+<BR>
+<LI><A NAME="tex2html220"
+  HREF="node62.htm">Summary of <I CLASS="sans">WAVE</I>&nbsp;controls</A>
+<UL>
+<LI><A NAME="tex2html221"
+  HREF="node63.htm"><I CLASS="sans">WAVE</I> 's main window</A>
+<LI><A NAME="tex2html222"
+  HREF="node64.htm">The <I CLASS="sans">File</I> menu</A>
+<LI><A NAME="tex2html223"
+  HREF="node65.htm">The <I CLASS="sans">Load</I> window</A>
+<LI><A NAME="tex2html224"
+  HREF="node66.htm">The <I CLASS="sans">Print setup</I> window</A>
+<LI><A NAME="tex2html225"
+  HREF="node67.htm">The <I CLASS="sans">Analyze</I> window</A>
+<LI><A NAME="tex2html226"
+  HREF="node68.htm">The <I CLASS="sans">Log</I> window</A>
+<LI><A NAME="tex2html227"
+  HREF="node69.htm">The <I CLASS="sans">View</I> window</A>
+<LI><A NAME="tex2html228"
+  HREF="node70.htm">The <I CLASS="sans">Edit</I> menu</A>
+<LI><A NAME="tex2html229"
+  HREF="node71.htm">The <I CLASS="sans">Properties</I> menu</A>
+<LI><A NAME="tex2html230"
+  HREF="node72.htm">The <I CLASS="sans">Find</I> window</A>
+<LI><A NAME="tex2html231"
+  HREF="node73.htm">The <I CLASS="sans">Help Topics</I> window</A>
+<LI><A NAME="tex2html232"
+  HREF="node74.htm">The <I CLASS="sans">Annotation Template</I> window</A>
+<LI><A NAME="tex2html233"
+  HREF="node75.htm">The <I CLASS="sans">Search Template</I> window</A>
+<LI><A NAME="tex2html234"
+  HREF="node76.htm">The <I CLASS="sans">Level</I> window</A>
+<LI><A NAME="tex2html235"
+  HREF="node77.htm">The <I CLASS="sans">Scope</I> window</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html236"
+  HREF="node78.htm">System Requirements for <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html237"
+  HREF="node79.htm">Necessities</A>
+<LI><A NAME="tex2html238"
+  HREF="node80.htm">Printers</A>
+<LI><A NAME="tex2html239"
+  HREF="node81.htm">Remote access requirements</A>
+<LI><A NAME="tex2html240"
+  HREF="node82.htm">Data</A>
+<LI><A NAME="tex2html241"
+  HREF="node83.htm">About Linux</A>
+<LI><A NAME="tex2html242"
+  HREF="node84.htm">Other useful software</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html243"
+  HREF="node85.htm">Setting up a <I CLASS="sans">WAVE</I>&nbsp;host</A>
+<UL>
+<LI><A NAME="tex2html244"
+  HREF="node86.htm">Obtaining and installing the current version of <I CLASS="sans">WAVE</I> </A>
+<LI><A NAME="tex2html245"
+  HREF="node87.htm">Setting up a printer for <I CLASS="sans">WAVE</I> </A>
+</UL>
+<BR>
+<LI><A NAME="tex2html246"
+  HREF="node88.htm">Frequently Asked Questions</A>
+<UL>
+<LI><A NAME="tex2html247"
+  HREF="node89.htm">Hardware questions</A>
+<UL>
+<LI><A NAME="tex2html248"
+  HREF="node90.htm">Can I use <I CLASS="sans">WAVE</I>  if I don't run Linux or another Unix?</A>
+<LI><A NAME="tex2html249"
+  HREF="node91.htm">How can I use <I CLASS="sans">WAVE</I>  from an X terminal, PC, Mac, etc.?</A>
+<LI><A NAME="tex2html250"
+  HREF="node92.htm">Can I run <I CLASS="sans">WAVE</I>  remotely using a modem?</A>
+<LI><A NAME="tex2html251"
+  HREF="node93.htm">How can I insert annotations using a two-button mouse?</A>
+<LI><A NAME="tex2html252"
+  HREF="node94.htm">How do I get spot help if I don't have a <I CLASS="sans">Help</I> key?</A>
+</UL>
+<LI><A NAME="tex2html253"
+  HREF="node95.htm">Problems starting <I CLASS="sans">WAVE</I> </A>
+<UL>
+<LI><A NAME="tex2html254"
+  HREF="node96.htm">Why won't <I CLASS="sans">WAVE</I>  run?</A>
+<LI><A NAME="tex2html255"
+  HREF="node97.htm">Why does <I CLASS="sans">WAVE</I>  take so long to display the first screen?</A>
+<LI><A NAME="tex2html256"
+  HREF="node98.htm">Where do I find the missing fonts?</A>
+</UL>
+<LI><A NAME="tex2html257"
+  HREF="node99.htm">Display-related questions</A>
+<UL>
+<LI><A NAME="tex2html258"
+  HREF="node100.htm">I can't see the signals!</A>
+<LI><A NAME="tex2html259"
+  HREF="node101.htm">I can't see text in the signal window!</A>
+<LI><A NAME="tex2html260"
+  HREF="node102.htm">Why does <I CLASS="sans">WAVE</I>  crash, saying ``All pty's in use''?</A>
+<LI><A NAME="tex2html261"
+  HREF="node103.htm"><I CLASS="sans">WAVE</I>  doesn't draw/erase properly in the scope window!</A>
+<LI><A NAME="tex2html262"
+  HREF="node104.htm">How can I get correct display scales?</A>
+<LI><A NAME="tex2html263"
+  HREF="node105.htm">Why are signals too big or too small?</A>
+<LI><A NAME="tex2html264"
+  HREF="node106.htm">How can I enlarge or reduce the size of individual signals?</A>
+<LI><A NAME="tex2html265"
+  HREF="node107.htm">How can I change <I CLASS="sans">WAVE</I> 's default scales or display colors?</A>
+<LI><A NAME="tex2html266"
+  HREF="node108.htm">Why do colors in other windows change when I use <I CLASS="sans">WAVE</I> ?</A>
+<LI><A NAME="tex2html267"
+  HREF="node109.htm">Everything in the <I CLASS="sans">Analysis Commands</I> window appears twice!</A>
+</UL>
+<LI><A NAME="tex2html268"
+  HREF="node110.htm">File-related questions</A>
+<UL>
+<LI><A NAME="tex2html269"
+  HREF="node111.htm">I can't find the file named `<SPAN  CLASS="textit">record</SPAN>'!</A>
+<LI><A NAME="tex2html270"
+  HREF="node112.htm">Why does <I CLASS="sans">WAVE</I>  tell me `Record ... is unavailable'?</A>
+<LI><A NAME="tex2html271"
+  HREF="node113.htm">How can I view a record stored on a web site or an FTP server?</A>
+</UL>
+<LI><A NAME="tex2html272"
+  HREF="node114.htm">Questions about editing</A>
+<UL>
+<LI><A NAME="tex2html273"
+  HREF="node115.htm">Where are my annotations?</A>
+<LI><A NAME="tex2html274"
+  HREF="node116.htm">Why does <I CLASS="sans">WAVE</I>  tell me `You may not edit annotations ...'?</A>
+<LI><A NAME="tex2html275"
+  HREF="node117.htm">How do I edit a record on a CD-ROM, a web site, or an FTP server?</A>
+<LI><A NAME="tex2html276"
+  HREF="node118.htm">How can I undo an edit?</A>
+<LI><A NAME="tex2html277"
+  HREF="node119.htm">Can I define my own annotations?</A>
+<LI><A NAME="tex2html278"
+  HREF="node120.htm">How can I recover work after a crash?</A>
+<LI><A NAME="tex2html279"
+  HREF="node121.htm">Can I edit annotations with a text editor?</A>
+<LI><A NAME="tex2html280"
+  HREF="node122.htm">What are `link' annotations?</A>
+<LI><A NAME="tex2html281"
+  HREF="node123.htm">Can <I CLASS="sans">WAVE</I>  edit signal files?</A>
+</UL>
+<LI><A NAME="tex2html282"
+  HREF="node124.htm">What else can <I CLASS="sans">WAVE</I>  do?</A>
+<UL>
+<LI><A NAME="tex2html283"
+  HREF="node125.htm">How can I make a screen dump?</A>
+<LI><A NAME="tex2html284"
+  HREF="node126.htm">Can <I CLASS="sans">WAVE</I>  read digitized signals in <SPAN  CLASS="textit">(fill in the blank)</SPAN>
+format?</A>
+<LI><A NAME="tex2html285"
+  HREF="node127.htm">What is ``high-resolution'' mode?</A>
+<LI><A NAME="tex2html286"
+  HREF="node128.htm">Can <I CLASS="sans">WAVE</I>  open more than one record at once?</A>
+<LI><A NAME="tex2html287"
+  HREF="node129.htm">Can <I CLASS="sans">WAVE</I>  open more than 32 signals in a window at once?</A>
+<LI><A NAME="tex2html288"
+  HREF="node130.htm">Can <I CLASS="sans">WAVE</I>  open more than one annotation file in a window at once?</A>
+<LI><A NAME="tex2html289"
+  HREF="node131.htm">Can <I CLASS="sans">WAVE</I>  do smooth scrolling?</A>
+<LI><A NAME="tex2html290"
+  HREF="node132.htm">Can <I CLASS="sans">WAVE</I>  be used for real-time display of data being acquired?</A>
+<LI><A NAME="tex2html291"
+  HREF="node133.htm">Can <I CLASS="sans">WAVE</I>  scroll through a record without user intervention?</A>
+<LI><A NAME="tex2html292"
+  HREF="node134.htm">How can I use <I CLASS="sans">WAVE</I> 's menu variables in a script or other program?</A>
+<LI><A NAME="tex2html293"
+  HREF="node135.htm">Is there a Motif version of <I CLASS="sans">WAVE</I> ?</A>
+<LI><A NAME="tex2html294"
+  HREF="node136.htm">How can I find out about ...?</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html295"
+  HREF="node137.htm">Command-line Options</A>
+<UL>
+<LI><A NAME="tex2html296"
+  HREF="node138.htm">Running two or more <I CLASS="sans">WAVE</I>  processes</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html297"
+  HREF="node139.htm">Menu Variables</A>
+<LI><A NAME="tex2html298"
+  HREF="node140.htm">Keyboard Command and Mouse Action Summary</A>
+<UL>
+<LI><A NAME="tex2html299"
+  HREF="node141.htm">General rules for all Open Look applications</A>
+<LI><A NAME="tex2html300"
+  HREF="node142.htm">Using the keyboard and mouse in the signal window</A>
+<UL>
+<LI><A NAME="tex2html301"
+  HREF="node143.htm">Simple mouse actions</A>
+<LI><A NAME="tex2html302"
+  HREF="node144.htm">Keyboard equivalents for simple mouse actions</A>
+<LI><A NAME="tex2html303"
+  HREF="node145.htm">Mouse and keyboard combination actions</A>
+<LI><A NAME="tex2html304"
+  HREF="node146.htm">Other keyboard actions</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html305"
+  HREF="node147.htm">Index</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html157"
+  HREF="node1.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html151"
+  HREF="../manuals.shtml">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png"> 
+<A NAME="tex2html153"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html155"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html158"
+  HREF="node1.htm">Other links of interest</A>
+<B>Up:</B> <A NAME="tex2html152"
+  HREF="../manuals.shtml">Books about PhysioToolkit</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

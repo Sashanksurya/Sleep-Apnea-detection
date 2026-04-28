@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on June 10, 2022 by texi2html 1.82
+texi2html was written by: 
+            Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people.
+Send bugs and suggestions to <texi2html-bug@nongnu.org>
+-->
+<head>
+<title>WFDB Programmer's Guide: 2.5 Conversion Functions</title>
+
+<meta name="description" content="WFDB Programmer's Guide: 2.5 Conversion Functions">
+<meta name="keywords" content="WFDB Programmer's Guide: 2.5 Conversion Functions">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.82">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.roman {font-family:serif; font-weight:normal;}
+span.sansserif {font-family:sans-serif; font-weight:normal;}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="conversion"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg_21.htm#sample" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#annstr-and-strann" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<a name="Conversion-Functions"></a>
+<h2 class="section">2.5 Conversion Functions</h2>
+<a name="index-conversion-functions"></a>
+
+<p>Functions in this section perform various useful conversions:  between
+annotation codes and printable strings, between times in sample intervals
+and printable strings, between Julian dates and printable strings, and between
+ADC units and physical units.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#annstr-and-strann">annstr, anndesc, and ecgstr</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">		annotation code &lt;-&gt; string
+</td></tr>
+<tr><td align="left" valign="top"><a href="#timstr-and-strtim">[ms]timstr</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">		time in sample intervals &lt;-&gt; HH:MM:SS string
+</td></tr>
+<tr><td align="left" valign="top"><a href="#datstr-and-strdat">datstr</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">		Julian date &lt;-&gt; DD/MM/YYYY string
+</td></tr>
+<tr><td align="left" valign="top"><a href="#aduphys-and-physadu">aduphys</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">		ADC units &lt;-&gt; physical units
+</td></tr>
+</table>
+
+<hr size="6">
+<a name="annstr-and-strann"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#conversion" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#strann-and-strecg" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<a name="annstr_002c-anndesc_002c-and-ecgstr"></a>
+<h3 class="unnumberedsubsec">annstr, anndesc, and ecgstr</h3>
+<a name="index-ecgstr"></a>
+<a name="index-annstr-_00285_002e3_0029"></a>
+<a name="index-anndesc-_00285_002e3_0029"></a>
+<a name="index-annotation-code-_0028conversion-to-and-from-string_0029"></a>
+<a name="index-string-_0028conversion-to-and-from-annotation-code_0029"></a>
+<a name="index-mnemonic-_0028annotation_0029"></a>
+<a name="index-conversion-between-annotation-code-and-string"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">char *annstr(int <var>code</var>)
+char *anndesc(int <var>code</var>)
+char *ecgstr(int <var>code</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(char *)</tt></dt>
+<dd><p>pointer to a printable string that describes the code, or <code>NULL</code>
+</p></dd>
+</dl>
+
+<a name="index-modification-label"></a>
+<p>These functions translate the annotation code specified by their argument
+into a string (see section <a href="wpg_36.htm#Annotation-Codes">Annotation Codes</a>).  Illegal or undefined codes
+are translated by <code>annstr</code> and <code>ecgstr</code> into decimal numerals
+surrounded by brackets (e.g., &lsquo;<samp>[55]</samp>&rsquo;); <code>anndesc</code> returns <code>NULL</code>
+in such cases.  The strings returned by <code>annstr</code> are mnemonics
+(usually only one character), which may be modified either by <code>setannstr</code>
+or by the presence of <em>modification labels</em> in an input annotation file
+(see section <a href="#annstr-and-strann"><code>setannstr</code></a>).
+The strings returned by <code>anndesc</code> are brief descriptive strings,
+usually those given in the table of annotation codes
+(see section <a href="wpg_36.htm#Annotation-Codes">Annotation Codes</a>).  The strings returned by
+<code>ecgstr</code> are usually the same as those returned by <code>annstr</code>,
+but they can be modified only by <code>setecgstr</code>, and not by the
+presence of modification labels as for <code>annstr</code>.  The intent is
+that <code>ecgstr</code> should be used rather than <code>annstr</code> only when
+it is necessary that a fixed set of mnemonics be used, independent of
+any modification labels.
+</p>
+<p>Here is a little program that prints a table of the codes, mnemonic
+strings, and descriptions:
+</p>
+<table><tr><td>&nbsp;</td><td><pre class="example">#include &lt;stdio.h&gt;
+#include &lt;wfdb/wfdb.h&gt;
+#include &lt;wfdb/ecgcodes.h&gt;
+
+main()
+{
+    int i;
+
+    printf(&quot;Code\tMnemonic\tDescription\n&quot;);
+    for (i = 1; i &lt;= ACMAX; i++) {
+        printf(&quot;%3d\t%s&quot;, i, annstr(i));
+        if (anndesc(i) != NULL)
+            printf(&quot;\t\t%s&quot;, anndesc(i));
+        printf(&quot;\n&quot;);
+    }
+}
+</pre></td></tr></table>
+
+<p>(See <a href="http://physionet.org/physiotools/wfdb/examples/exannstr.c">http://physionet.org/physiotools/wfdb/examples/exannstr.c</a>
+for a copy of this program.)
+</p>
+<p><code>ACMAX</code> is defined in &lsquo;<tt>&lt;wfdb/ecgcodes.h&gt;</tt>&rsquo;.  The range from 1
+through <code>ACMAX</code> includes all legal annotation codes; if you run
+this program, you will find some undefined but legal annotation codes in
+this range. See section <a href="wpg_52.htm#Example-3">Example 3: An Annotation Printer</a>, for another illustration of the use of
+<code>annstr</code>.  (<code>annstr</code> and <code>anndesc</code> were first introduced
+in WFDB library version 5.3.)
+</p>
+<hr size="6">
+<a name="strann-and-strecg"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#annstr-and-strann" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#setannstr_002c-setanndesc_002c-and-setecgstr" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">strann and strecg</h3>
+<a name="index-strecg"></a>
+<a name="index-strann-_00285_002e3_0029"></a>
+<a name="index-annotation-code-_0028conversion-to-and-from-string_0029-1"></a>
+<a name="index-string-_0028conversion-to-and-from-annotation-code_0029-1"></a>
+<a name="index-mnemonic-_0028annotation_0029-1"></a>
+<a name="index-conversion-between-annotation-code-and-string-1"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">int strann(const char *<var>string</var>)
+int strecg(const char *<var>string</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(int)</tt></dt>
+<dd><p>annotation code
+</p></dd>
+</dl>
+
+<p>These functions translate the null-terminated ASCII character strings to
+which their arguments point into annotation codes.  Illegal strings are
+translated into <code>NOTQRS</code>.  Input strings for <code>strann</code> and
+<code>strecg</code> should match those returned by <code>annstr</code> and
+<code>ecgstr</code> respectively.  See section <a href="wpg_58.htm#Example-9">Example 9: A Signal Averager</a>, for an illustration of the
+use of <code>strann</code>. (<code>strann</code> was first introduced in WFDB library
+version 5.3.)
+</p>
+<hr size="6">
+<a name="setannstr_002c-setanndesc_002c-and-setecgstr"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#strann-and-strecg" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#timstr-and-strtim" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">setannstr, setanndesc, and setecgstr</h3>
+<a name="index-setannstr-_00285_002e3_0029"></a>
+<a name="index-setanndesc-_00285_002e3_0029"></a>
+<a name="index-setecgstr"></a>
+<a name="index-annotation-code-strings-_0028setting_0029"></a>
+<a name="index-changing-annotation-code-strings"></a>
+<a name="index-setting-annotation-code-strings"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">int setannstr(int <var>code</var>, const char *<var>string</var>)
+int setanndesc(int <var>code</var>, const char *<var>string</var>)
+int setecgstr(int <var>code</var>, const char *<var>string</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt> 0</tt></dt>
+<dd><p>Success
+</p></dd>
+<dt> <tt>-1</tt></dt>
+<dd><p>Failure: illegal <code>code</code>
+</p></dd>
+</dl>
+
+<p>These functions modify translation tables used by functions that
+convert between annotation codes and strings.  <code>setannstr</code> modifies
+the table shared by <code>annstr</code> and <code>strann</code>; <code>setanndesc</code>
+modifies the table used by <code>anndesc</code>; and <code>setecgstr</code> modifies
+the table shared by <code>ecgstr</code> and <code>strecg</code>.  They may be used
+to redefine strings for defined annotation codes as well as to define
+strings for undefined annotation codes.  For example,
+<code>setannstr(NORMAL, &quot;\\267&quot;)</code> redefines the string for normal beats
+as a PostScript bullet, &lsquo;<samp>&bull;</samp>&rsquo; (<code>NORMAL</code> is defined in
+&lsquo;<tt>&lt;wfdb/ecgcodes.h&gt;</tt>&rsquo;).
+</p>
+<a name="index-modification-label-1"></a>
+<p>An important difference between <code>setannstr</code> (or <code>setanndesc</code>)
+and <code>setecgstr</code> is that <code>annopen</code> and <code>wfdbinit</code> insert
+modification labels in any output annotation files that are created
+<em>after</em> invoking <code>setannstr</code> or <code>setanndesc</code>;
+<code>setecgstr</code> does not have this side effect.  By using
+<code>setannstr</code> before <code>annopen</code>, a WFDB application may create
+annotation files with self-contained code tables, which can be read
+properly by other WFDB applications without the need to inform them
+explicitly about non-standard codes.  For this scheme to work as
+intended, all custom code mnemonics and descriptions must be defined
+before the output annotation files are opened.
+</p>
+<p>By passing a negative value as <var>code</var> to <code>setannstr</code> or
+<code>setanndesc</code>, the translation for
+-<var>code</var>
+can be modified without triggering the generation of a modification label.
+This feature can be useful for programs that use alternate sets of
+mnemonics or descriptions for speakers of different languages.
+</p>
+<p>Note that it is possible, though not desirable, to define identical
+strings for two or more codes; the behavior of <code>strann</code> and
+<code>strecg</code> in such cases is implementation-dependent.
+(<code>setannstr</code> and <code>setanndesc</code> were first introduced in WFDB
+library version 5.3.)
+</p>
+<hr size="6">
+<a name="timstr-and-strtim"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#setannstr_002c-setanndesc_002c-and-setecgstr" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#strtim" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+
+<!-- link: strtim.htm -->
+<br>
+<br>
+
+<p>The next three functions convert between &ldquo;standard time format&rdquo;
+strings and times in units of sample intervals.  Normally they should be
+invoked after <code>isigopen</code>, <code>wfdbinit</code>, or <code>sampfreq</code>, any of
+which will determine the duration of a sample interval and the base time
+from a header file, or after defining these quantities using
+<code>setsampfreq</code> and <code>setbasetime</code>.  If this is not done, or if
+these time-conversion functions are used after <code>wfdbquit</code>, they will
+perform conversions in units of seconds (i.e., the sample interval is
+taken to be one second in such cases).
+</p>
+<a name="g_t_005bms_005dtimstr"></a>
+<h3 class="unnumberedsubsec">[ms]timstr</h3>
+<a name="index-timstr"></a>
+<a name="index-mstimstr"></a>
+<a name="index-time-_0028conversion-to-and-from-string_0029"></a>
+<a name="index-string-_0028conversion-to-and-from-time_0029"></a>
+<a name="index-elapsed-time"></a>
+<a name="index-conversion-between-time-and-string"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">char *timstr(WFDB_Time <var>t</var>)
+char *mstimstr(WFDB_Time <var>t</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(char *)</tt></dt>
+<dd><p>pointer to a string that represents the time
+</p></dd>
+</dl>
+
+<p>These functions convert times or time intervals into null-terminated
+ASCII strings.  If the argument, <var>t</var>, is greater than zero, it is
+treated as a time interval, and converted directly into <var>HH:MM:SS</var>
+format by <code>timstr</code>, or to <var>HH:MM:SS.SSS</var> format by
+<code>mstimstr</code>, with leading zero digits and colons suppressed.  If
+<var>t</var> is zero or negative, it is taken to represent negated elapsed
+time from the beginning of the record, and it is converted to a time of
+day using the base time for the record as indicated by the &lsquo;<tt>hea</tt>&rsquo;
+file or the caller
+(see section <a href="wpg_24.htm#setbasetime"><code>setbasetime</code></a>);
+in this case, if the base time is defined, the string will contain all
+digits even if there are leading zeroes, it will include the date if a
+base date is defined, and it will be marked as a time of day by being
+bracketed (e.g., &lsquo;<samp>[08:45:00 23/04/1989]</samp>&rsquo;).  The result of the
+conversion is truncated to a multiple of a second by <code>timstr</code>, or
+to a multiple of a millisecond by <code>mstimstr</code>.  Note in each case
+that the returned pointer addresses static data (shared by <code>timstr</code>
+and <code>mstimstr</code>), the contents of which are overwritten by
+subsequent calls.  See section <a href="wpg_52.htm#Example-3">Example 3: An Annotation Printer</a>, for an illustration of the use of
+<code>mstimstr</code>; also see section <a href="wpg_54.htm#Example-5">Example 5: Reading Signal Specifications</a>, for an example of the use of
+<code>timstr</code>.
+</p>
+<hr size="6">
+<a name="strtim"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#timstr-and-strtim" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#datstr-and-strdat" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">strtim</h3>
+<a name="index-strtim"></a>
+<a name="index-time-_0028conversion-to-and-from-string_0029-1"></a>
+<a name="index-string-_0028conversion-to-and-from-time_0029-1"></a>
+<a name="index-elapsed-time-1"></a>
+<a name="index-conversion-between-time-and-string-1"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">WFDB_Time strtim(const char *<var>string</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(WFDB_Time) &gt;0</tt></dt>
+<dd><p>number of sample intervals corresponding to the argument interpreted as
+a time interval
+</p></dd>
+<dt> <tt>(WFDB_Time) &lt;0</tt></dt>
+<dd><p>(negated) elapsed time in sample intervals from the beginning of the record,
+corresponding to the argument interpreted as a time of day
+</p></dd>
+<dt> <tt>(WFDB_Time)  0</tt></dt>
+<dd><p>a legal return if the argument matches the base time;  otherwise an error
+return indicating an incorrectly formatted argument
+</p></dd>
+</dl>
+
+<a name="index-standard-time-format-_0028examples_0029"></a>
+<p>This function converts an ASCII string in <em>standard time format</em> to a time
+in units of sample intervals.  Examples of standard time format:
+</p><dl compact="compact">
+<dt> <code>2:14.875</code></dt>
+<dd><p>2 minutes + 14.875 seconds
+</p></dd>
+<dt> <code>[13:6:0]</code></dt>
+<dd><p>13:06 (1:06 PM)
+</p></dd>
+<dt> <code>[8:0:0 1]</code></dt>
+<dd><p>8 AM on the day following the base date
+</p></dd>
+<dt> <code>[12:0:0 1/3/1992]</code></dt>
+<dd><p>noon on 1 March 1992
+</p></dd>
+<dt> <code>143</code></dt>
+<dd><p>143 seconds (2 minutes + 23 seconds)
+</p></dd>
+<dt> <code>4:02:01</code></dt>
+<dd><p>4 hours + 2 minutes + 1 second
+</p></dd>
+<dt> <code>s12345</code></dt>
+<dd><p>12345 sample intervals
+</p></dd>
+<dt> <code>c350.5</code></dt>
+<dd><p>counter value 350.5
+</p></dd>
+<dt> <code>e</code></dt>
+<dd><p>time of the end of the record (if defined)
+</p></dd>
+<dt> <code>i</code></dt>
+<dd><p>time of the next sample in input signal 0
+</p></dd>
+<dt> <code>o</code></dt>
+<dd><p>(the letter &lsquo;o&rsquo;) time of the next sample in output signal 0
+</p></dd>
+</dl>
+
+<p>If the argument is bracketed (as in the second, third, and fourth examples), it
+is taken as a time of day, and <code>strtim</code> uses the base time defined
+by the header file or by the caller
+(see section <a href="wpg_24.htm#setbasetime"><code>setbasetime</code></a>);
+in this case, the value returned is zero or negative (and can be
+converted into elapsed time from the beginning of the record by simply
+negating it).  If the argument is not bracketed, it is taken as a time
+interval, and converted directly into a positive number of sample
+intervals.  These notations match those used by <code>timstr</code> and
+<code>mstimstr</code>, which are (approximately) inverse functions of
+<code>strtim</code>; in fact, for MIT DB and AHA DB records (and any others
+with sampling frequencies below 1 KHz), <code>strtim(mstimstr(<var>t</var>))</code>
+= <var>t</var>, for any <var>t</var>.  The &lsquo;<samp>s</samp>&rsquo;-format (as in the seventh
+example above) is provided to allow &ldquo;conversion&rdquo; of time intervals
+already expressed in sample intervals.  The similar &lsquo;<samp>c</samp>&rsquo;-format
+converts counter values
+(see section <a href="wpg_24.htm#counter-conversion"><code>getcfreq</code></a>)
+into sample intervals.  The length of the record in
+sample intervals can be obtained using <code>strtim(&quot;e&quot;)</code>, which
+evaluates to zero if this quantity is undefined.  The sample number of
+the next sample to be read or written can be determined using
+<code>strtim(&quot;i&quot;)</code> or <code>strtim(&quot;o&quot;)</code>.  If the argument string is
+incorrectly formatted, <code>strtim</code> returns zero (indistinguishable
+from a correct input that evokes a zero output); this may be considered
+a feature.  Several of the programs in chapter 6 illustrate the use of
+<code>strtim</code> (for example, see section <a href="wpg_56.htm#Example-7">Example 7: A General-Purpose FIR Filter</a>).
+</p>
+<hr size="6">
+<a name="datstr-and-strdat"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#strtim" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#strdat" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+
+<p>The next two functions convert between Julian dates and ASCII strings.
+Julian dates as defined by astronomers begin at noon GMT; these begin at
+midnight local time.
+</p>
+<a name="datstr"></a>
+<h3 class="unnumberedsubsec">datstr</h3>
+<a name="index-datstr"></a>
+<a name="index-date-_0028conversion-to-and-from-string_0029"></a>
+<a name="index-Julian-date-_0028conversion-to-and-from-string_0029"></a>
+<a name="index-string-_0028conversion-to-and-from-Julian-date_0029"></a>
+<a name="index-conversion-between-Julian-date-and-string"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">char *datstr(WFDB_Date <var>date</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(char *)</tt></dt>
+<dd><p>pointer to a string that represents the date
+</p></dd>
+</dl>
+
+<p>This function converts the Julian date represented by <var>date</var> into
+an ASCII string in the form <var>DD/MM/YYYY</var>.
+</p>
+<hr size="6">
+<a name="strdat"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#datstr-and-strdat" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#aduphys-and-physadu" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">strdat</h3>
+<a name="index-strdat"></a>
+<a name="index-date-_0028conversion-to-and-from-string_0029-1"></a>
+<a name="index-Julian-date-_0028conversion-to-and-from-string_0029-1"></a>
+<a name="index-string-_0028conversion-to-and-from-Julian-date_0029-1"></a>
+<a name="index-conversion-between-Julian-date-and-string-1"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">WFDB_Date strdat(const char *<var>string</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(WFDB_Date)</tt></dt>
+<dd><p>Julian date corresponding to the argument
+</p></dd>
+</dl>
+
+<p>This function converts <var>string</var> into a Julian date.  The argument
+should be in the format used by <code>datstr</code>; if <var>string</var> is
+improperly formatted, <code>strdat</code> returns zero.  Note that dates such
+as &lsquo;<samp>15/3/89</samp>&rsquo; refer to the first century A.D., not the twentieth.
+For example, the interval in days between the events commemorated by the
+French and American national holidays is <code>strdat(&quot;14/7/1789&quot;)</code> &ndash;
+<code>strdat(&quot;4/7/1776&quot;)</code>.
+</p>
+<br>
+<br>
+
+<hr size="6">
+<a name="aduphys-and-physadu"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#strdat" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#physadu" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+
+<p>The next four functions convert between analog-to-digital converter
+(ADC) units and physical units, using as a conversion factor the gain
+for the specified input signal.  The first two (<code>aduphys</code> and
+<code>physadu</code>) are general-purpose functions that convert absolute
+levels (i.e., they account for non-zero <code>baseline</code> values); the
+last two (<code>adumuv</code> and <code>muvadu</code>) are for use with
+millivolt-dimensioned signals only, and convert potential differences
+(i.e., <code>adumuv(<var>s</var>, 0)</code> = <code>muvadu(<var>s</var>, 0)</code> = 0 for all
+<var>s</var>, irrespective of the <code>baseline</code> values specified in the
+header file).  Normally, these functions should be invoked after
+<code>isigopen</code> or <code>wfdbinit</code>, either of which will determine the
+gain from the &lsquo;<tt>hea</tt>&rsquo; file.  If this is not done, or if the
+header file indicates that the gain is uncalibrated, or if the
+specified input signal is not currently open, a gain of <code>WFDB_DEFGAIN</code>
+(defined in &lsquo;<tt>&lt;wfdb/wfdb.h&gt;</tt>&rsquo;) ADC units per millivolt, and a baseline
+of zero, are assumed.  If the physical units
+(see section <a href="wpg_27.htm#WFDB_005fSiginfo-structures">Signal Information Structures</a>)
+are not millivolts, <code>adumuv</code> and <code>muvadu</code> convert to and from
+thousandths of the defined physical units.  Note that <code>adumuv</code> and
+<code>muvadu</code> deal exclusively with integers, but <code>aduphys</code> returns
+and <code>physadu</code> accepts double-precision floating point physical
+values.
+</p>
+<a name="aduphys"></a>
+<h3 class="unnumberedsubsec">aduphys</h3>
+<a name="index-aduphys-_00286_002e0_0029"></a>
+<a name="index-adu-_0028conversion-to-and-from-physical-units_0029"></a>
+<a name="index-physical-units-_0028conversion-to-and-from-adus_0029"></a>
+<a name="index-conversion-between-adus-and-physical-units"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">double aduphys(WFDB_Signal <var>s</var>, WFDB_Sample <var>a</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(double)</tt></dt>
+<dd><p>physical value corresponding to a sample value of <var>a</var> ADC units
+</p></dd>
+</dl>
+
+<p>This function converts the sample value <var>a</var> from ADC units to
+physical units, based on the <code>gain</code> and <code>baseline</code> for input
+signal <var>s</var>.  (<code>aduphys</code> was first introduced in WFDB library
+version 6.0.)
+</p>
+<hr size="6">
+<a name="physadu"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#aduphys-and-physadu" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#adumuv" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">physadu</h3>
+<a name="index-physadu-_00286_002e0_0029"></a>
+<a name="index-adu-_0028conversion-to-and-from-physical-units_0029-1"></a>
+<a name="index-physical-units-_0028conversion-to-and-from-adus_0029-1"></a>
+<a name="index-conversion-between-adus-and-physical-units-1"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">WFDB_Sample physadu(WFDB_Signal <var>s</var>, double <var>v</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(WFDB_Sample)</tt></dt>
+<dd><p>sample value, in ADC units, corresponding to <var>v</var>, in physical units
+</p></dd>
+</dl>
+
+<p>This function converts the value <var>v</var> from physical units to ADC
+units, based on the <code>gain</code> and <code>baseline</code> for input signal
+<var>s</var>.  (<code>physadu</code> was first introduced in WFDB library version
+6.0.)
+</p>
+<hr size="6">
+<a name="adumuv"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#physadu" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#muvadu" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">adumuv</h3>
+<a name="index-adumuv"></a>
+<a name="index-adu-_0028conversion-to-and-from-voltage_0029"></a>
+<a name="index-voltage-_0028conversion-to-and-from-adus_0029"></a>
+<a name="index-conversion-between-adus-and-voltage"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">int adumuv(WFDB_Signal <var>s</var>, WFDB_Sample <var>a</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(int)</tt></dt>
+<dd><p>number of microvolts corresponding to <var>a</var> ADC units
+</p></dd>
+</dl>
+
+<p>This function converts the potential difference <var>a</var> from ADC units to
+microvolts, based on the <code>gain</code> for input signal <var>s</var>.
+</p>
+<hr size="6">
+<a name="muvadu"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#adumuv" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_23.htm#calibration" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="unnumberedsubsec">muvadu</h3>
+<a name="index-muvadu"></a>
+<a name="index-adu-_0028conversion-to-and-from-voltage_0029-1"></a>
+<a name="index-voltage-_0028conversion-to-and-from-adus_0029-1"></a>
+<a name="index-conversion-between-adus-and-voltage-1"></a>
+
+<table><tr><td>&nbsp;</td><td><pre class="example">WFDB_Sample muvadu(WFDB_Signal <var>s</var>, int <var>v</var>)
+</pre></td></tr></table>
+<p><strong>Return:</strong>
+</p><dl compact="compact">
+<dt> <tt>(int)</tt></dt>
+<dd><p>number of ADC units corresponding to <var>v</var> microvolts
+</p></dd>
+</dl>
+
+<p>This function converts the potential difference <var>v</var> from microvolts
+to ADC units, based on the <code>gain</code> for input signal <var>s</var>.
+</p>
+
+<hr size="6">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#adumuv" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_23.htm#calibration" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#conversion" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_26.htm#Data-Types" title="Next chapter"> &gt;&gt; </a>]</td>
+</tr></table>
+<p>
+<p><address>
+<a href="mailto:wfdb@physionet.org"><em>PhysioNet
+ (<tt>wfdb@physionet.org</tt>)</em></A>
+</address>
+</body>
+</html>

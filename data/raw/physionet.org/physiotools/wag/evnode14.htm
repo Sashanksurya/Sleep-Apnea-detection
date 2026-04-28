@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Noise stress testing</TITLE>
+<META NAME="description" CONTENT="Noise stress testing">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="previous" HREF="evnode13.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next_gr.png"> 
+<A
+ HREF="eval.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode13.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B>Up:</B> <A
+ HREF="eval.htm"><a href="eval.htm">Evaluating ECG Analyzers</a></A>
+<B> Previous:</B> <A
+ HREF="evnode13.htm">Using the AHA Database</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00080000000000000000">
+Noise stress testing</A>
+</H1>
+
+<P>
+With respect to many tasks performed by an ECG analyzer, dealing with
+noise is the major problem faced by system designers.  Although
+measurements such as ST deviation may be obtained reliably in clean
+signals, the presence of noise may render them inaccurate.  In some
+instances, it is sufficient to recognize the presence of noise and either
+to mark measurements as unreliable or to avoid making measurements
+altogether.  In other cases, excluding noisy data is inappropriate
+(for example, given the multiple correlations among physical
+activity, noise, and transient ischemia, excluding noisy signals is
+likely to introduce sampling bias in an ischemia detector).
+
+<P>
+It is difficult to measure the effects of noise on an ECG analyzer
+using ordinary recordings.  Even if existing databases include an
+adequate variety of both ECG signals and noise, the sample size is
+certainly too small to include all combinations of noise and ECG
+signals that may be encountered in clinical use.  In ordinary
+recordings, it is difficult or impossible to separate the effects of
+noise from the intrinsic problems of analyzing clean signals of the
+same type.
+
+<P>
+The noise stress test circumvents these problems.  By adding noise
+in calibrated amounts to clean signals, any combination of noise and
+signal types is possible.  Since both the noise-corrupted signal and
+the clean signal can be analyzed (in separate experiments) by the
+same analyzer, the effects of noise on the analysis are readily
+separable from any other problems that may arise while analyzing the
+clean signals.  Finally, since the test can be repeated using
+different amounts of noise, it is possible to characterize analyzer
+performance as a function of signal-to-noise ratio.
+
+<P>
+The major criticisms of the noise stress test are that not all noise
+is additive, and that the characteristics of the added noise may not
+perfectly match those of noise observed in clinical practice.  These
+points, though formally irrefutable, do not negate the value of the
+test.  In practice, most of the troublesome noise is additive; thus
+(given appropriate inputs) the noise stress test can simulate most of
+the noisy signals of interest.  The NST DB includes noise recordings
+made using standard ambulatory ECG electrodes and recorders, but with
+electrodes placed on the limbs of active volunteers in configurations
+in which the subject's ECG is not apparent in the recorded signals.
+Given the recording technique used, it is not surprising that the
+characteristics of the recorded noise closely match those of noise in
+standard ambulatory ECG recordings. Although it may be argued that the
+particular muscles responsible for the recorded noise might produce
+different signals than those that generate the EMG present in noisy
+ECGs, no such differences are apparent from comparisons of either the
+signals or their power spectra.
+
+<P>
+The NST DB includes a small set of ECG records with calibrated amounts
+of added noise.  EC38 specifies that performance on these records must
+be reported, although no specific performance levels are required.
+Program <SPAN style="font-family:monospace">nst</SPAN> can be used to generate additional records for noise
+stress testing.  To do so, choose an ECG record and a noise record
+(the latter may be <SPAN style="font-family:monospace">bw</SPAN>, <SPAN style="font-family:monospace">em</SPAN>, or <SPAN style="font-family:monospace">ma</SPAN> from the NST DB, or
+any other available noise recording).  Run <SPAN style="font-family:monospace">nst</SPAN> and answer its
+questions to generate a noisy ECG record that may then be used in the
+same way as any other WFDB record.  By default, <SPAN style="font-family:monospace">nst</SPAN> adds no noise
+during the first five minutes of the record, then adds noise for the
+next two minutes, none for the following two minutes, and repeats this
+pattern of two minutes of noise followed by two minutes of clean
+signals for the remainder of the record.  The scale factors for the
+noise, if determined by <SPAN style="font-family:monospace">nst</SPAN>, are adjusted such that the
+signal-to-noise ratios are equal for each signal.  The durations of
+the noisy periods, and the scale factors for each signal, are recorded
+in a <EM>protocol annotation file</EM>, which is generated by <SPAN style="font-family:monospace">nst</SPAN>
+unless an existing protocol annotation file is supplied as input.  To
+change these parameters, simply edit the protocol annotation file
+(using, for example, <SPAN style="font-family:monospace">rdann</SPAN> to convert it to text form, any text
+editor to make the modifications, and <SPAN style="font-family:monospace">wrann</SPAN> to convert it back
+to annotation file format), then rerun <SPAN style="font-family:monospace">nst</SPAN> using the protocol
+file to generate a new record.
+
+<DIV CLASS="navigation"><HR>
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next_gr.png"> 
+<A
+ HREF="eval.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode13.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B>Up:</B> <A
+ HREF="eval.htm"><a href="eval.htm">Evaluating ECG Analyzers</a></A>
+<B> Previous:</B> <A
+ HREF="evnode13.htm">Using the AHA Database</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode14.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

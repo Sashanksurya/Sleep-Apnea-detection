@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on June 10, 2022 by texi2html 1.82
+texi2html was written by: 
+            Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people.
+Send bugs and suggestions to <texi2html-bug@nongnu.org>
+-->
+<head>
+<title>WFDB Programmer's Guide: Records</title>
+
+<meta name="description" content="WFDB Programmer's Guide: Records">
+<meta name="keywords" content="WFDB Programmer's Guide: Records">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.82">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.roman {font-family:serif; font-weight:normal;}
+span.sansserif {font-family:sans-serif; font-weight:normal;}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="Concepts-1"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_3.htm#Concepts-2" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<a name="Records"></a>
+<h2 class="unnumberedsec">Records</h2>
+<!-- link: records.htm --><a name="index-record"></a>
+<a name="index-record-name"></a>
+<a name="index-tape"></a>
+
+<p>The databases for which the WFDB library was designed consist of a
+small number of <em>records</em>, each of which is quite large (typically
+a megabyte or more).  Before 1990, database records usually originated
+as multi-channel analog tape recordings that had been digitized and
+stored as disk files.  For this historical reason, they are sometimes
+referred to as <em>tapes</em>, although most newly created records are
+digitally recorded onto disk media.  Each record contains a continuous
+recording from a single subject.  A typical application program
+accesses only a single record, and most (if not all) of the access
+within the record is sequential.  Much less frequently, it may be of
+interest to compare the contents of several records, or to select sets
+of records.  These databases are therefore qualitatively different
+from those for which conventional database management software is
+written.
+</p>
+<a name="index-file-names"></a>
+<p>Records are identified by <em>record names</em> of up to 20 characters
+(the limit is <code>MAXRNL</code>, defined in &lsquo;<tt>&lt;wfdb/wfdb.h&gt;</tt>&rsquo;).  For
+example, record names in the MIT DB are three-digit numbers, those in
+the AHA DB are four-digit numbers, and those in the ESC DB are
+four-digit numbers prefixed by the letter &lsquo;<samp>e</samp>&rsquo;.  You may create
+database records with names containing letters, digits, and
+underscores.  Case is significant in record names that contain
+letters, even in environments such as MS-Windows for which case
+translation is normally performed by the operating system on file
+names; thus &lsquo;<samp>e0104</samp>&rsquo; is the name of a record found in the ESC DB,
+whereas &lsquo;<samp>E0104</samp>&rsquo; is not.  A record is comprised of several files,
+which contain signals, annotations, and specifications of signal
+attributes; each file belonging to a given record normally includes
+the record name as the first part of its name.  A record is an
+extensible collection of files, which need not all be located in the
+same directory, or even on the same physical device.  Thus it is
+possible, for example, to create a local disk file of your own
+annotations for a record read from a web server or a CDROM, and to
+treat your file as part of the record.
+</p>
+<hr size="6">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_3.htm#Concepts-2" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_1.htm#Overview" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Next chapter"> &gt;&gt; </a>]</td>
+</tr></table>
+<p>
+<p><address>
+<a href="mailto:wfdb@physionet.org"><em>PhysioNet
+ (<tt>wfdb@physionet.org</tt>)</em></A>
+</address>
+</body>
+</html>

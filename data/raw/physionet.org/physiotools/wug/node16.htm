@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Annotation Editing</TITLE>
+<META NAME="description" CONTENT="Annotation Editing">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="next" HREF="node34.htm">
+<LINK REL="previous" HREF="node7.htm">
+<LINK REL="up" HREF="wug.htm">
+<LINK REL="next" HREF="node17.htm">
+</HEAD>
+
+<BODY bgcolor="FFFFFF" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html660"
+  HREF="node17.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html654"
+  HREF="wug.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html648"
+  HREF="node15.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html656"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html658"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html661"
+  HREF="node17.htm">Loading annotations to be edited</A>
+<B>Up:</B> <A NAME="tex2html655"
+  HREF="wug.htm">WAVE User's Guide</A>
+<B> Previous:</B> <A NAME="tex2html649"
+  HREF="node15.htm">A Five-Minute Tour of WAVE</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00400000000000000000">
+Annotation Editing</A>
+</H1>
+
+<P>
+There are five editing operations that you can perform using <I CLASS="sans">WAVE</I> :
+changing, moving, copying, inserting, and deleting annotations.  In
+this chapter, you will create and edit an annotation file using <I CLASS="sans">WAVE</I> 
+and an external QRS detection program.  Start as in the previous
+chapter, but use the command
+<PRE>
+    wave -r 100s &amp;
+</PRE>
+
+omitting the `<TT>-a atr</TT>' option this time.  Note that the title bar
+contains only the record name.
+
+<P>
+
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="100" HEIGHT="146" BORDER="0"
+ SRC="img35.png"
+ ALT="\begin{wrapfigure}{l}{2.2cm}
+\mbox{\epsfig{file=file-analyze}}
+\end{wrapfigure}">
+</DIV>
+Click right on <!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~File~\ensuremath{\nabla}~}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~File~\ensuremath{\nabla}~}">, and click left on the <I CLASS="sans">Analyze...</I>
+selection in the File menu.  After a short delay, the <I CLASS="sans">Analyze</I>
+window (see figure&nbsp;<A HREF="#fig:analyze-window">2.1</A>) and the
+<I CLASS="sans">Analysis Commands</I> window (see figure&nbsp;<A HREF="#fig:analysis-commands">2.2</A>) appear.
+
+<DIV ALIGN="CENTER"><A NAME="fig:analyze-window"></A><A NAME="4968"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2.1:</STRONG>
+The <I CLASS="sans">Analyze</I> window.</CAPTION>
+<TR><TD><IMG
+ WIDTH="809" HEIGHT="176" BORDER="0"
+ SRC="img36.png"
+ ALT="\begin{figure}\centerline{\epsfig{file=analyze-window}}\index{Analyze window@{\sf Analyze} window}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+At any time, you can click on <!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Show command window~}$
+ -->
+<IMG
+ WIDTH="208" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Show command window~}"> in the <I CLASS="sans">Analyze</I>
+window to make the <I CLASS="sans">Analysis Commands</I> window visible if it becomes
+covered by another window.
+
+<P>
+Below the title bar of the <I CLASS="sans">Analyze</I> window, text fields allow you to
+specify the beginning and end of a segment of the record, and to
+choose signals.  The <I CLASS="sans">Analyze</I> window also contains buttons specifying
+various actions that you can apply to the signals.  The separate
+<I CLASS="sans">Analysis Commands</I> window behaves like an OpenWindows <TT>cmdtool</TT>
+window (a scrollable terminal emulator).  
+<A NAME="4970"></A>
+
+<DIV ALIGN="CENTER"><A NAME="fig:analysis-commands"></A><A NAME="4972"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2.2:</STRONG>
+The <I CLASS="sans">Analysis Commands</I> window.</CAPTION>
+<TR><TD><IMG
+ WIDTH="622" HEIGHT="156" BORDER="0"
+ SRC="img38.png"
+ ALT="\begin{figure}\centerline{\epsfig{file=analysis-commands}}\index{analysis commands window@{\sf Analysis Commands} window}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+Commands may be run in the
+<I CLASS="sans">Analysis Commands</I> window either by clicking left on action buttons
+<A NAME="675"></A>
+in the <I CLASS="sans">Analyze</I> window, or by typing directly into the window (depending
+on your window manager's policy for moving the keyboard focus, you may
+need to click left within the window before you can type into it,
+however).  The <I CLASS="sans">Analysis Commands</I> window may be resized if desired, and
+standard Open Look user interface methods may be used to cut and paste
+text between it and other windows, including those in other
+applications.
+
+<P>
+<A NAME="678"></A>
+<A NAME="679"></A>
+To create an annotation file, click left on <!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Mark QRS complexes~}$
+ -->
+<IMG
+ WIDTH="189" HEIGHT="27" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Mark QRS complexes~}">.
+The command
+<PRE>
+    sqrs -r 100s -f 0 -t 1:00.000 -s 0
+</PRE>
+
+appears in the <I CLASS="sans">Analysis Commands</I> window, as shown in
+figure&nbsp;<A HREF="#fig:analysis-commands">2.2</A>.  Below the command, its error
+output appears.  When the command has run to completion (which will take only
+a few seconds unless the <I CLASS="sans">WAVE</I>  host is heavily loaded), an annotation file
+named `<TT>100s.qrs</TT>' is written into the current directory.
+
+<P>
+If you wish, the <I CLASS="sans">Analyze</I> window or the <I CLASS="sans">Analysis Commands</I>
+window, or both, may be dismissed (by selecting <I CLASS="sans">Quit</I> from the
+window menu to the left of the title bar); this can be done at any
+time, even while analysis is still in progress.  If you recall the
+<I CLASS="sans">Analysis Commands</I> window later (using <!-- MATH
+ $\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Show command window~}$
+ -->
+<IMG
+ WIDTH="208" HEIGHT="25" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.png"
+ ALT="\ovalbox{\rule[-.3mm]{0cm}{2.5mm}\small\sf ~Show command window~}">
+in the <I CLASS="sans">Analyze</I> window), it will show any output sent to it
+while it was dismissed.  Note that the <I CLASS="sans">Analysis Commands</I> window is
+dismissed whenever you exit from <I CLASS="sans">WAVE</I> , and its contents are not
+retained after that point.
+
+<P>
+<BR> <HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html662"
+  HREF="node17.htm">Loading annotations to be edited</A>
+<LI><A NAME="tex2html663"
+  HREF="node18.htm">The <I CLASS="sans">Annotation Template</I></A>
+<LI><A NAME="tex2html664"
+  HREF="node19.htm">Selecting an annotation</A>
+<LI><A NAME="tex2html665"
+  HREF="node20.htm">Changing an annotation without moving it</A>
+<LI><A NAME="tex2html666"
+  HREF="node21.htm">Moving an annotation</A>
+<LI><A NAME="tex2html667"
+  HREF="node22.htm">Inserting an annotation</A>
+<LI><A NAME="tex2html668"
+  HREF="node23.htm">Copying an annotation</A>
+<LI><A NAME="tex2html669"
+  HREF="node24.htm">Deleting and restoring annotations</A>
+<LI><A NAME="tex2html670"
+  HREF="node25.htm">Markers</A>
+<LI><A NAME="tex2html671"
+  HREF="node26.htm">Changing the <I CLASS="sans">Annotation Template</I></A>
+<LI><A NAME="tex2html672"
+  HREF="node27.htm">Changing many annotations at once</A>
+<LI><A NAME="tex2html673"
+  HREF="node28.htm">Searching for annotations</A>
+<LI><A NAME="tex2html674"
+  HREF="node29.htm">Saving your work</A>
+<LI><A NAME="tex2html675"
+  HREF="node30.htm">Creating an annotation file manually</A>
+<LI><A NAME="tex2html676"
+  HREF="node31.htm">Multi-edit mode</A>
+<LI><A NAME="tex2html677"
+  HREF="node32.htm">About link annotations</A>
+<LI><A NAME="tex2html678"
+  HREF="node33.htm">Creating and using new annotation types</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html660"
+  HREF="node17.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html654"
+  HREF="wug.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html648"
+  HREF="node15.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html656"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html658"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html661"
+  HREF="node17.htm">Loading annotations to be edited</A>
+<B>Up:</B> <A NAME="tex2html655"
+  HREF="wug.htm">WAVE User's Guide</A>
+<B> Previous:</B> <A NAME="tex2html649"
+  HREF="node15.htm">A Five-Minute Tour of WAVE</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

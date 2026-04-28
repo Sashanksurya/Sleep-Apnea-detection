@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MIMIC-IV v2.2</title>
+    
+  <!-- wfdb-python: <p>Version: 2.2</p> -->
+  
+    <meta name="description" content="Large database of de-identified health information from patients admitted to Beth Israel Deaconess Medical Center">
+  
+
+    
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/static/font-awesome/css/all.css"/>
+<link rel="stylesheet" type="text/css" href="/static/custom/css/physionet.css"/>
+    
+  <link rel="stylesheet" type="text/css" href="/static/project/css/project-content.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/highlight/css/default.min.css"/>
+
+    
+<script src="/static/jquery/jquery.min.js"></script>
+<script src="/static/popper/popper.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87592301-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87592301-7');
+</script>
+    
+  <script src="/static/mathjax/MathJax.js?config=MML_HTMLorMML"></script>
+  <script src="/static/highlight/js/highlight.min.js"></script>
+  <script src="/static/custom/js/copy-to-clipboard.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/fonts/inter-local.css">
+    <link rel="stylesheet" type="text/css" href="/static/custom/css/style.css?v=2">
+  </head>
+
+  
+  <body class="flexbody">
+    
+
+
+
+
+<div class="modern-ui nav-wrapper">
+  <nav class="nav">
+    <div class="container my-0 h-100 d-flex justify-content-between align-items-center">
+      <button type="button" class="nav__hamburger circle-button mr-2"
+              popovertarget="nav__hamburger_popup"
+              title="Menu">
+        <i class="nav__hamburger__list bi bi-list"></i>
+        <i class="nav__hamburger__x bi bi-x"></i>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <a href="/">
+        
+          <img src="/static/images/physionet-logo.svg" width="200px" alt="PhysioNet">
+        
+      </a>
+      <div class="nav__links align-items-center">
+        
+          
+            <a href="/about/publish/" class="nav-link">Share</a>
+          
+        
+          
+            <a href="/about/" class="nav-link">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <a href="/about/faqs/" class="nav-link">FAQs</a>
+          
+        
+
+        <div>
+          <button type="button" class="nav-link nav-link--expandable"
+                  popovertarget="nav__explore_popup">
+            Explore <i class="bi bi-chevron-down ml-2"></i>
+          </button>
+          <dialog class="nav-link__popup" id="nav__explore_popup" popover
+                  aria-label="Explore">
+            <div class="nav-sublinks">
+              
+                <a class="nav-sublink" href="/about/database/">
+                  <div class="nav-sublink__icon">
+                    
+                      <img src="/static/images/icons/data.png" alt="" height="32px">
+                    
+                  </div>
+                  <div class="nav-sublink__text">
+                    <span class="nav-sublink__title">Data</span>
+                    <span class="nav-sublink__description">View datasets</span>
+                  </div>
+                </a>
+              
+                <a class="nav-sublink" href="/about/software/">
+                  <div class="nav-sublink__icon">
+                    
+                      <img src="/static/images/icons/software.png" alt="" height="32px">
+                    
+                  </div>
+                  <div class="nav-sublink__text">
+                    <span class="nav-sublink__title">Software</span>
+                    <span class="nav-sublink__description">View software</span>
+                  </div>
+                </a>
+              
+                <a class="nav-sublink" href="/about/challenge/">
+                  <div class="nav-sublink__icon">
+                    
+                      <img src="/static/images/icons/challenges.png" alt="" height="32px">
+                    
+                  </div>
+                  <div class="nav-sublink__text">
+                    <span class="nav-sublink__title">Challenges</span>
+                    <span class="nav-sublink__description">View challenges</span>
+                  </div>
+                </a>
+              
+                <a class="nav-sublink" href="/about/tutorial/">
+                  <div class="nav-sublink__icon">
+                    
+                      <img src="/static/images/icons/tutorials.png" alt="" height="32px">
+                    
+                  </div>
+                  <div class="nav-sublink__text">
+                    <span class="nav-sublink__title">Tutorials</span>
+                    <span class="nav-sublink__description">View tutorials</span>
+                  </div>
+                </a>
+              
+              </div>
+          </dialog>
+        </div>
+      </div>
+      <div class="nav__actions d-flex ml-md-4">
+        <form action="/content/" class="mr-2">
+          <div class="nav__search">
+            <input type="text" name="topic" placeholder="Search for anything...">
+            <div class="nav__search__actions">
+              <button type="button" class="nav__search__close mr-2"
+                      title="Cancel">
+                <i class="bi bi-x"></i>
+                <span class="visually-hidden">Cancel</span>
+              </button>
+              <button type="submit" class="circle-button">Search</button>
+            </div>
+          </div>
+        </form>
+        <button type="button" class="nav__search__open circle-button mr-md-2"
+                title="Search PhysioNet">
+          <i class="bi bi-search"></i>
+          <span class="visually-hidden">Search PhysioNet</span>
+        </button>
+        
+          <a class="nav__user" href="/login/"
+             title="Log in">
+            <i class="bi bi-person"></i>
+            <span class="visually-hidden">Log in</span>
+          </a>
+        
+      </div>
+    </div>
+
+    <dialog class="nav__mobile" id="nav__hamburger_popup" popover
+            aria-label="Menu">
+      
+        
+          <a href="/about/publish/" class="nav-link">Share</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">About</a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="/about/faqs/" class="nav-link">FAQs</a>
+        
+      
+      <hr>
+      <div class="nav-sublinks">
+        
+          <a class="nav-sublink" href="/about/database/">
+            <div class="nav-sublink__icon">
+              
+                <img src="/static/images/icons/data.png" alt="" height="32px">
+              
+              </div>
+            <div class="nav-sublink__text">
+              <span class="nav-sublink__title">Data</span>
+              <span class="nav-sublink__description">View datasets</span>
+            </div>
+          </a>
+        
+          <a class="nav-sublink" href="/about/software/">
+            <div class="nav-sublink__icon">
+              
+                <img src="/static/images/icons/software.png" alt="" height="32px">
+              
+              </div>
+            <div class="nav-sublink__text">
+              <span class="nav-sublink__title">Software</span>
+              <span class="nav-sublink__description">View software</span>
+            </div>
+          </a>
+        
+          <a class="nav-sublink" href="/about/challenge/">
+            <div class="nav-sublink__icon">
+              
+                <img src="/static/images/icons/challenges.png" alt="" height="32px">
+              
+              </div>
+            <div class="nav-sublink__text">
+              <span class="nav-sublink__title">Challenges</span>
+              <span class="nav-sublink__description">View challenges</span>
+            </div>
+          </a>
+        
+          <a class="nav-sublink" href="/about/tutorial/">
+            <div class="nav-sublink__icon">
+              
+                <img src="/static/images/icons/tutorials.png" alt="" height="32px">
+              
+              </div>
+            <div class="nav-sublink__text">
+              <span class="nav-sublink__title">Tutorials</span>
+              <span class="nav-sublink__description">View tutorials</span>
+            </div>
+          </a>
+        
+      </div>
+    </dialog>
+  </nav>
+</div>
+
+    <div class="nav-spacer"></div>
+
+    <main>
+  <div class="container">
+    
+
+    <p>
+      <span class="badge badge-dark"><i class="fa fa-database"></i> Database</span>
+      <span class="badge badge-danger"><i class="fas fa-lock"></i> Credentialed Access</span>
+    </p>
+    <h1 class="form-signin-heading">MIMIC-IV</h1>
+    <p>
+      <strong>
+      
+        <a class="author">Alistair Johnson</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Massachusetts Institute of Technology&lt;/p&gt;<p><b>Profile</b><br><a href=/users/alistairewj target=_blank>alistairewj</a></p>" data-html="true" style="cursor: pointer;"></i>
+        ,&nbsp;
+      
+        <a class="author">Lucas Bulgarelli</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Massachusetts Institute of Technology&lt;/p&gt;<p><b>Profile</b><br><a href=/users/lbulgarelli target=_blank>lbulgarelli</a></p>" data-html="true" style="cursor: pointer;"></i>
+        ,&nbsp;
+      
+        <a class="author">Tom Pollard</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Massachusetts Institute of Technology, USA&lt;/p&gt;<p><b>Profile</b><br><a href=/users/tompollard target=_blank>tompollard</a></p>" data-html="true" style="cursor: pointer;"></i>
+        ,&nbsp;
+      
+        <a class="author">Steven Horng</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Beth Israel Deaconess Medical Center&lt;br&gt;Harvard Medical School&lt;/p&gt;<p><b>Profile</b><br><a href=/users/shorng target=_blank>shorng</a></p>" data-html="true" style="cursor: pointer;"></i>
+        ,&nbsp;
+      
+        <a class="author">Leo Anthony Celi</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Massachusetts Institute of Technology, Cambridge, USA&lt;br&gt;Beth Israel Deaconess Medical Center, Boston, USA&lt;/p&gt;<p><b>Profile</b><br><a href=/users/leoanthonyceli target=_blank>leoanthonyceli</a></p>" data-html="true" style="cursor: pointer;"></i>
+        ,&nbsp;
+      
+        <a class="author">Roger Mark</a> <i class="fas fa-info-circle" data-toggle="popover" data-original-title="<strong>Author Info</strong>" data-placement="bottom" data-content="&lt;b&gt;Affiliations&lt;/b&gt;&lt;p&gt;Massachusetts Institute of Technology&lt;/p&gt;<p><b>Profile</b><br><a href=/users/rgmark target=_blank>rgmark</a></p>" data-html="true" style="cursor: pointer;"></i>
+        
+      
+      </strong>
+    </p>
+
+    <p>Published: Jan. 6, 2023. Version:
+      2.2
+      <a href="/content/mimiciv/">&lt;View latest version&gt;</a>
+    </p>
+
+    
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      This is <strong>not</strong> the latest version. Click <a
+        href="/content/mimiciv/">here</a> for the latest version.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+    <hr>
+
+    <!-- Latest news and announcements -->
+    
+      <div class="alert alert-primary" role="alert">
+        
+        
+          <p>
+            <strong>Guidelines for creating datasets and models from MIMIC</strong>
+            <em>(April 24, 2024, 10:12 a.m.)</em>
+            <p>We recognize that there is value in creating datasets or models that are either derived from MIMIC or which augment MIMIC in some way (for example, by adding annotations). Here are some guidelines on creating these datasets and models:</p>
+<ul>
+<li><strong>Any derived datasets or models should be treated as containing sensitive information</strong>. If you wish to share these resources, they should be shared on PhysioNet under the same agreement as the source data.</li>
+<li><strong>If you would like to use the MIMIC acronym in your project&nbsp;name</strong>, please include the letters &ldquo;Ext&rdquo; (for example, MIMIC-IV-Ext-YOUR-DATASET"). Ext may either indicate &ldquo;extracted&rdquo; (e.g. a derived subset) or &ldquo;extended&rdquo; (e.g. annotations), depending on your use case.</li>
+<li>Please select the relevant "Parent Projects" in the Discovery tab of the submission portal when preparing your project for submission.</li>
+</ul>
+            
+          </p>
+          
+          
+      </div>
+    
+
+    <div class="row">
+      <!-- Main column -->
+      <div class="col-md-8">
+        
+          <div class="alert alert-secondary">
+
+  
+    
+      <p>
+        <strong>When using this resource, please cite: </strong>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#citationModal" title="View citation formats"><i class="bi bi-quote"></i> Cite</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary ml-1" title="Copy BibTeX" onclick="copyToClipboard(document.getElementById('bibtex-data-2').value); this.innerHTML='<i class=\'bi bi-check\'></i> Copied'; var btn=this; setTimeout(function(){ btn.innerHTML='<i class=\'bi bi-clipboard\'></i> Copy BibTeX'; }, 2000);"><i class="bi bi-clipboard"></i> Copy BibTeX</button>
+        <br><span>Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., &amp; Mark, R. (2023). MIMIC-IV (version 2.2). <i>PhysioNet</i>. RRID:SCR_007345. <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a></span>
+      </p>
+      <textarea id="bibtex-data-2" style="display:none;">@article{PhysioNet-mimiciv-2.2,
+  author = {Johnson, Alistair and Bulgarelli, Lucas and Pollard, Tom and Horng, Steven and Celi, Leo Anthony and Mark, Roger},
+  title = {{MIMIC-IV}},
+  journal = {{PhysioNet}},
+  year = {2023},
+  month = jan,
+  note = {Version 2.2},
+  doi = {10.13026/6mm1-ek67},
+  url = {https://doi.org/10.13026/6mm1-ek67}
+}</textarea>
+
+      <div class="modal fade" id="citationModal">
+  <div class="modal-dialog citation" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      <table><tbody>
+        
+          
+          <tr>
+            <th>MLA</th>
+            <td>Johnson, Alistair, et al. "MIMIC-IV" (version 2.2). <i>PhysioNet</i> (2023). RRID:SCR_007345. <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <th>APA</th>
+            <td>Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., &amp; Mark, R. (2023). MIMIC-IV (version 2.2). <i>PhysioNet</i>. RRID:SCR_007345. <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <th>Chicago</th>
+            <td>Johnson, Alistair, Bulgarelli, Lucas, Pollard, Tom, Horng, Steven, Celi, Leo Anthony, and Roger Mark. "MIMIC-IV" (version 2.2). <i>PhysioNet</i> (2023). RRID:SCR_007345. <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <th>Harvard</th>
+            <td>Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., and Mark, R. (2023) 'MIMIC-IV' (version 2.2), <i>PhysioNet</i>. RRID:SCR_007345. Available at: <a href='https://doi.org/10.13026/6mm1-ek67'>https://doi.org/10.13026/6mm1-ek67</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <th>Vancouver</th>
+            <td>Johnson A, Bulgarelli L, Pollard T, Horng S, Celi L A, Mark R. MIMIC-IV (version 2.2). PhysioNet. 2023. RRID:SCR_007345. Available from: <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a></td>
+          </tr>
+          
+        
+          
+        
+      </tbody></table>
+      
+      <div class="mt-3">
+        <strong>BibTeX</strong>
+        <button class="btn btn-sm btn-outline-secondary ml-2" onclick="copyToClipboard(document.getElementById('bibtex-data-2').value); var btn=this; btn.textContent='Copied!'; setTimeout(function(){ btn.textContent='Copy'; }, 2000)">Copy</button>
+        <pre id="bibtex-citation-2" class="mt-2 p-2 border rounded" style="white-space: pre-wrap; background-color: #f8f9fa;">@article{PhysioNet-mimiciv-2.2,
+  author = {Johnson, Alistair and Bulgarelli, Lucas and Pollard, Tom and Horng, Steven and Celi, Leo Anthony and Mark, Roger},
+  title = {{MIMIC-IV}},
+  journal = {{PhysioNet}},
+  year = {2023},
+  month = jan,
+  note = {Version 2.2},
+  doi = {10.13026/6mm1-ek67},
+  url = {https://doi.org/10.13026/6mm1-ek67}
+}</pre>
+      </div>
+      
+            </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <strong>Additionally, please cite the original publication:</strong>
+      
+        <p><a href="https://doi.org/10.1038/s41597-022-01899-x">Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset. Sci Data 10, 1 (2023). https://doi.org/10.1038/s41597-022-01899-x</a></p>
+      
+    
+  
+    
+      <p>
+        <strong>Please include the standard citation for PhysioNet:</strong>
+        <a href="#citationModalPlatform" data-toggle="modal">(show more options)</a>
+          <br><span>Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... &amp; Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.</span>
+      </p>
+    
+
+  <div class="modal fade" id="citationModalPlatform">
+  <div class="modal-dialog citation" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+  <table><tbody>
+    
+        
+          <tr>
+            <th>APA</th>
+            <td>Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... &amp; Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.</td>
+          </tr>
+        
+    
+        
+          <tr>
+            <th>MLA</th>
+            <td>Goldberger, A., et al. &quot;PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.&quot; (2000). RRID:SCR_007345.</td>
+          </tr>
+        
+    
+        
+          <tr>
+            <th>CHICAGO</th>
+            <td>Goldberger, A., L. Amaral, L. Glass, J. Hausdorff, P. C. Ivanov, R. Mark, J. E. Mietus, G. B. Moody, C. K. Peng, and H. E. Stanley. &quot;PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.&quot; (2000). RRID:SCR_007345.</td>
+          </tr>
+        
+    
+        
+          <tr>
+            <th>HARVARD</th>
+            <td>Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P.C., Mark, R., Mietus, J.E., Moody, G.B., Peng, C.K. and Stanley, H.E., 2000. PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.</td>
+          </tr>
+        
+    
+        
+          <tr>
+            <th>VANCOUVER</th>
+            <td>Goldberger A, Amaral L, Glass L, Hausdorff J, Ivanov PC, Mark R, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.</td>
+          </tr>
+        
+    
+  </tbody></table>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+        
+
+        
+          
+  
+    <h2 id="abstract">Abstract</h2>
+    <p>Retrospectively collected medical data has the opportunity to improve patient care through knowledge discovery and algorithm development. Broad reuse of medical data is desirable for the greatest public good, but data sharing must be done in a manner which protects patient privacy. The Medical Information Mart for Intensive Care (MIMIC)-III database provided critical care data for over 40,000 patients admitted to intensive care units at the Beth Israel Deaconess Medical Center (BIDMC). Importantly, MIMIC-III was deidentified, and patient identifiers were removed according to the Health Insurance Portability and Accountability Act (HIPAA) Safe Harbor provision. MIMIC-III has been integral in driving large amounts of research in clinical informatics, epidemiology, and machine learning. Here we present MIMIC-IV, an update to MIMIC-III, which incorporates contemporary data and improves&nbsp;on numerous aspects of MIMIC-III. MIMIC-IV adopts a modular approach to data organization, highlighting data provenance and facilitating both individual and combined use of disparate data sources. MIMIC-IV is intended to carry on the success of MIMIC-III and support a broad set of applications within healthcare.</p>
+    <hr>
+  
+
+  
+    <h2 id="background">Background</h2>
+    <p>In recent years there has been a concerted move towards the adoption of digital health record systems in hospitals. In the US, nearly 96% of hospitals had a digital electronic health record system (EHR) in 2015 [1]. Retrospectively collected medical data has increasingly been used for epidemiology and predictive modeling. The latter&nbsp;is in part due to the&nbsp;effectiveness of modeling approaches on large datasets [2]. Despite these&nbsp;advances, access to medical data to improve patient care remains a significant challenge. While the reasons for limited sharing of medical data are multifaceted, concerns around patient privacy are highlighted as one of the most significant issues. Although patient studies have shown almost uniform agreement that deidentified medical data should be used to improve medical practice, domain experts continue to debate the optimal mechanisms of doing so. Uniquely, the MIMIC-III database adopted a permissive access scheme which allowed for broad reuse of the data [3]. This mechanism has been successful in the wide use of MIMIC-III in a variety of studies ranging from assessment of treatment efficacy in well defined cohorts to prediction of key patient outcomes such as mortality. MIMIC-IV aims to carry on the success of MIMIC-III, with a number of changes to improve usability of the data and enable more research applications.</p>
+    <hr>
+  
+
+  
+    <h2 id="methods">Methods</h2>
+    <p>MIMIC-IV is sourced from two in-hospital database systems: a custom hospital wide EHR and an ICU specific clinical information system. The creation of MIMIC-IV was carried out in three steps:</p>
+
+<ol>
+	<li><em>Acquisition.</em> Data for patients who were admitted to the BIDMC emergency department or one of the intensive care units were extracted from the respective hospital databases. A master patient list was created which contained all medical record numbers corresponding to patients admitted to an ICU or the emergency department&nbsp;between 2008 - 2019. All source tables were filtered to only rows related to patients in the master patient list.</li>
+	<li><em>Preparation.</em>&nbsp;The data were reorganized to better facilitate retrospective data analysis. This included the&nbsp;denormalization of tables, removal of audit trails, and reorganization into fewer tables. The aim of this process is to simplify retrospective analysis of the database. Importantly, data cleaning steps were not performed, to ensure the data reflects a real-world clinical dataset.</li>
+	<li><em>Deidentify.</em>&nbsp;Patient identifiers as stipulated by HIPAA were removed. Patient identifiers were replaced using a random cipher, resulting in deidentified integer identifiers for patients, hospitalizations, and ICU stays. Structured data were filtered using look up tables and allow lists. If necessary, a free-text&nbsp;deidentification algorithm&nbsp;was applied to remove PHI from free-text. Finally, date and times&nbsp;were shifted randomly into the future using an offset measured in days. A single date shift was assigned to each&nbsp;<em>subject_id</em>.&nbsp;As a result, the data for a single patient are&nbsp;internally consistent. For example, if the time between two measures in the database was 4 hours in the raw data, then the calculated time difference in MIMIC-IV will also be 4 hours. Conversely, distinct patients are not temporally comparable. That is, two patients admitted in 2130 were not necessarily admitted in the same year.</li>
+</ol>
+
+<p>After these three steps were carried out, the database was exported&nbsp;to a character based comma delimited format.</p>
+    <hr>
+  
+
+  
+    <h2 id="description">Data Description</h2>
+    <p>MIMIC-IV is grouped into two modules:&nbsp;<em>hosp</em>, and <em>icu</em>. The aim of these modules is to highlight their&nbsp;provenance.</p>
+
+<h3><em>hosp</em></h3>
+
+<p>The&nbsp;<em>hosp</em>&nbsp;module contains data derived from the hospital wide EHR. These measurements are predominantly recorded during the hospital stay, though some tables include data from outside the hospital as well (e.g. outpatient laboratory tests in&nbsp;<em>labevents</em>). Patient demographics (<em>patients</em>), hospitalizations (<em>admissions</em>), and intra-hospital transfers (<em>transfers</em>)&nbsp;are recorded in the <em>hosp</em>&nbsp;module.</p>
+
+<p>Notably, the&nbsp;<em>patients</em>&nbsp;table provides timing information for each patient through the&nbsp;<em>anchor_year</em>&nbsp;and&nbsp;<em>anchor_year_group</em>&nbsp;columns. The&nbsp;<em>anchor_year</em>&nbsp;is a deidentified year occurring sometime between 2100 - 2200, and the&nbsp;<em>anchor_year_group</em>&nbsp;is a three year long date ranges between 2008 - 2019.&nbsp;These pieces of information allow researchers to infer the approximate year a patient received care. For example, if a patient&#39;s&nbsp;<em>anchor_year</em>&nbsp;is 2158, and their&nbsp;<em>anchor_year_group</em>&nbsp;is 2011 - 2013, then any hospitalizations for the patient occurring in the year 2158 actually occurred sometime between 2011 - 2013. Finally,&nbsp;the&nbsp;<em>anchor_age</em>&nbsp;provides the patient age in the given&nbsp;<em>anchor_year</em>. If the patient was over 89 in the&nbsp;<em>anchor_year</em>, this&nbsp;<em>anchor_age</em>&nbsp;has been set to 91 (i.e. all patients over 89 have been grouped together into a single group with value 91, regardless of what their real age was).</p>
+
+<p>Date of death is available within the&nbsp;<em>dod</em>&nbsp;column of the&nbsp;<em>patients</em>&nbsp;table. Date of death is derived from hospital records and state records. If both exist, hospital records take precedence. State records were matched using a custom rule based linkage algorithm based on name, date of birth, and social security number. State and hospital records for date of death were collected two years after the last patient discharge in MIMIC-IV, which should limit the impact of reporting delays in date of death.</p>
+
+<p>Dates of death occurring more than one year after hospital discharge are censored as a part of the deidentification process. As a result, the maximum time of follow up for each patient is exactly one year after their last hospital discharge. For example, if a patient&#39;s&nbsp;last hospital discharge occurs on&nbsp;2150-01-01, then the last possible date of death for the patient is 2151-01-01. If the individual died on or before 2151-01-01, and it was captured in either state or hospital death records, then the&nbsp;<em>dod</em>&nbsp;column will contain the deidentified date of death. If the individual survived for at least one year after their last hospital discharge, then the&nbsp;<em>dod</em> column will have a NULL value.</p>
+
+<p>Other information in the&nbsp;<em>hosp</em> module includes laboratory measurements (<em>labevents</em>,&nbsp;<em>d_labitems</em>), microbiology cultures (<em>microbiologyevents</em>,&nbsp;<em>d_micro</em>), provider orders (<em>poe</em>,&nbsp;<em>poe_detail</em>), medication administration (<em>emar</em>,&nbsp;<em>emar_detail</em>), medication prescription (<em>prescriptions</em>,&nbsp;<em>pharmacy</em>), hospital billing information (<em>diagnoses_icd</em>,&nbsp;<em>d_icd_diagnoses</em>,&nbsp;<em>procedures_icd</em>,&nbsp;<em>d_icd_procedures</em>,&nbsp;<em>hcpcsevents</em>,&nbsp;<em>d_hcpcs</em>, <em>drgcodes</em>), online medical record data (<em>omr</em>), and service related information (<em>services</em>).</p>
+
+<p>Provider information is available in the <em>provider</em>&nbsp;table. The provider_id column is a deidentified character string which uniquely represents a single care provider. As <code>provider_id</code> is used in different contexts across the module, a prefix is usually present in data tables to contextualize how the provider relates to the event. For example, the provider who admits the patient to the hospital is documented in the&nbsp;<em>admissions</em>&nbsp;table as <code>admit_provider_id</code>. All columns which have a suffix of <code>provider_id&nbsp;</code>may be linked to the&nbsp;<em>provider</em>&nbsp;table.</p>
+
+<h3><em>icu</em></h3>
+
+<p>The&nbsp;<em>icu</em>&nbsp;module contains data sourced from the clinical information system at the BIDMC: MetaVision (iMDSoft). MetaVision tables were denormalized to create a star schema where the&nbsp;<em>icustays</em>&nbsp;and&nbsp;<em>d_items</em>&nbsp;tables link to a set of data tables all suffixed with &quot;events&quot;. Data documented in the <em>icu</em>&nbsp;module includes intravenous and fluid inputs (<em>inputevents</em>), ingredients for the aforementioned inputs (<em>ingredientevents),</em>&nbsp;patient outputs (<em>outputevents</em>), procedures (<em>procedureevents</em>), information documented as a date or time (<em>datetimeevents</em>),&nbsp;and other charted information&nbsp;(<em>chartevents</em>). All events tables contain a&nbsp;<em>stay_id</em>&nbsp;column&nbsp;allowing identification of the associated ICU patient in <em>icustays</em>, and an&nbsp;<em>itemid</em>&nbsp;column&nbsp;allowing identification of the concept documented in&nbsp;<em>d_items</em>. Additionally, the&nbsp;<em>caregiver</em>&nbsp;table contains <code>caregiver_id</code>, a deidentified integer representing the care provider who documented data into the system. All events tables (<em>chartevents</em>,&nbsp;<em>datetimeevents</em>,&nbsp;<em>ingredientevents</em>,&nbsp;<em>inputevents</em>, <em>outputevents</em>,&nbsp;<em>procedureevents</em>) have a <code>caregiver_id</code>&nbsp;column which links to the&nbsp;<em>caregiver</em>&nbsp;table.</p>
+    <hr>
+  
+
+  
+    <h2 id="usage-notes">Usage Notes</h2>
+    <p>The data described here are collected during routine clinical practice and reflect the idiosyncrasies of that practice. Implausible values may be present in the database as an artifact of the archival process.&nbsp; Researchers should follow best practice guidelines when analyzing the data.</p>
+
+<p>Up to date documentation for MIMIC-IV is available on the MIMIC-IV website [4]. We have created an open source repository for the sharing of code and discussion of the database, referred to as the MIMIC&nbsp;Code Repository [5, 6]. The code repository provides a mechanism for shared discussion and analysis of all versions of MIMIC, including MIMIC-IV.</p>
+    <hr>
+  
+
+  
+    <h2 id="release-notes">Release Notes</h2>
+    <h3>MIMIC-IV v2.2</h3>
+
+<p>MIMIC-IV v2.2 was released in January 2023. It added provider identifiers, imputed <code>hadm_id</code> for a number of rows in <em>emar</em>, and changed the subset of <code>subject_id</code> which are held out. Final row counts are available in the validation scripts published with the MIMIC Code Repository [6]. For clarity, after removal of the test set, the row counts are as follows:</p>
+
+<ul>
+	<li><em>patients</em>: 299,712 (was&nbsp;315,460 in v2.0)</li>
+	<li><em>admissions</em>: 431,231 (was 454,324 in v2.0)</li>
+	<li><em>icustays</em>:&nbsp;73,181 (was&nbsp;76,943 in v2.0)</li>
+</ul>
+
+<h4><u>icu</u>&nbsp;module</h4>
+
+<ul>
+	<li><em>caregiver</em>
+
+	<ul>
+		<li>New table in v2.2. Contains one column: <code>caregiver_id</code>, a deidentified integer which uniquely represents a single caregiver or provider. These identifiers are sourced from the MetaVision ICU system. When present in a table, it indicates the user who documented the data into MetaVision. For example, the <code>caregiver_id</code> associated with a row indicating mechanical ventilation in the procedureevents table represents the user who documented the event, and not the provider who performed the procedure.</li>
+	</ul>
+	</li>
+	<li><em>chartevents</em>,&nbsp;<em>datetimeevents</em>,&nbsp;<em>ingredientevents</em>,&nbsp;<em>inputevents</em>, <em>outputevents</em>,&nbsp;<em>procedureevents</em>
+	<ul>
+		<li>Added the <code>caregiver_id</code> column. This column is a deidentified integer representing the care provider who documented the data for the given row.</li>
+	</ul>
+	</li>
+</ul>
+
+<h4><u>hosp</u> module</h4>
+
+<ul>
+	<li><em>provider</em>
+
+	<ul>
+		<li>New table in v2.2. Contains one column: <code>provider_id</code>, a deidentified string which uniquely represents a single caregiver or provider. These identifiers are sourced from the hospital wide EHR system, and used in a variety of contexts across tables in the module.</li>
+	</ul>
+	</li>
+	<li><em>admissions</em>
+	<ul>
+		<li>New column: <code>admit_provider_id</code>, a deidentified string representing the provider who admitted the patient.</li>
+	</ul>
+	</li>
+	<li><em>emar</em>
+	<ul>
+		<li>New column: <code>enter_provider_id</code>, a deidentified string representing the provider who entered the medication administration information into the database.</li>
+		<li>Fixed a bug where a subset of <em>emar</em> rows (713,117, ~2.5%) did not have an <code>hadm_id</code> even though they were associated with a given hospitalization. These rows occur outside of the administratively documented admission and discharge times for a hospitalization, but are still considered as administered during that hospitalization in the raw data.</li>
+	</ul>
+	</li>
+	<li><em>labevents</em>,&nbsp;<em>microbiologyevents</em>,&nbsp;<em>poe</em>,&nbsp;<em>prescriptions</em>
+	<ul>
+		<li>New column: <code>order_provider_id</code>, a deidentified string representing the provider who ordered the corresponding&nbsp;event (e.g. the lab test in the case of <em>labevents</em>, or the medication in the case of <em>prescriptions</em>).</li>
+	</ul>
+	</li>
+</ul>
+
+<h3>MIMIC-IV v2.1</h3>
+
+<p>MIMIC-IV v2.1 was released on November 16, 2022. It removed a subset of subject_id which will be retained internally as a test set. Future data releases will exclude these patients.</p>
+
+<ul>
+	<li>patients - Removed&nbsp;15,748 <code>subject_id</code> from the table</li>
+	<li>admissions - Removed&nbsp;23,093 <code>hadm_id</code> from the table.</li>
+	<li>icustays - Removed&nbsp;3,762 <code>stay_id</code> from the table.</li>
+	<li>Other tables will have rows removed to reflect the removal of the aforementioned <code>subject_id</code>, <code>hadm_id</code>, and <code>stay_id</code>. Final row counts are available in the validation scripts published with the MIMIC Code Repository [6].</li>
+</ul>
+
+<h3>MIMIC-IV v2.0</h3>
+
+<p>MIMIC-IV v2.0 was released on June 12, 2022. It focused on expanding the data elements available for patients within MIMIC-IV v1.0. Additional data available includes&nbsp;out-of-hospital date of death, information from the online medical record system (which includes height and weight), and more detail for continuous infusions in the ICU.</p>
+
+<h4>Major changes</h4>
+
+<ul>
+	<li>The <u>core</u>&nbsp;module has been removed to simplify the schema. The&nbsp;<em>admissions</em>,&nbsp;<em>patients</em>, and&nbsp;<em>transfers</em>&nbsp;tables are now in the&nbsp;<u>hosp</u>&nbsp;module.</li>
+	<li>Neonates have been removed from the dataset. Neonatal data&nbsp;will be released in a separate project with data from the neonatal intensive care unit.</li>
+</ul>
+
+<h4><u>icu</u>&nbsp;module</h4>
+
+<ul>
+	<li><em>icustays</em>
+
+	<ul>
+		<li>Around 700 stays&nbsp;(~1%)&nbsp;have changed due to the changes in the&nbsp;<em>patients</em>&nbsp;table.</li>
+	</ul>
+	</li>
+	<li><em>chartevents, d_items</em>
+	<ul>
+		<li>The problem list from MetaVision has been added. All problems are documented with the same <code>itemid</code> now present in&nbsp;<em>d_items</em>: 220001. There are just over 1,000 unique problems. Most documented problems are related to the care plan for the patient and documented during nurse shift changes (either 7am or 7pm). Less frequently, the ongoing issues are documented here.</li>
+	</ul>
+	</li>
+	<li><em>ingredientevents</em>
+	<ul>
+		<li>This is a new table associated with&nbsp;<em>inputevents</em>. Each intravenous administration tracked in <em>inputevents</em> is associated with a set of ingredients. These ingredients include water content, caloric information, and so on. The goal of the&nbsp;<em>inputevents</em>&nbsp;table is to support nutrition research and to provide a mechanism for estimating fluid input via summing all instances of the water ingredient. These ingredients have been separated from the&nbsp;<em>inputevents</em>&nbsp;table to simplify analysis and reduce the size of&nbsp;<em>inputevents</em>.</li>
+	</ul>
+	</li>
+	<li><em>inputevents</em>
+	<ul>
+		<li>Removed a single column&nbsp;which contained only null values: <code>cancelreason</code>.</li>
+	</ul>
+	</li>
+	<li><em>procedureevents</em>
+	<ul>
+		<li>Removed columns which contained only null values: <code>totalamount</code>, <code>totalamountuom</code>, <code>cancelreason</code>, <code>comments_editedby</code>, <code>comments_canceledby</code>, <code>comments_date</code>, <code>secondaryordercategoryname</code>.</li>
+	</ul>
+	</li>
+</ul>
+
+<h4><u>hosp</u> module</h4>
+
+<ul>
+	<li><em>admissions</em>
+
+	<ul>
+		<li>Fixed an issue where hospitalizations were missing&nbsp;<em>edregtime</em>&nbsp;and&nbsp;<em>edouttime</em>&nbsp;when the patient was admitted via the ED (reported in <a href="https://github.com/MIT-LCP/mimic-code/issues/1247">#1247</a>, thanks <a href="https://github.com/MEladawi">@MEladawi</a>).</li>
+	</ul>
+	</li>
+	<li><em>patients</em>
+	<ul>
+		<li><code>dod</code> is now populated with out-of-hospital mortality from state death records. For patients admitted to the ICU, this change has increased capture of date of death from 8,223 records to 23,844 (i.e. we now have out-of-hospital mortality for an additional 15,621 ICU patients).</li>
+		<li>The mechanism for determining patients included in MIMIC was changed. For the most part this has resulted in an improvement, particularly regarding the logic for merging patients who had distinct medical record numbers. As a result of this change, most tables have had a change in the data content. Approximately 1% of stays were affected.</li>
+	</ul>
+	</li>
+	<li><em>transfers</em>
+	<ul>
+		<li>Fixed a bug where the <code>outtime</code> for ED&nbsp;stays with no associated <code>hadm_id</code> (i.e. an ED stay where the individual was not admitted to the hospital) was incorrect. This resulted in all <em>transfers</em>&nbsp;rows with a NULL <code>hadm_id&nbsp;</code>having an apparent stay of minutes or less. The <code>outtime</code> column has now been corrected.</li>
+	</ul>
+	</li>
+	<li><em>labevents, d_labitems</em>
+	<ul>
+		<li>The <code>itemid</code> for <em>d_labitems</em> has been changed for 43&nbsp;items. These are extremely infrequently documented and each <code>itemid</code> has fewer than 100 observations in <em>labevents</em>. The exact&nbsp;<code>itemid</code> are provided in the changelog file CHANGELOG.txt.</li>
+		<li>Errors were found in the current values of <code>loinc_code</code> (reported in <a href="https://github.com/MIT-LCP/mimic-code/issues/938">#938</a>, thanks <a href="https://github.com/Mauvila">@Mauvila</a>). In order to enable collaborative improvement, the <code>loinc_code</code> column has been removed, and will now be collaboratively developed in the <a href="https://github.com/MIT-LCP/mimic-code/">MIMIC Code Repository</a>. Initial values will be sourced from the hospital system.</li>
+		<li>A number of labs which previously had the value in the comments field now have the value in the value field (reported in <a href="https://github.com/MIT-LCP/mimic-code/issues/941">#941</a>, thanks <a href="https://github.com/Mauvila">@Mauvila</a>). This change makes the <em>labevents</em> table more consistent with MIMIC-III, which had these values in the value field.</li>
+	</ul>
+	</li>
+	<li><em>microbiologyevents</em>
+	<ul>
+		<li>New organisms, tests, specimens, and antibiotics have been added.</li>
+	</ul>
+	</li>
+	<li><em>omr</em>
+	<ul>
+		<li>A new table has been added:&nbsp;<em>omr.</em>&nbsp;The source of this data is the Online Medical Record, and it contains miscellaneous information useful for understanding an individual&#39;s health. As of v2.0, the&nbsp;<em>omr</em>&nbsp;table has the following information: blood pressure, height, weight, body mass index, and Estimated Glomerular Filtration Rate (eGFR). These values are available from both inpatient and outpatient visits, and in many cases a &quot;baseline&quot; value from before a patient&#39;s hospitalization is available.</li>
+	</ul>
+	</li>
+	<li><em>prescriptions</em>
+	<ul>
+		<li>The <code>formulary_drug_cd</code> table has been added back (was previously in MIMIC-III). This column has the same set of values as the <code>product_code</code> column of emar_detail.</li>
+	</ul>
+	</li>
+</ul>
+
+<h3>MIMIC-IV v1.0</h3>
+
+<p>MIMIC-IV v1.0 was released&nbsp;March 16, 2021.</p>
+
+<h4><u>core</u></h4>
+
+<ul>
+	<li><em>admissions</em>
+
+	<ul>
+		<li>A number (~1000, &lt;1%) of erroneous <code>hadm_id</code> have been removed.</li>
+	</ul>
+	</li>
+	<li><em>patients</em>
+	<ul>
+		<li><code>dod</code> is now populated using the patient&#39;s <code>deathtime</code> from their latest hospitalization (reported in <a href="https://github.com/MIT-LCP/mimic-iv/issues/71">#71</a>, thanks <a href="https://github.com/jinjinzhou">@jinjinzhou</a>).</li>
+		<li>At the moment, out-of-hospital mortality is <u><strong>not</strong></u>&nbsp;captured by `dod`.</li>
+	</ul>
+	</li>
+	<li><em>transfers</em>
+	<ul>
+		<li>Removed erroneous transfers included in the previous version.</li>
+		<li><code>transfer_id</code> has been regenerated. <code>transfer_id</code> in MIMIC-IV v1.0 are <strong>not compatible</strong> with <code>transfer_id</code> from v0.4. We do not intend to change <code>transfer_id</code> when updating MIMIC-IV, but had to update it due to an error in its generation.</li>
+		<li>All <code>hadm_id</code> in transfers are also present in <em>admissions</em>&nbsp;and vice-versa (reported in <a href="https://github.com/MIT-LCP/mimic-iv/issues/84">#84</a>, thanks <a href="https://github.com/kokoko12305">@kokoko12305</a>).</li>
+	</ul>
+	</li>
+</ul>
+
+<h4><u>icu</u></h4>
+
+<ul>
+	<li><em>icustays</em>
+
+	<ul>
+		<li>ICU stays were inappropriately assigned in the previous version due to an error in the preprocessing code. Previously, non-ICU ward transfers were included in the ICU stays, and certain ward stays were not treated as ICU stays (reported in <a href="https://github.com/MIT-LCP/mimic-iv/issues/67">#67</a>, thanks <a href="https://github.com/JHLiu7">@JHLiu7</a>&nbsp;and <a href="https://github.com/stefanhgm">@stefanhgm</a>). The assignment of <code>stay_id</code> has been regenerated.</li>
+		<li>The mapping between hospital transfers and ICU stays has been updated.</li>
+		<li><code>stay_id</code> in MIMIC-IV v1.0 are <strong>not compatible</strong>&nbsp;with <code>stay_id</code> from v0.4. We do not intend to change <code>stay_id</code> when updating MIMIC-IV, but had to update it due to the error identified above.</li>
+	</ul>
+	</li>
+	<li>The change in <em>icustays</em>&nbsp;has re-assigned values to new <code>stay_id</code>, as a result all tables have had their content changed (due to a change in <code>stay_id</code>), but the structure is unchanged.</li>
+</ul>
+
+<h4><u>hosp</u></h4>
+
+<ul>
+	<li>
+	<ul>
+	</ul>
+	<em>hcpcsevents</em>
+
+	<ul>
+		<li>Data has been added for a number of previously excluded hospitalizations.</li>
+		<li>The table now has a <code>chartdate</code> column, containing the date associated with the code. Every row is associated with a date.</li>
+	</ul>
+	</li>
+	<li><em>drgcodes</em>
+	<ul>
+		<li>Data has been added for a number of previously excluded hospitalizations.</li>
+		<li>Duplicate DRG codes have been removed from the table.</li>
+		<li>Descriptions have been updated using the latest dictionaries made available from mass.gov and HCUP.</li>
+	</ul>
+	</li>
+	<li><em>diagnoses_icd, d_icd_diagnoses</em>
+	<ul>
+		<li>Data has been added for a number of previously excluded hospitalizations (reported in <a href="https://github.com/MIT-LCP/mimic-iv/issues/27">#27</a>, thanks <a href="https://github.com/yugangjia">@yugangjia</a>).</li>
+		<li>The <code>icd_code</code> column is now trimmed and stored as a VARCHAR, i.e. codes no longer contain trailing whitespaces (&#39;<code>850 &#39;&nbsp;</code>-&gt; &#39;<code>850&#39;</code>).</li>
+		<li>Missing ICD codes have been added to the dictionary. All ICD codes in the <em>diagnoses_icd</em> table have an associated reference in <em>d_icd_diagnoses.</em></li>
+	</ul>
+	</li>
+	<li><em>labevents</em>
+	<ul>
+		<li>The <code>comments</code>&nbsp;field has been updated, fixing a bug where comments longer than 4096 characters were truncated. Due to the deidentification, it&#39;s unlikely users will see much difference, as these comments will appear as ___.</li>
+	</ul>
+	</li>
+	<li><em>procedures_icd</em>
+	<ul>
+		<li>Data has been added to <em>procedures_icd</em> for a number of previously excluded hospitalizations.</li>
+		<li>The table now has a <code>chartdate</code> column, containing the date associated with each billed procedure.</li>
+		<li>The <code>icd_code</code> column is now trimmed and stored as a VARCHAR, i.e. codes no longer contain trailing whitespaces (&#39;<code>850 &#39;&nbsp;</code>-&gt; &#39;<code>850&#39;</code>).</li>
+		<li>Missing ICD codes have been added to the dictionary. All ICD codes in the <em>procedures_icd</em> table have an associated reference in <em>d_icd_procedures.</em></li>
+	</ul>
+	</li>
+</ul>
+
+<h3>v0.4</h3>
+
+<ul>
+	<li><em>d_micro</em>
+
+	<ul>
+		<li>This table has been removed</li>
+	</ul>
+	</li>
+	<li><em>microbiologyevents</em>
+	<ul>
+		<li>Added the column<em>&nbsp;spec_type_desc</em>, <em>test_name</em>, <em>org_name</em>, and&nbsp;<em>ab_name</em>&nbsp;columns</li>
+		<li>These columns contain the textual name of the organism/antibiotic/test/specimen</li>
+		<li>Added the&nbsp;<em>comments</em>&nbsp;column: this column contains information about the test, and in some cases (e.g. viral load tests), contains the result</li>
+	</ul>
+	</li>
+</ul>
+
+<h3>v0.3</h3>
+
+<ul>
+	<li>Fixed a bug in the timing between&nbsp;<em>hosp</em>&nbsp;and&nbsp;<em>icu</em></li>
+</ul>
+
+<h3>v0.2</h3>
+
+<ul>
+	<li>Updated demographics in the patient table
+	<ul>
+		<li><code>anchor_year</code>&nbsp;-&gt;&nbsp;<code>anchor_year_group</code></li>
+		<li><code>anchor_year_shifted</code>&nbsp;-&gt;&nbsp;<code>anchor_year</code></li>
+		<li>See the patients table in the MIMIC online documentation&nbsp;for detail on these columns</li>
+	</ul>
+	</li>
+	<li><em>transfers</em>
+	<ul>
+		<li>Deleted the&nbsp;<code>los</code>&nbsp;column</li>
+	</ul>
+	</li>
+	<li><em>emar</em>
+	<ul>
+		<li><code>mar_id</code>&nbsp;-&gt;&nbsp;<code>emar_id</code></li>
+		<li><code>emar_id</code>&nbsp;is now a composite of&nbsp;<code>subject_id</code>&nbsp;and&nbsp;<code>emar_seq</code>, and has form &ldquo;subject_id-emar_seq&rdquo;</li>
+		<li><code>emar_seq</code>&nbsp;column - a monotonically increasing integer starting with the first eMAR administration</li>
+		<li>Added&nbsp;<code>poe_id</code>&nbsp;and&nbsp;<code>pharmacy_id</code>&nbsp;columns for linking to those tables</li>
+	</ul>
+	</li>
+	<li><em>emar_detail</em>
+	<ul>
+		<li><code>mar_id</code>&nbsp;-&gt;&nbsp;<code>emar_id</code>&nbsp;(changed as above)</li>
+		<li>Deleted the&nbsp;<code>mar_detail_id</code>&nbsp;column</li>
+	</ul>
+	</li>
+	<li><em>hcpcsevents</em>
+	<ul>
+		<li><code>ticket_id_seq</code>&nbsp;-&gt;&nbsp;<code>seq_num</code></li>
+	</ul>
+	</li>
+	<li><em>labevents</em>
+	<ul>
+		<li>Many previously NULL values are now populated - these were removed originally due to deidentification</li>
+		<li>Added the&nbsp;<code>comments</code>&nbsp;column. This contains deidentified free-text comments with labs. PHI is replaced with three underscores (<code>___</code>). If an entire comment is&nbsp;<code>___</code>, then the entire comment was scrubbed.</li>
+	</ul>
+	</li>
+	<li><em>microbiologyevents</em>
+	<ul>
+		<li><code>stay_id</code>&nbsp;column removed</li>
+		<li><code>spec_id</code>&nbsp;-&gt;&nbsp;<code>micro_specimen_id</code></li>
+	</ul>
+	</li>
+	<li>Added the&nbsp;<em>poe</em>&nbsp;and&nbsp;<em>poe_detail</em>&nbsp;tables
+	<ul>
+		<li>Documentation of provider orders for various treatments and other aspects of patient management</li>
+	</ul>
+	</li>
+	<li>Added the&nbsp;<em>prescriptions</em>&nbsp;table
+	<ul>
+		<li>Documentation of medicine prescriptions via the provider order interface</li>
+	</ul>
+	</li>
+	<li>Added the&nbsp;<em>pharmacy</em>&nbsp;table
+	<ul>
+		<li>Detailed information regarding prescriptions provided by the pharmacy including formulary dose, route, frequency, dose, and so on.</li>
+	</ul>
+	</li>
+	<li><em>inputevents</em>
+	<ul>
+		<li>Fixed an error in the calculation of the&nbsp;<em>amount</em>&nbsp;column</li>
+	</ul>
+	</li>
+	<li><em>icustays</em>
+	<ul>
+		<li>Re-derived&nbsp;<code>stay_id</code>&nbsp;- the new&nbsp;<code>stay_id</code>&nbsp;are distinct from the previous version.</li>
+	</ul>
+	</li>
+</ul>
+    <hr>
+  
+
+  
+    <h2 id="ethics">Ethics</h2>
+    <p>The collection of patient information and creation of the research resource was reviewed by the Institutional Review Board at the Beth Israel Deaconess Medical Center, who granted a waiver of informed consent and approved the data sharing initiative.</p>
+    <hr>
+  
+
+  
+    <h2 id="acknowledgements">Acknowledgements</h2>
+    We would like to thank the Beth Israel Deaconess Medical Center for their continued support of the MIMIC project. In particular we would like to thank Carolyn Conti, Alvin Gayles, Larry Markson, Ayad Shammout, Lu Shen, and Manu Tandon for their assistance. This work was supported by the National Institute of Biomedical Imaging and Bioengineering (NIBIB) under NIH grant number R01EB030362.
+    <hr>
+  
+
+  
+    <h2 id="conflicts-of-interest">Conflicts of Interest</h2>
+    <p>None to declare.</p>
+    <hr>
+  
+
+
+
+  <h2 id="references">References</h2>
+  <ol>
+  
+    <li>Henry, J., Pylypchuk, Y., Searcy T. &amp; Patel V. (May 2016). Adoption of Electronic Health Record Systems among U.S. Non-Federal Acute Care Hospitals: 2008-2015. ONC Data Brief, no.35. Office of the National Coordinator for Health Information Technology: Washington DC.+</li>
+  
+    <li>Halevy, A., Norvig, P., &amp; Pereira, F. (2009). The unreasonable effectiveness of data. IEEE Intelligent Systems, 24(2), 8-12.</li>
+  
+    <li>Johnson, A. E., Pollard, T. J., Shen, L., Lehman, L.H., Feng, M., Ghassemi, M., ... &amp; Mark, R. G. (2016). MIMIC-III, a freely accessible critical care database. Scientific data, 3(1), 1-9.</li>
+  
+    <li>MIMIC Online Documentation. <a href="https://mimic.mit.edu">https://mimic.mit.edu</a></li>
+  
+    <li>Johnson AE, Stone DJ, Celi LA, Pollard TJ. The MIMIC Code Repository: enabling reproducibility in critical care research. Journal of the American Medical Informatics Association. 2018 Jan;25(1):32-9.</li>
+  
+    <li>Alistair Johnson, Tom Pollard, Jim Blundell, Brian Gow, erinhong, Nicolas Paris, et al. MIT-LCP/mimic-code: MIMIC Code v2.1.1. Zenodo; 2021. <a href="https://doi.org/10.5281/zenodo.821871">https://doi.org/10.5281/zenodo.821871</a></li>
+  
+</ol>
+
+  <hr>
+
+
+        
+      </div>
+      <!-- /.main column -->
+
+      <!-- Sidebar Column -->
+      <div class="col-md-4">
+        
+        
+        <div class="card" style="border: 0">
+          <button class="btn btn-secondary dropdown-toggle btn-rsp btn-right" type="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contents
+          </button>
+          <div class="dropdown-menu">
+            
+              
+                <a class="dropdown-item" href="#abstract">Abstract</a>
+              
+            
+              
+                <a class="dropdown-item" href="#background">Background</a>
+              
+            
+              
+                <a class="dropdown-item" href="#methods">Methods</a>
+              
+            
+              
+                <a class="dropdown-item" href="#description">Data Description</a>
+              
+            
+              
+                <a class="dropdown-item" href="#usage-notes">Usage Notes</a>
+              
+            
+              
+                <a class="dropdown-item" href="#release-notes">Release Notes</a>
+              
+            
+              
+                <a class="dropdown-item" href="#ethics">Ethics</a>
+              
+            
+              
+                <a class="dropdown-item" href="#acknowledgements">Acknowledgements</a>
+              
+            
+              
+                <a class="dropdown-item" href="#conflicts-of-interest">Conflicts of Interest</a>
+              
+            
+            
+              <a class="dropdown-item" href="#references">References</a>
+            
+            <a class="dropdown-item" href="#files">Files</a>
+          </div>
+        </div>
+        
+
+        
+
+        <div class="card my-4">
+          <h5 class="card-header">Share</h5>
+          <div class="card-body">
+            <a class="btn btn-sm share-email sharebtn"
+              href="mailto:?subject=MIMIC-IV&body=https://physionet.org/content/mimiciv/2.2/"
+              role="button" title="Share with email"><i class="far fa-envelope"></i></a>
+            <a class="btn btn-sm facebook sharebtn"
+              href="http://www.facebook.com/sharer.php?u=https://physionet.org/content/mimiciv/2.2/" role="button"
+              title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+            <a class="btn btn-sm linkedin sharebtn"
+              href="https://www.linkedin.com/shareArticle?url=https://physionet.org/content/mimiciv/2.2/"
+              role="button" title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a class="btn btn-sm reddit sharebtn"
+              href="https://www.reddit.com/submit?url=https://physionet.org/content/mimiciv/2.2/&title=MIMIC-IV"
+              role="button" title="Share on Reddit"><i class="fab fa-reddit"></i></a>
+            <a class="btn btn-sm twitter sharebtn"
+              href="https://twitter.com/intent/tweet?text=MIMIC-IV. https://physionet.org/content/mimiciv/2.2/"
+              role="button" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="card my-4">
+          <h5 class="card-header">Access</h5>
+          <div class="card-body">
+            <p>
+              <strong>Access Policy:</strong>
+              <br>
+              Only credentialed users who sign the DUA can access the files.
+            </p>
+            <p>
+              <strong>License (for files):</strong>
+              <br>
+              <a href="/content/mimiciv/view-license/2.2/">PhysioNet Credentialed Health Data License 1.5.0</a>
+            </p>
+            
+              <p>
+                <strong>Data Use Agreement:</strong>
+                <br>
+                <a href="/content/mimiciv/view-dua/2.2/">PhysioNet Credentialed Health Data Use Agreement 1.5.0</a>
+              </p>
+            
+
+            
+              <p>
+                <strong>Required training:</strong>
+                
+                  
+                    <br>
+                    <a href="/content/mimiciv/view-required-training/2.2/#1"CITI Data or Specimens Only Research>CITI Data or Specimens Only Research</a>
+                  
+                
+              </p>
+            
+          </div>
+        </div>
+        <div class="card my-4">
+          <h5 class="card-header">Discovery</h5>
+          <div class="card-body">
+            
+              <p><strong>DOI (version 2.2):</strong>
+                <br>
+                <a href="https://doi.org/10.13026/6mm1-ek67">https://doi.org/10.13026/6mm1-ek67</a>
+              </p>
+            
+
+            
+              <p><strong>DOI (latest version):</strong>
+                <br>
+                <a href="https://doi.org/10.13026/07hj-2a80">https://doi.org/10.13026/07hj-2a80</a>
+              </p>
+            
+
+            
+
+            
+              <p><strong>Topics:</strong>
+                <br>
+                
+                  <a href="/content/?topic=critical+care"><span class="badge badge-pn">critical care</span></a>
+                
+                  <a href="/content/?topic=intensive+care+unit"><span class="badge badge-pn">intensive care unit</span></a>
+                
+                  <a href="/content/?topic=machine+learning"><span class="badge badge-pn">machine learning</span></a>
+                
+                  <a href="/content/?topic=mimic"><span class="badge badge-pn">mimic</span></a>
+                
+              </p>
+            
+
+            
+              <p><strong>Project Website:</strong>
+                <br>
+                <a href="https://mimic.mit.edu"><i
+                  class="fas fa-external-link-alt"></i> https://mimic.mit.edu</a>
+              </p>
+            
+          </div>
+        </div>
+
+        <div class="card my-4">
+          <h5 class="card-header">Project Views</h5>
+          <div class="card-body text-center">
+            <div class="d-flex justify-content-around mb-2">
+              <div>
+                <h3 class="mb-0">15229</h3>
+                <small class="text-muted">Current Version</small>
+              </div>
+              <div>
+                <h3 class="mb-0">47882</h3>
+                <small class="text-muted">All Versions</small>
+              </div>
+            </div>
+            <small class="text-muted mb-0"><em>Project Views by Unique Registered Users</em></small>
+            <div class="mt-2">
+              <a href="/content/mimiciv/metrics/2.2/" class="btn btn-sm btn-outline-secondary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card my-4">
+          <h5 class="card-header">Corresponding Author</h5>
+          <div class="card-body">
+            
+              <em>You must be logged in to view the contact information.</em>
+            
+          </div>
+        </div>
+
+        <div class="card my-4">
+  <h5 class="card-header">Versions</h5>
+  <ul class="list-group list-group-flush project-version-list">
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/0.3/">
+          <span class="project-version">0.3</span>
+          <time datetime="2020-08-13">
+            Aug. 13, 2020
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/0.4/">
+          <span class="project-version">0.4</span>
+          <time datetime="2020-08-13">
+            Aug. 13, 2020
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/1.0/">
+          <span class="project-version">1.0</span>
+          <time datetime="2021-03-16">
+            March 16, 2021
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/2.0/">
+          <span class="project-version">2.0</span>
+          <time datetime="2022-06-12">
+            June 12, 2022
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/2.1/">
+          <span class="project-version">2.1</span>
+          <time datetime="2022-11-16">
+            Nov. 16, 2022
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/2.2/">
+          <span class="project-version">2.2</span>
+          <time datetime="2023-01-06">
+            Jan. 6, 2023
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/3.0/">
+          <span class="project-version">3.0</span>
+          <time datetime="2024-07-23">
+            July 23, 2024
+          </time>
+        </a>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/content/mimiciv/3.1/">
+          <span class="project-version">3.1</span>
+          <time datetime="2024-10-11">
+            Oct. 11, 2024
+          </time>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+      <!-- /.sidebar -->
+    </div>
+    <h2 id="files">Files</h2>
+    
+      
+        <div class="alert alert-danger col-md-8" role="alert">
+  
+    This is a restricted-access resource. To access the files, you must fulfill all of the following requirements:
+    <ul>
+      
+        
+          <li>be a <a href="/settings/credentialing/">credentialed user</a></li>
+        
+        
+          <li>complete required training:</li>
+          <ul>
+            
+              <li><a href="/content/mimiciv/view-required-training/2.2/#1">CITI Data or Specimens Only Research</a></li>
+            
+            You may submit your training <a href="/settings/training/">here</a>.
+          </ul>
+        
+        
+          <li>
+            <a href="/sign-dua/mimiciv/2.2/">sign the data use agreement</a> for the project
+          </li>
+        
+      
+    </ul>
+  
+</div>
+
+      
+    
+    <br>
+    
+</div>
+
+
+
+</main>
+
+    
+<link rel="stylesheet" type="text/css" href="/static/custom/css/footer.css"/>
+
+<div class="modern-ui">
+  <footer class="footer w-100 secondary-bg py-5">
+    <div class="container my-0 py-0 py-md-5">
+      
+        <img src="/static/images/physionet-logo-white.svg" width="180px" alt="PhysioNet" class="pb-2" />
+      
+      <div class="footer__columns light-text">
+        <div>
+          
+            <p class="dark-light-text mb-2">Maintained by the MIT Laboratory for Computational Physiology</p>
+          
+          
+            <p class="dark-light-text mb-2">Supported by the National Institute of Biomedical Imaging and Bioengineering (NIBIB), National Heart Lung and Blood Institute (NHLBI), and NIH Office of the Director under NIH grant numbers U24EB037545 and R01EB030362</p>
+          
+        </div>
+        <div class="d-flex flex-column pl-0 pl-md-5 pt-4 pt-md-0">
+          <h2 class="text-white font-weight-bold">Navigation</h2>
+          <a href="/content" class="pb-3 dark-light-text">Discover Data</a>
+          <a href="/about/publish" class="pb-3 dark-light-text">Share Data</a>
+          <a href="/about" class="pb-3 dark-light-text">About</a>
+          <a href="/news" class="pb-3 dark-light-text">News</a>
+        </div>
+        <div class="d-flex flex-column pt-4 pt-md-0">
+          <h2 class="text-white font-weight-bold">Explore</h2>
+          
+            <a href="/about/database/" class="pb-3 dark-light-text">Data</a>
+          
+            <a href="/about/software/" class="pb-3 dark-light-text">Software</a>
+          
+            <a href="/about/challenge/" class="pb-3 dark-light-text">Challenges</a>
+          
+            <a href="/about/tutorial/" class="pb-3 dark-light-text">Tutorials</a>
+          
+        </div>
+        <!-- <div class="d-flex flex-column flex-grow">
+          <h2 class="text-white font-weight-bold">Subscribe to our Newsletter</h2>
+          <input type="email" class="form-control mb-2" placeholder="Your email">
+          <button type="button" class="primary-button">Subscribe Now</button>
+        </div> -->
+      </div>
+      <hr >
+      <div class="d-flex flex-column align-items-center justify-content-between flex-md-row">
+        <div class="d-flex pt-2 pt-md-0">
+          
+            <a class="mr-3" href="https://github.com/MIT-LCP/physionet-build/"><img src="/static/images/icons/github.png" height="18px"></a>
+          
+          
+          
+            <a class="mr-3" href="http://linkedin.com/company/physionet"><img src="/static/images/icons/linkedin.png" height="18px"></a>
+          
+          
+        </div>
+        <div class="pt-4 pt-md-0">
+          
+          
+          
+             <a class="dark-light-text" href="https://accessibility.mit.edu/">Accessibility</a>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+    
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/static/custom/js/navbar.js"></script>
+
+    
+  <script src="/static/project/js/dynamic-files-panel.js"></script>
+  <script src="/static/custom/js/enable-popover.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+    
+  <!-- https://schema.org/ metadata for discovery -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "MIMIC\u002DIV",
+  "description": "Retrospectively collected medical data has the opportunity to improve patient care through knowledge discovery and algorithm development. Broad reuse of medical data is desirable for the greatest public good, but data sharing must be done in a manner which protects patient privacy. The Medical Information Mart for Intensive Care (MIMIC)\u002DIII database provided critical care data for over 40,000 patients admitted to intensive care units at the Beth Israel Deaconess Medical Center (BIDMC). Importantly, MIMIC\u002DIII was deidentified, and patient identifiers were removed according to the Health Insurance Portability and Accountability Act (HIPAA) Safe Harbor provision. MIMIC\u002DIII has been integral in driving large amounts of research in clinical informatics, epidemiology, and machine learning. Here we present MIMIC\u002DIV, an update to MIMIC\u002DIII, which incorporates contemporary data and improves\u0026nbsp\u003Bon numerous aspects of MIMIC\u002DIII. MIMIC\u002DIV adopts a modular approach to data organization, highlighting data provenance and facilitating both individual and combined use of disparate data sources. MIMIC\u002DIV is intended to carry on the success of MIMIC\u002DIII and support a broad set of applications within healthcare.",
+  "version": "2.2",
+  "license": "https://github.com/MIT\u002DLCP/license\u002Dand\u002Ddua/tree/master/drafts",
+  "datePublished" : "Jan. 6, 2023",
+  "url": "https://physionet.org/content/mimiciv/2.2/",
+  
+  "identifier": "https://doi.org/10.13026/6mm1\u002Dek67",
+  
+  "creator": [
+  
+    {
+      "@type": "Person",
+      "givenName": "Alistair",
+      "familyName": "Johnson",
+      "name": "Alistair Johnson"
+    },
+  
+    {
+      "@type": "Person",
+      "givenName": "Lucas",
+      "familyName": "Bulgarelli",
+      "name": "Lucas Bulgarelli"
+    },
+  
+    {
+      "@type": "Person",
+      "givenName": "Tom",
+      "familyName": "Pollard",
+      "name": "Tom Pollard"
+    },
+  
+    {
+      "@type": "Person",
+      "givenName": "Steven",
+      "familyName": "Horng",
+      "name": "Steven Horng"
+    },
+  
+    {
+      "@type": "Person",
+      "givenName": "Leo Anthony",
+      "familyName": "Celi",
+      "name": "Leo Anthony Celi"
+    },
+  
+    {
+      "@type": "Person",
+      "givenName": "Roger",
+      "familyName": "Mark",
+      "name": "Roger Mark"
+    }
+  
+    ],
+  "includedInDataCatalog":{
+     "@type": "DataCatalog",
+     "name": "physionet.org"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://physionet.org/content/mimiciv/2.2/#files"
+    }
+  ]
+}
+</script>
+
+  </body>
+  
+</html>

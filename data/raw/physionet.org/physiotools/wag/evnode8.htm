@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Obtaining Test Annotation Files</TITLE>
+<META NAME="description" CONTENT="Obtaining Test Annotation Files">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="next" HREF="evnode9.htm">
+<LINK REL="previous" HREF="evnode7.htm">
+<LINK REL="next" HREF="evnode9.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode9.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode7.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode9.htm">Obtaining Reference Heart Rate Data</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode7.htm">Presenting Signals to the Analyzer</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00032000000000000000">
+Obtaining Test Annotation Files</A>
+</H2>
+For any ambulatory ECG monitor that incorporates automated analysis functions,
+the EC-38 standard requires the manufacturer to implement and disclose a
+method for producing test annotation files.  Independent evaluators should seek
+assistance from the manufacturer in any case, since the manufacturer's
+interpretation of the device's outputs in the language of EC-38 is definitive
+(in effect, the annotation file generation technique becomes part of
+the system under test).  Note that generation of annotation files need not be
+synchronous with data acquisition; a device might conceivably store all of the
+necessary data until the end of the test, and only then write the file.
+Neither does the standard require that an annotation be determined within any
+fixed amount of time, as would be expected of devices designed to trigger
+pacing, for example.  Furthermore, EC-38 specifically allows for the
+possibility that the device under test might not produce the annotation file
+directly.  If any external hardware or software is required to do so, however,
+it must be made generally available or specified in sufficient detail by the
+manufacturer to permit an independent evaluator to obtain test annotation
+files.
+
+<P>
+Annotation files contain a label (an annotation) for each beat and for certain
+other features of the signals, such as rhythm and ST changes.  Annotations are
+stored in time order in annotation files.  The &ldquo;time&rdquo; of an annotation is
+that of the sample in the signal file with which the annotation is
+associated.<A ID="tex2html5"
+  HREF="evfoot.htm#foot259"><SUP><SPAN CLASS="arabic">5</SPAN></SUP></A> The WFDB library (included in the WFDB software package)
+includes C-callable functions (<SPAN style="font-family:monospace">getann</SPAN> and <SPAN style="font-family:monospace">putann</SPAN>) for reading and
+writing annotations.  In a C program, annotations appear as data structures
+containing a 32-bit <SPAN style="font-family:monospace">time</SPAN> field together with a pair of 8-bit fields that
+encode the annotation type and sub-type (<SPAN style="font-family:monospace">anntyp</SPAN> and <SPAN style="font-family:monospace">subtyp</SPAN> [sic],
+respectively), and a variable-length <SPAN style="font-family:monospace">aux</SPAN> field usually used to store
+text.  In annotation files, these annotation structures are usually stored in
+a variable-length bit-packed format averaging slightly more than 16 bits per
+annotation.<A ID="tex2html6"
+  HREF="evfoot.htm#foot260"><SUP><SPAN CLASS="arabic">6</SPAN></SUP></A>
+<P>
+Test annotation files may include the following:
+
+<UL>
+<LI><EM>Beat annotations</EM>.  These need not coincide precisely with the
+reference beat annotations, since the evaluation protocol allows a time
+difference of up to 150 ms between each pair of matching beat annotations.
+All beat annotations are mapped during the evaluation process into the set
+{ N, V, F, S, Q } (corresponding to normal, ventricular ectopic, ventricular
+fusion, supraventricular ectopic, and unclassifiable or paced beats
+respectively); devices need not be capable of producing all of these
+annotations, but any beat annotations that they do produce will be translated
+into one of these types.  The standard specifies the mapping used for the
+<SPAN style="font-family:monospace">anntyp</SPAN> values defined in <SPAN style="font-family:monospace">&lt;wfdb/ecgcodes.h&gt;</SPAN>. (This file is
+included in the WFDB Software Package.)  Any beat annotations that
+appear in the first five minutes of a record (the &ldquo;learning period&rdquo;) are
+ignored in the evaluation process.  The remainder of the record (the &ldquo;test
+period&rdquo;) must be fully annotated.  Note in particular that the last beat of
+some records may be very close to the last sample;  since the analyzer may
+reach the end of the input signals before producing an annotation for the last
+beat, it may be necessary to &ldquo;pad&rdquo; the input data for a few seconds at the
+end of the record to permit the analyzer to emit its final beat annotation.
+
+<P>
+</LI>
+<LI><EM>Shutdown annotations</EM>.  If the device suspends its analysis
+because of poor signal quality or for any other reason, it should mark the
+periods during which analysis is suspended.  The evaluation software tallies
+beats missed during such periods separately from beats missed at other times.
+The beginning of each period of shutdown may be marked using a <SPAN style="font-family:monospace">NOISE</SPAN>
+annotation with <!-- MATH
+ ${\tt subtyp} = -1$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg2.svg"
+ ALT="${\tt subtyp} = -1$"></SPAN>, and the end of each period of shutdown
+may be marked using a <SPAN style="font-family:monospace">NOISE</SPAN> annotation with <!-- MATH
+ ${\tt subtyp} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg3.svg"
+ ALT="${\tt subtyp} = 0$"></SPAN> (see
+the source for <SPAN style="font-family:monospace">bxb</SPAN> for notes on other acceptable methods of marking
+shutdown).
+
+<P>
+</LI>
+<LI><EM>Ventricular fibrillation annotations</EM>.  The beginning and end
+of each detected episode of ventricular fibrillation should be marked using
+<SPAN style="font-family:monospace">VFON</SPAN> and <SPAN style="font-family:monospace">VFOFF</SPAN> annotations.
+
+<P>
+</LI>
+<LI><EM>Other rhythm annotations</EM>.  These should include
+<SPAN style="font-family:monospace">RHYTHM</SPAN> annotations marking the beginning and end of each detected episode
+of atrial fibrillation.  The beginning of each episode should be marked with an
+&ldquo;<SPAN style="font-family:monospace">(AFIB</SPAN>&rdquo; rhythm annotation, i.e., an annotation with <SPAN style="font-family:monospace">anntyp</SPAN> = <SPAN style="font-family:monospace">RHYTHM</SPAN> and <SPAN style="font-family:monospace">aux</SPAN> = <code>"\05(AFIB"</code>, where &ldquo;<code>\05</code>&rdquo; is C notation
+for a byte with the value 5 (ASCII control-E).  Non-empty <SPAN style="font-family:monospace">aux</SPAN> fields
+always begin with a byte that specifies the number of data bytes that follow;
+in this case, the five characters (<SPAN style="font-family:monospace">( A F I B</SPAN>) of the string.  The end of
+each episode should be marked with any other rhythm annotation (for example,
+<code>"\02(N"</code>).
+
+<P>
+</LI>
+<LI><EM>Heart rate measurements</EM>.  Each type of heart rate measurement
+(including any heart rate or RR interval variability measurements) made by the
+device under test should be assigned a measurement number, <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg4.svg"
+ ALT="$m$"></SPAN>, between 0 and
+127.  A <SPAN style="font-family:monospace">MEASURE</SPAN> annotation should be recorded for each heart rate
+measurement, with <!-- MATH
+ ${\tt subtyp} = m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg5.svg"
+ ALT="${\tt subtyp} = m$"></SPAN> and with the measurement in the <SPAN style="font-family:monospace">aux</SPAN>
+field, as an ASCII-coded decimal number.
+
+<P>
+</LI>
+<LI><EM>ST deviation measurements</EM>.  If available, these should
+be provided in the <SPAN style="font-family:monospace">aux</SPAN> fields of beat annotations, as
+ASCII-coded decimal numbers indicating the deviations in microvolts
+from reference levels established for each signal from the first 30
+seconds of each record.  For example, &ldquo;<SPAN style="font-family:monospace">25 -104</SPAN>&rdquo; indicates a 25
+<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg6.svg"
+ ALT="$\mu$"></SPAN>V elevation in signal 0 and a 104 <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="evimg6.svg"
+ ALT="$\mu$"></SPAN>V depression in signal 1.
+If ST measurements are omitted from any beat annotation, the
+evaluation software assumes they are unchanged from their previous
+values.
+
+<P>
+</LI>
+<LI><EM>Ischemic ST change annotations</EM>.  These <SPAN style="font-family:monospace">STCH</SPAN> annotations
+should mark the beginning and end of each detected episode of ischemic ST
+change.  ST change annotations have additional information in the <SPAN style="font-family:monospace">aux</SPAN>
+field as for rhythm annotations: the beginning of each episode is marked by an
+&ldquo;<SPAN style="font-family:monospace">(ST</SPAN><I>ns</I>&rdquo; annotation, and the end of each episode by a
+&ldquo;<SPAN style="font-family:monospace">ST<I>ns</I>)</SPAN>&rdquo; annotation, where <I>n</I> indicates the signal affected
+ (&ldquo;<SPAN style="font-family:monospace">0</SPAN>&rdquo; or &ldquo;<SPAN style="font-family:monospace">1</SPAN>&rdquo;), and <I>s</I> indicates ST elevation (&ldquo;<SPAN style="font-family:monospace">+</SPAN>&rdquo;)
+or depression (&ldquo;<SPAN style="font-family:monospace">-</SPAN>&rdquo;).  <I>n</I> may be omitted if the episode detection
+criteria depend on features of both signals.  The extremum of each episode may
+optionally be marked with an &ldquo;<SPAN style="font-family:monospace">AST</SPAN><I>nsm</I>&rdquo; annotation, where <I>n</I>
+and <I>s</I> are defined as above, and <I>m</I> is the ST deviation in
+microvolts, relative to a reference level established as above.
+
+<P>
+</LI>
+<LI><EM>Comment annotations</EM>.  Annotations with <SPAN style="font-family:monospace">anntyp = NOTE</SPAN>
+and any desired string data in <SPAN style="font-family:monospace">aux</SPAN> may be included anywhere in
+an annotation file.  <SPAN style="font-family:monospace">NOTE</SPAN> annotations are ignored by the
+standard evaluation software;  they may be used, for example, to
+record the values of internal algorithm variables for debugging purposes.
+</LI>
+</UL>
+Note that only beat annotations are absolutely required in test annotation
+files.  ST deviation measurements within beat annotations, and the other
+types of annotations listed above, only need to be recorded for devices
+that are claimed by their manufacturers to provide optional features for
+detection of ventricular or atrial fibrillation, measurement of ST deviations,
+or detection of ischemic ST changes.
+
+<P>
+If the time units in the test annotation files are not the same as those in
+the reference annotation files (for example, because <SPAN style="font-family:monospace">xform</SPAN> was used to
+change the sampling frequency of the signal files in a digital-domain test),
+the time units must be rescaled before proceeding with the comparison.  This
+may be done by using <SPAN style="font-family:monospace">xform</SPAN> to rewrite the test annotation files with
+the original sampling frequency.<A ID="tex2html7"
+  HREF="evfoot.htm#foot262"><SUP><SPAN CLASS="arabic">7</SPAN></SUP></A>
+<P>
+Details of the ST deviation measurement and episode detection criteria used in
+producing the reference annotation files for the ESC database may be found in
+several sources.<A ID="tex2html8"
+  HREF="evfoot.htm#foot263"><SUP><SPAN CLASS="arabic">8</SPAN></SUP></A> Note, however, that many techniques
+for measuring ST deviation and for detecting transient ischemic ST changes are
+possible, and that to date the best evaluation results have been obtained for
+analyzers using criteria that do not attempt to mimic those used by the human
+experts who annotated the database.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A
+ HREF="evnode9.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode6.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode7.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode9.htm">Obtaining Reference Heart Rate Data</A>
+<B>Up:</B> <A
+ HREF="evnode6.htm">Evaluating an ECG Analyzer</A>
+<B> Previous:</B> <A
+ HREF="evnode7.htm">Presenting Signals to the Analyzer</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode8.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

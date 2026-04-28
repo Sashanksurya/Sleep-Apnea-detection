@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Notes:</TITLE>
+<META NAME="description" CONTENT="Notes:">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="previous" HREF="node8.htm">
+<LINK REL="up" HREF="node8.htm">
+<LINK REL="next" HREF="node10.htm">
+</HEAD>
+
+<BODY bgcolor="FFFFFF" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html561"
+  HREF="node10.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html555"
+  HREF="node8.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html551"
+  HREF="node8.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html557"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html559"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html562"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B>Up:</B> <A NAME="tex2html556"
+  HREF="node8.htm">Start-up worksheet for WAVE</A>
+<B> Previous:</B> <A NAME="tex2html552"
+  HREF="node8.htm">Start-up worksheet for WAVE</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00310100000000000000">
+Notes:</A>
+</H3>
+
+<P>
+<A NAME="4900"></A>
+<A NAME="4901"></A>
+<DL>
+<DT><STRONG>1. Starting the X server.</STRONG></DT>
+<DD>On some computers, the X server and the window manager
+are started automatically whenever you log in, and no command is
+needed.  Otherwise, you must run a command to start the X server
+before you can run <I CLASS="sans">WAVE</I> .  This command may be `<TT>startx</TT>' or
+`<TT>openwin</TT>'; for details, check your X server manual (on a UNIX
+system, type `<TT>man X</TT>').  If you have a choice of window managers,
+use <TT>olwm</TT> or <TT>olvwm</TT> if possible
+<A HREF="node78.htm#app:system-requirements">(click here for details).</A>
+If no terminal window is available after starting the X server, you can
+usually open one by moving the mouse pointer over the background (the
+<SPAN  CLASS="textit">root window</SPAN>) of the display, then clicking the left or right
+mouse button to open a menu.  Depending on your system, the menu may
+include `<I CLASS="sans">xterm</I>', `<I CLASS="sans">shell</I>', `<I CLASS="sans">cmdtool</I>', `<I CLASS="sans">terminal
+emulator</I>', or something similar; choose any of these to open a
+terminal window.
+<A NAME="228"></A><A NAME="229"></A>
+<A NAME="230"></A><A NAME="231"></A>
+
+<P>
+</DD>
+<DT><STRONG>2. Initializing the environment.</STRONG></DT>
+<DD>If you are using a recent version of <I CLASS="sans">WAVE</I> , you probably will not
+need to do anything to initialize the environment (the WFDB path
+and the name of the WFDB calibration file).  Unless you keep input files
+in non-standard places, or if you have created your own calibration
+file in a non-standard location, you can skip this step. 
+<A NAME="233"></A><A NAME="234"></A>
+<A NAME="235"></A><A NAME="236"></A>
+<A NAME="4903"></A><A NAME="238"></A>
+<A NAME="4904"></A>
+<A NAME="4905"></A>
+<A NAME="4906"></A>
+<A NAME="4907"></A>
+
+<P>
+If you do need to initialize your environment, this is typically done
+using a command at login time.  The form of this command depends on
+what shell (command interpreter) you use on the <I CLASS="sans">WAVE</I>  host.  To
+identify your shell, log onto the <I CLASS="sans">WAVE</I>  host <A NAME="4908"></A> and type `<TT>echo $SHELL</TT>'.  If the response
+contains the characters `<TT>csh</TT>', you are using the C-shell (or a
+variant of it); in this case, use `<TT>source /usr/bin/cshsetwfdb</TT>'
+to initialize the environment.  Otherwise, use `<TT>.&nbsp;setwfdb</TT>' to do
+so (don't omit the `<TT>.</TT>' in this case).  Usually, the appropriate
+command is included in your `<TT>.profile</TT>' or `<TT>.login</TT>' script
+on the <I CLASS="sans">WAVE</I>  host, so that it need not be entered each time you log
+onto the <I CLASS="sans">WAVE</I>  host.  See <A NAME="tex2html11"
+  HREF="../wag/setwfd-1.htm"><TT>setwfdb(1)</TT></A>
+(type `<TT>man setwfdb</TT>' on the
+<I CLASS="sans">WAVE</I>  host) for further information.
+
+<P>
+</DD>
+<DT><STRONG>3. Simulating a middle button click.</STRONG></DT>
+<DD>On a two-button mouse, this is often done by clicking both buttons
+simultaneously; on a one-button mouse, this is usually performed by
+pressing and holding a keyboard key such as <!-- MATH
+ $\Ovalbox{\small\sf Shift}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="26" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="\Ovalbox{\small\sf Shift}">
+while clicking the mouse button.  Refer to your X server
+documentation.
+<A NAME="260"></A>
+<A NAME="261"></A>
+<A NAME="262"></A>
+
+<P>
+</DD>
+<DT><STRONG>4. Simulating a right button click.</STRONG></DT>
+<DD>This is usually done by pressing and holding a keyboard key while
+clicking the mouse button.  Refer to your X server documentation.
+<A NAME="263"></A>
+<A NAME="264"></A>
+<A NAME="265"></A>
+
+<P>
+</DD>
+<DT><STRONG>5. Your computer's name.</STRONG></DT>
+<DD>If you don't know your computer's name, you may be able to discover it
+by typing the command `<TT>hostname</TT>' (on a UNIX system), or by
+logging in to the <I CLASS="sans">WAVE</I>  host and typing the command `<TT>who am I</TT>'
+(your computer's name should appear at the end of the output).  If the
+<I CLASS="sans">WAVE</I>  host doesn't recognize your computer by name, use your
+computer's IP address (in the form <TT>a.b.c.d</TT>, where <TT>a</TT>, <TT>b</TT>, <TT>c</TT>, and <TT>d</TT> are decimal numbers between 0 and 255).
+<A NAME="4910"></A>
+<A NAME="276"></A>
+<A NAME="4911"></A>
+<A NAME="4912"></A>
+<A NAME="279"></A>
+<A NAME="280"></A>
+
+<P>
+</DD>
+<DT><STRONG>6. The <I CLASS="sans">WAVE</I>  host's name.</STRONG></DT>
+<DD>If your computer doesn't recognize the <I CLASS="sans">WAVE</I>  host by name, use
+the <I CLASS="sans">WAVE</I>  host's IP address.
+
+<P>
+</DD>
+<DT><STRONG>7. Permitting access to your display.</STRONG></DT>
+<DD>If you use <TT>ssh</TT> (see the next item) to login to the <I CLASS="sans">WAVE</I>  host,
+skip this step.  Otherwise, this command is usually
+needed if your computer is running UNIX.  For example, if the name of
+the <I CLASS="sans">WAVE</I>  host is <TT>atlantic</TT>, this command would be `<TT>xhost
++atlantic</TT>'.  If your computer is not running UNIX, there may not be
+any command required; if in doubt, see your X server manual.
+<A NAME="4913"></A>
+<A NAME="4914"></A>
+
+<P>
+</DD>
+<DT><STRONG>8. Logging onto the <I CLASS="sans">WAVE</I>  host.</STRONG></DT>
+<DD><P>
+This is probably a command of the form `<TT>ssh atlantic</TT>'.  You will
+probably be prompted to enter your password when you execute this
+command.  If you don't have <TT>ssh</TT> on your computer, and an <TT>ssh</TT> server on the <I CLASS="sans">WAVE</I>  host, it is very strongly recommended that you
+obtain and install them (both are freely available from
+<A NAME="tex2html12"
+  HREF="http://www.openssh.org/">http://www.openssh.org/</A>).
+Use <TT>telnet</TT> only as a last resort, and never on a public network.
+<A NAME="4915"></A>
+<A NAME="4916"></A>
+
+<P>
+</DD>
+<DT><STRONG>9. Redirecting <I CLASS="sans">WAVE</I>  output to your display.</STRONG></DT>
+<DD><A NAME="sec:setting-display"></A>If you use <TT>ssh</TT> (see above), skip this step.  Otherwise, you will
+need to set the <TT>DISPLAY</TT> environment variable to point to your
+computer.  Assume that the name of your computer is <TT>arctic</TT>.  If
+you use the C-shell on the <I CLASS="sans">WAVE</I>  host (see note 2 above), the
+command would be `<TT>setenv DISPLAY arctic:0</TT>'.  Otherwise, it would
+be `<TT>DISPLAY=arctic:0; export DISPLAY</TT>'.  It is possible to set up
+your <TT>.profile</TT> or <TT>.login</TT> script so that this command can be
+executed automatically each time you log onto the <I CLASS="sans">WAVE</I>  host.
+Consult your system administrator for details.
+<A NAME="312"></A>
+<A NAME="313"></A>
+<A NAME="4917"></A>
+<A NAME="4918"></A>
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html561"
+  HREF="node10.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html555"
+  HREF="node8.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html551"
+  HREF="node8.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html557"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html559"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html562"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B>Up:</B> <A NAME="tex2html556"
+  HREF="node8.htm">Start-up worksheet for WAVE</A>
+<B> Previous:</B> <A NAME="tex2html552"
+  HREF="node8.htm">Start-up worksheet for WAVE</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

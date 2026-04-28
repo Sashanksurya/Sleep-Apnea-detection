@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Studying Discrepancies</TITLE>
+<META NAME="description" CONTENT="Studying Discrepancies">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="next" HREF="evnode12.htm">
+<LINK REL="previous" HREF="evnode10.htm">
+<LINK REL="next" HREF="evnode12.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode12.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="eval.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode10.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode12.htm">Acknowledgements</A>
+<B>Up:</B> <A
+ HREF="eval.htm"><a href="eval.htm">Evaluating ECG Analyzers</a></A>
+<B> Previous:</B> <A
+ HREF="evnode10.htm">Comparing Annotation Files</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00050000000000000000">
+Studying Discrepancies</A>
+</H1>
+
+<P>
+Having conducted an evaluation as described above, a common question
+is &ldquo;what were the errors?&rdquo;  <SPAN style="font-family:monospace">bxb</SPAN> and <SPAN style="font-family:monospace">rxr</SPAN> can help
+answer such questions.
+
+<P>
+<SPAN style="font-family:monospace">bxb</SPAN> can generate an output annotation file (with annotator name
+&ldquo;<SPAN style="font-family:monospace">bxb</SPAN>&rdquo;) in which all matching beat annotations are copied from
+the test annotation file, and each mismatch is indicated by a <SPAN style="font-family:monospace">NOTE</SPAN> annotation, with the <SPAN style="font-family:monospace">aux</SPAN> field indicating the element of
+the confusion matrix in which the mismatch is tallied (e.g., &ldquo;<SPAN style="font-family:monospace">Vn</SPAN>&rdquo;
+represents a beat called a VEB by the reference annotator and a normal
+beat by the test annotator).  Programs such as
+<SPAN style="font-family:monospace">wave</SPAN><A ID="tex2html13"
+  HREF="evfoot.htm#foot267"><SUP><SPAN CLASS="arabic">13</SPAN></SUP></A>can be used to search for and display the waveforms associated with the
+mismatches.  To generate an output annotation file, add the <SPAN style="font-family:monospace">-o</SPAN> option to
+the <SPAN style="font-family:monospace">bxb</SPAN> command line, as in:
+<PRE>
+bxb -r 100 -a atr yow -L bxb.out sd.out -o
+</PRE>
+A particularly useful way to document an evaluation is to print a
+full disclosure report with <SPAN style="font-family:monospace">bxb</SPAN> output annotations, using the
+program <SPAN style="font-family:monospace">psfd</SPAN> (also included in the WFDB Software Package).  This may
+be accomplished by preparing a file containing a list of the names of
+the records to be printed (call it <SPAN style="font-family:monospace">list</SPAN>), and then using the
+command:
+<PRE>
+psfd -a bxb list &gt;output.ps
+</PRE>
+The file <SPAN style="font-family:monospace">output.ps</SPAN> can be printed on any PostScript printer.
+Run <SPAN style="font-family:monospace">psfd</SPAN> without any arguments for a summary of its (numerous)
+options;  try a short test before making a large set of printouts,
+which can take a long time.
+
+<P>
+Both <SPAN style="font-family:monospace">bxb</SPAN> and <SPAN style="font-family:monospace">rxr</SPAN> accept a <SPAN style="font-family:monospace">-v</SPAN> option to run in
+&ldquo;verbose&rdquo; mode, in which each discrepancy is reported in the
+standard error output.  When running <SPAN style="font-family:monospace">rxr</SPAN>, this feature is useful
+for finding missed and falsely detected ectopic couplets and runs.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A
+ HREF="evnode12.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="eval.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode10.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode12.htm">Acknowledgements</A>
+<B>Up:</B> <A
+ HREF="eval.htm"><a href="eval.htm">Evaluating ECG Analyzers</a></A>
+<B> Previous:</B> <A
+ HREF="evnode10.htm">Comparing Annotation Files</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode11.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

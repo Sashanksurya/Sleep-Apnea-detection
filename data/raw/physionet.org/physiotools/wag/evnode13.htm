@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Using the AHA Database</TITLE>
+<META NAME="description" CONTENT="Using the AHA Database">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="next" HREF="evnode14.htm">
+<LINK REL="previous" HREF="evnode12.htm">
+<LINK REL="next" HREF="evnode14.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode14.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="eval.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode12.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode14.htm">Noise stress testing</A>
+<B>Up:</B> <A
+ HREF="eval.htm"><a href="eval.htm">Evaluating ECG Analyzers</a></A>
+<B> Previous:</B> <A
+ HREF="evnode12.htm">Acknowledgements</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00070000000000000000">
+Using the AHA Database</A>
+</H1>
+
+<P>
+Since the AHA DB is not available in the standard PhysioBank format
+used by all of the other databases, the WFDB Software Package includes
+a pair of programs that convert files read from AHA DB distribution
+tapes or floppy disks into files in PhysioBank format.  <SPAN style="font-family:monospace">a2m</SPAN>
+converts AHA annotation files, and <SPAN style="font-family:monospace">ad2m</SPAN> converts AHA signal
+files and also generates header (<SPAN style="font-family:monospace">*.hea</SPAN>) files.  (Run these
+programs without command-line arguments to obtain instructions on
+their use.)  Using <SPAN style="font-family:monospace">a2m</SPAN> and <SPAN style="font-family:monospace">ad2m</SPAN>, all 80 AHA DB records can
+be stored in roughly 130 Mb of disk space (assuming use of the
+standard 35-minute records).  These programs can also reformat old
+(pre-1989) MIT DB tapes written in the AHA DB distribution format.
+
+<P>
+It is also possible to read and write AHA tape-format files directly using
+the WFDB library;  refer to the <I><a href="../wpg/wpg.htm">WFDB Programmer's Guide</a></I>
+for details.
+
+<P>
+<BR> <HR>
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode13.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

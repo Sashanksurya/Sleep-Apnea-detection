@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>ECG Databases</TITLE>
+<META NAME="description" CONTENT="ECG Databases">
+<META NAME="keywords" CONTENT="eval">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="eval.css">
+
+<LINK REL="next" HREF="evnode4.htm">
+<LINK REL="previous" HREF="evnode2.htm">
+<LINK REL="next" HREF="evnode4.htm">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<A
+ HREF="evnode4.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode2.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode2.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode4.htm">Evaluation Protocols</A>
+<B>Up:</B> <A
+ HREF="evnode2.htm">Introduction</A>
+<B> Previous:</B> <A
+ HREF="evnode2.htm">Introduction</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00021000000000000000">
+ECG Databases</A>
+</H2>
+Several databases of ECG recordings are generally available
+for evaluating ECG analyzers.  They serve several important needs:
+
+<UL>
+<LI>They contain <EM>representative</EM> signals.  Wide variations in
+ECG characteristics among subjects severely limit the value of
+synthesized waveforms for testing purposes.  Realistic tests of ECG
+analyzers require large sets of &ldquo;real-world&rdquo; signals.
+
+<P>
+</LI>
+<LI>They contain <EM>rarely observed but clinically significant</EM>
+signals.  Although it is not particularly difficult to obtain
+recordings of common ECG abnormalities, often those that are most
+significant are rarely recorded.  Both developers and evaluators of
+ECG analyzers need examples of such recordings.
+
+<P>
+</LI>
+<LI>They contain <EM>standard</EM> signals.  System comparisons
+are meaningless unless performance is measured using the same test
+data in each case, since performance is so strongly data-dependent.
+
+<P>
+</LI>
+<LI>They contain <EM>annotated</EM> signals.  Typically, each QRS
+complex has been manually annotated by two or more cardiologists
+working independently.  The <EM>reference</EM> annotations produced
+as a result serve as a &ldquo;gold standard&rdquo; against which a device's
+analysis can be compared quantitatively.
+
+<P>
+</LI>
+<LI>They contain <EM>digitized, computer-readable</EM> signals.  It is
+therefore possible to perform a fully automated, strictly reproducible
+test in the digital domain if desired, allowing one to establish with
+certainty the effects of algorithm modifications on performance.
+</LI>
+</UL>
+
+<P>
+Standards EC38 and EC57 require the use of the following ECG
+databases:<A ID="tex2html1"
+  HREF="evfoot.htm#foot40"><SUP><SPAN CLASS="arabic">1</SPAN></SUP></A>
+<UL>
+<LI><B>AHA DB</B>: The American Heart Association Database for
+Evaluation of Ventricular Arrhythmia Detectors (80 records, 35 minutes
+each)
+
+<P>
+</LI>
+<LI><B>MIT DB</B>: The Massachusetts Institute of Technology&ndash;Beth
+Israel Hospital Arrhythmia Database (48 records, 30 minutes each)
+
+<P>
+</LI>
+<LI><B>ESC DB</B>: The European Society of Cardiology ST-T
+Database (90 records, two hours each)
+
+<P>
+</LI>
+<LI><B>NST DB</B>: The Noise Stress Test Database (12 records, 30
+minutes each)
+
+<P>
+</LI>
+<LI><B>CU DB</B>: The Creighton University Sustained Ventricular
+Arrhythmia Database (35 records, 8 minutes each)
+
+<P>
+</LI>
+</UL>
+Each of these databases represents a very substantial effort by many
+workers; in particular, the AHA, MIT, and ESC databases each required
+more than five years of sustained effort by large teams of researchers
+and clinicians from many institutions.  Nevertheless, it should be
+recognized that even these databases do not fully represent the
+variety of &ldquo;real-world&rdquo; ECGs observed in clinical practice.
+Although these databases permit standardized, quantitative, automated,
+and fully reproducible evaluations of analyzer performance, it is
+risky to extrapolate from the results of such evaluations to
+expectations of real-world performance.  Such extrapolations can be
+particularly error-prone if the evaluation data were also used for
+development of the analysis algorithm, since the algorithm may have
+been (perhaps unintentionally) &ldquo;tuned&rdquo; to its training set.  It
+should also be noted that the first four of the databases listed above were
+obtained from Holter ECG recordings; although the frequency response
+of the Holter recording technique is not usually a limiting factor in
+the performance of an ECG analyzer, it may tend to favor devices that
+are designed to analyze Holter recordings over devices that have been
+designed to analyze higher-fidelity input signals.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A
+ HREF="evnode4.htm">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="evnode2.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="evnode2.htm">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="previous.png"></A>   <BR>
+<B> Next:</B> <A
+ HREF="evnode4.htm">Evaluation Protocols</A>
+<B>Up:</B> <A
+ HREF="evnode2.htm">Introduction</A>
+<B> Previous:</B> <A
+ HREF="evnode2.htm">Introduction</A>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/evnode3.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

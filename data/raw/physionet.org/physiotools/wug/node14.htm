@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Starting WAVE </TITLE>
+<META NAME="description" CONTENT="Starting WAVE ">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="next" HREF="node15.htm">
+<LINK REL="previous" HREF="node13.htm">
+<LINK REL="up" HREF="node10.htm">
+<LINK REL="next" HREF="node15.htm">
+</HEAD>
+
+<BODY bgcolor="FFFFFF" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html634"
+  HREF="node15.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html628"
+  HREF="node10.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html622"
+  HREF="node13.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html630"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html632"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html635"
+  HREF="node15.htm">A Five-Minute Tour of WAVE</A>
+<B>Up:</B> <A NAME="tex2html629"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B> Previous:</B> <A NAME="tex2html623"
+  HREF="node13.htm">Checking the environment and the sample record</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00324000000000000000">
+Starting <I CLASS="sans">WAVE</I> </A>
+</H2>
+
+<P>
+<A NAME="4928"></A><A NAME="4929"></A>
+<A NAME="378"></A>
+<A NAME="4930"></A>
+<A NAME="380"></A><A NAME="381"></A>
+
+<P>
+<I CLASS="sans">WAVE</I>  is usually started by typing a command in a terminal window.
+Type:
+<PRE>
+    wave
+</PRE>
+(Be sure to type this using lower-case letters.)  If you see a
+response similar to `<TT>wave:&nbsp;Command not found.</TT>', you will need to
+find the executable copy of <I CLASS="sans">WAVE</I>  on the <I CLASS="sans">WAVE</I>  host system.  (It
+may be in a directory that is not part of your <TT>PATH</TT>; if so, you
+may wish to add that directory to your <TT>PATH</TT> by editing <TT>.cshrc</TT> or <TT>.profile</TT> in your home directory.  If the previous
+sentence makes no sense to you, refer to any introductory book on UNIX
+for guidance.)  If the response is `<TT>wave:&nbsp;permission denied</TT>',
+see your system administrator about obtaining permission to run
+<I CLASS="sans">WAVE</I> .
+
+<P>
+If all goes as it should, <I CLASS="sans">WAVE</I>  prints a concise summary of its command
+format, which should appear (approximately) as:
+<PRE>
+WAVE version XXX (MMM DD YYYY)
+ WFDB library version XXXXXX (MMM DD YYYY).
+usage: wave -r RECORD[+RECORD] [ options ]
+
+Options are:
+ -a annotator-name  Open an annotation file
+ -dpi XX[xYY]       Calibrate for XX [by YY] dots/inch
+ -f TIME            Open the record beginning at TIME
+ -g                 Use shades of grey only
+ -H                 Use high-resolution mode
+ -m                 Use black and white only
+ -O                 Use overlay graphics
+ -p PATH            Search for input files in PATH
+                     (if not found in the WFDB path)
+ -s SIGNAL [SIGNAL ...]  Initialize the signal list
+ -S                 Use a shared colormap
+ -Vx                Set initial display option x
+
+wave is an X11 client.  You must specify the X server
+connection for it in the DISPLAY environment variable.
+
+Be sure to set the WFDB environment variable to
+indicate a list of directories that contain
+input files for wave.
+
+For more information, type `more /usr/help/wave/wave.hlp',
+or open `http://physionet.org/physiotools/wug/' using
+your web browser.
+</PRE>
+
+The comments about setting the <TT>DISPLAY</TT> and <TT>WFDB</TT> variables will not
+appear if you have already set these variables.
+<A NAME="399"></A><A NAME="400"></A>
+<A NAME="401"></A><A NAME="402"></A>
+
+<P>
+Now try using <I CLASS="sans">WAVE</I>  to view record <TT>100s</TT>, together with its
+<TT>atr</TT> (reference) annotations.  Type:
+<PRE>
+    wave -r 100s -a atr &amp;
+</PRE>
+The `<TT>&amp;</TT>' is optional but recommended; it allows you to type additional
+commands in the terminal emulator window without interrupting or exiting from
+<I CLASS="sans">WAVE</I> .  After a few seconds, <I CLASS="sans">WAVE</I> 's <SPAN  CLASS="textit">main window</SPAN>
+(figure&nbsp;<A HREF="#fig:main-window">1.1</A>) opens.
+<A NAME="4931"></A>
+<A NAME="414"></A><A NAME="415"></A>
+<A NAME="416"></A>
+
+<DIV ALIGN="CENTER"><A NAME="fig:main-window"></A><A NAME="4933"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.1:</STRONG>
+<I CLASS="sans">WAVE</I> 's main window.</CAPTION>
+<TR><TD><IMG
+ WIDTH="956" HEIGHT="592" BORDER="0"
+ SRC="img2.png"
+ ALT="\begin{figure}\centerline{\epsfig{file=main-window}}\index{main window}
+\end{figure}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html634"
+  HREF="node15.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html628"
+  HREF="node10.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html622"
+  HREF="node13.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html630"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html632"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html635"
+  HREF="node15.htm">A Five-Minute Tour of WAVE</A>
+<B>Up:</B> <A NAME="tex2html629"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B> Previous:</B> <A NAME="tex2html623"
+  HREF="node13.htm">Checking the environment and the sample record</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

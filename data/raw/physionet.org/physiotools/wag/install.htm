@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021 (Released January 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Installing the WFDB Software Package</TITLE>
+<META NAME="description" CONTENT="Installing the WFDB Software Package">
+<META NAME="keywords" CONTENT="install">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021">
+
+<LINK REL="STYLESHEET" HREF="install.css">
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV CLASS="navigation">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next_gr.png"> 
+<A
+ HREF="wag.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_gr.png">   <BR>
+<b>Next:</b> <a href=eval.htm>Evaluating ECG Analyzers</a> <B>Up:</B> <A
+ HREF="wag.htm">WFDB Applications Guide</A> <b>Previous:</b> <a href=xview-7.htm>xview(7)</a>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<P>
+<H1 class="CENTER">Installing the WFDB Software Package</H1>
+<DIV CLASS="author_info">
+
+<STRONG>George B. Moody</STRONG>
+<BR>
+Harvard-MIT Division of Health Sciences and Technology, Cambridge, MA, USA
+</DIV>
+
+<P>
+This appendix briefly describes how to install the WFDB Software Package
+on a new system.  The package includes C-language sources for the WFDB
+library and for most of the applications described in this manual, sources
+for this manual, the <EM><a href="../wpg/wpg.htm">WFDB Programmer's Guide</a></EM>, and the
+<EM><a href="../wug/wug.htm">WAVE User's Guide</a></EM>, and a one-minute sample record (<SPAN style="font-family:monospace">100s</SPAN>).
+
+<P>
+The latest version of the package can always be downloaded in
+source form from <SPAN style="font-family:monospace">http://physionet.org/physiotools/wfdb.shtml</SPAN>,
+the WFDB home page on PhysioNet.  Binaries for popular operating systems and
+development snapshots are also usually available there.
+
+<P>
+The process for installing the package is the same on all platforms, and
+is documented in detail in the quick-start guides for the popular platforms
+that can be found on the WFDB home page.  In brief:
+
+<P>
+
+<OL>
+<LI><SPAN  CLASS="textit">Install any prerequisites needed for your platform.</SPAN>  These include
+<SPAN style="font-family:monospace">gcc</SPAN> (the GNU Compiler Collection), related software development tools
+such as <SPAN style="font-family:monospace">make</SPAN>, a supported HTTP client library (either <SPAN style="font-family:monospace">libcurl</SPAN> or
+<SPAN style="font-family:monospace">libwww</SPAN>; this can be omitted if NETFILES support is not desired), the
+XView libraries (needed for WAVE only), and X11 (needed by XView). All of these
+components are free (open-source) software available for all popular platforms,
+including GNU/Linux, Mac OS X, MS Windows, and Unix.  The quick start guides
+list recommended packages and where to find them.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Download and unpack the WFDB Software Package.</SPAN>  Versions for all
+platforms are built from a single package of portable sources;  the most
+recent package is always available at
+<SPAN style="font-family:monospace">http://physionet.org/physiotools/wfdb.tar.gz</SPAN>.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Configure the package for your system.</SPAN>  The <SPAN style="font-family:monospace">configure</SPAN> script
+creates a customized building procedure for your system and allows you
+a few choices about where to install the package.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Make and verify a test build.</SPAN>  The package includes a set of test
+scripts that are run to verify basic operations of the WFDB library and
+many of the applications, permitting them to be tested before installation.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Make, install, and test a final build.</SPAN>
+</LI>
+</OL>
+
+<P>
+See the quick start guide for your platform for detailed step-by-step
+instructions.
+
+<P>
+<SPAN  CLASS="textit">Important:</SPAN> Although you may be able to compile the WFDB Software Package
+using a proprietary compiler, this is <SPAN  CLASS="textit">not supported</SPAN>.
+
+<DIV CLASS="navigation"><HR>
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next_gr.png"> 
+<A
+ HREF="wag.htm">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_gr.png">   <BR>
+<b>Next:</b> <a href=eval.htm>Evaluating ECG Analyzers</a> <B>Up:</B> <A
+ HREF="wag.htm">WFDB Applications Guide</A> <b>Previous:</b> <a href=xview-7.htm>xview(7)</a>
+</DIV>
+<!--End of Navigation Panel-->
+
+<p><b>Up:</b> <a href="wag.htm">WFDB Applications Guide</a><hr><font size=-1><p>Please e-mail your comments and suggestions to <a href="mailto:webmaster@physionet.org?subject=http://www.physionet.org/physiotools/wag/install.htm"><tt>webmaster@physionet.org</tt></a>, or post them to:<p><address>PhysioNet<br>MIT Room E25-505A<br>77 Massachusetts Avenue<br>Cambridge, MA 02139 USA<br></address></i><p>Updated 10 June 2022</font></BODY>
+</HTML>

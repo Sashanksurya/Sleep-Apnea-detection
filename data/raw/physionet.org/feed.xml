@@ -1,0 +1,1190 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>PhysioNet News</title>
+<link>https://physionet.org/feed.xml</link>
+<description>
+News from the research resource for complex physiologic signals
+</description>
+<atom:link href="https://physionet.org/feed.xml"
+           rel="self" type="application/rss+xml" />
+<language>en-us</language>
+<pubDate>6 Apr 2026 12:52 -0400</pubDate>
+<lastBuildDate>6 Apr 2026 12:52 -0400</lastBuildDate>
+<docs>http://www.rssboard.org/rss-specification</docs>
+
+
+<item>
+  <title>Nature Health paper highlights PhysioNet’s global impact</title>
+  <link>https://rdcu.be/faatM</link>
+  <pubDate>6 Apr 2026 12:52 -0400</pubDate>
+  <description>&lt;p&gt;A new paper in Nature Health highlights the role of PhysioNet as a global platform for biomedical research.&lt;/p&gt;
+&lt;p&gt;In &quot;PhysioNet as a global platform for biomedical research,&quot; we reflect on 25 years of PhysioNet, from its early foundations to its current role in enabling biomedical and clinical research worldwide. The article describes how PhysioNet has helped to support tens of thousands of research papers and outlines future priorities including secure data sharing, community engagement, and scalable research infrastructure.&lt;/p&gt;</description>
+  <guid isPermaLink="false">5d4034bb-6b5c-4b4b-996f-f06baf341ff2</guid>
+</item>
+
+<item>
+  <title>PhysioNet featured by MIT Jameel Clinic</title>
+  <link>https://jclinic.mit.edu/physionet-at-25/</link>
+  <pubDate>6 Apr 2026 12:50 -0400</pubDate>
+  <description>&lt;p&gt;PhysioNet has been featured in a new MIT Jameel Clinic story marking the platform&amp;rsquo;s 25th anniversary.&lt;/p&gt;
+&lt;p&gt;The article, &amp;ldquo;PhysioNet at 25: The Open-Source Engine Behind Modern AI in Medicine,&amp;rdquo; reflects on the origins of PhysioNet, its growth into a global resource for biomedical and clinical research, and its continuing role in supporting open data, reproducible science, and clinical AI.&lt;/p&gt;</description>
+  <guid isPermaLink="false">43727df4-a31e-4baf-a653-f325c0f58177</guid>
+</item>
+
+<item>
+  <title>Raw Audio Data Access for Bridge2AI Voice Adult Cohort is via Synapse</title>
+  <link>https://www.synapse.org/Synapse:syn72370534</link>
+  <pubDate>9 Mar 2026 10:11 -0400</pubDate>
+  <description>&lt;p&gt;The published Bridge2AI-Voice Adult Dataset contains derived features from the audio waveforms. This PhysioNet project does not contain raw audios.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Accessing raw audio is a more involved process and requires institutional sign off. Please reach out to the access committee if you are interested in access: DACO@b2ai-voice.org&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Data will be made available via Synapse: &lt;a href=&quot;https://www.synapse.org/Synapse:syn72370534/&quot;&gt;https://www.synapse.org/Synapse:syn72370534/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;For questions regarding the dataset itself, please contact the corresponding author, listed on the sidebar.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Note that the Bridge2AI-Voice&amp;nbsp;Pediatric Dataset is also available on PhysioNet:&amp;nbsp;&lt;a href=&quot;../../../../content/b2ai-voice-pediatric/&quot;&gt;https://physionet.org/content/b2ai-voice-pediatric/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">9446e4e3-12bf-4074-8797-bad464a4950b</guid>
+</item>
+
+<item>
+  <title>Raw Audio Data Access for Bridge2AI Voice Pediatric Cohort is via Synapse</title>
+  <link>https://www.synapse.org/Synapse:syn73617068</link>
+  <pubDate>9 Mar 2026 10:07 -0400</pubDate>
+  <description>&lt;p&gt;The published Bridge2AI-Voice Pediatric Dataset contains derived features from the audio waveforms. This PhysioNet project does not contain raw audios.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Accessing raw audio is a more involved process and requires institutional sign off. Please reach out to the access committee if you are interested in access: DACO@b2ai-voice.org&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Data will be made available via Synapse&lt;/span&gt;&lt;span&gt;: &lt;a href=&quot;https://www.synapse.org/Synapse:syn73617068&quot;&gt;https://www.synapse.org/Synapse:syn73617068&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;For questions regarding the dataset itself, please contact the corresponding author, listed on the sidebar.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Note that the Bridge2AI-Voice Adult Dataset is also available on PhysioNet:&amp;nbsp;&lt;a href=&quot;../../../../content/b2ai-voice/&quot;&gt;https://physionet.org/content/b2ai-voice/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">2d61b73d-4f8b-4d4c-a739-98b01f70afd1</guid>
+</item>
+
+<item>
+  <title>Announcing the George B. Moody PhysioNet Challenge 2026</title>
+  <link>https://moody-challenge.physionet.org/2026/</link>
+  <pubDate>12 Feb 2026 14:10 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;The&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;u&gt;&lt;span&gt;&lt;a href=&quot;https://moody-challenge.physionet.org/2026/&quot;&gt;George B. Moody PhysioNet Challenge 2026&amp;nbsp;&lt;/a&gt;&lt;/span&gt;&lt;/u&gt;&lt;span&gt;is officially underway&lt;/span&gt;&lt;span&gt;.&amp;nbsp;&lt;u&gt;The 2026 Challenge invites teams to develop algorithms for using polysomnograms (PSGs) to predict cognitive impairment from sleep studies.&lt;/u&gt;&lt;br&gt;&lt;br&gt;Sleep is a fundamental physiological process that is deeply intertwined with human health. Traditionally, clinicians use sleep studies to diagnose obstructive sleep apnea, insomnia, and other sleep disorders. However, sleep studies can also reveal other chronic conditions that cause, are caused by, or are correlated with physiological changes in sleep. These findings can provide context to sleep disorders and inform the early diagnosis and treatment of other health conditions.&lt;br&gt;&lt;br&gt;We have shared multicenter Challenge training data containing EEG, ECG, and other physiological signals and algorithmic and human sleep annotations as well as an example Challenge entry that you can use as a template for your entries. We will open the scoring system in the coming days.&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Please see the Challenge website for the data, code, and &amp;nbsp;more information, rules, and deadlines:&amp;nbsp;&lt;/span&gt;&lt;u&gt;&lt;span&gt;&lt;a href=&quot;https://moody-challenge.physionet.org/2026/&quot;&gt;https://moody-challenge.physionet.org/2026/&lt;/a&gt;&lt;/span&gt;&lt;/u&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;As in previous years, we have divided the Challenge into two phases: an unofficial phase and an official phase. The unofficial phase solicits feedback from the research community (i.e., you) to help us improve the Challenge for the official phase, so &lt;u&gt;we require teams to register and&amp;nbsp;&lt;b&gt;participate in the unofficial phase of the Challenge&lt;/b&gt;&amp;nbsp;for prize eligibility&lt;/u&gt;. Please enter early and often &amp;ndash; we need you to look for quirks in our data, our scoring system, and otherwise. We are imperfect (and bandwidth-limited), so please send us&amp;nbsp;&lt;/span&gt;&lt;span&gt;comments, issues, and&amp;nbsp;&lt;/span&gt;&lt;span&gt;suggestions via the&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot; title=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;&lt;span&gt;Challenge forum&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&amp;nbsp;(see below).&amp;nbsp;&lt;b&gt;We rely on the community to help us to improve the quality of the Challenge each year.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;The culmination of the Challenge will be in Spain at the annual meeting of &lt;/span&gt;&lt;a href=&quot;http://cinc2026.org/&quot; title=&quot;http://cinc2026.org/&quot;&gt;&lt;span&gt;Computing in Cardiology&lt;/span&gt;&lt;/a&gt;&lt;span&gt;, where we will present prizes at the closing ceremony.&lt;br&gt;&lt;br&gt;We will post more information on the&amp;nbsp;&lt;/span&gt;&lt;u&gt;&lt;span&gt;&lt;a href=&quot;https://moody-challenge.physionet.org/2026/&quot;&gt;PhysioNet Challenge website&lt;/a&gt;&lt;/span&gt;&lt;/u&gt;&lt;span&gt;&amp;nbsp;and&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot; title=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;&lt;span&gt;Challenge forum&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&amp;nbsp;as it becomes available, or when your input helps us modify the boundaries and content&lt;/span&gt;&lt;span&gt;&amp;nbsp;of the Challenge&lt;/span&gt;&lt;span&gt;.&amp;nbsp;&lt;/span&gt;&lt;span&gt;You may (and should)&lt;/span&gt;&lt;span&gt;&amp;nbsp;post questions and comments&amp;nbsp;&lt;/span&gt;&lt;span&gt;on&lt;/span&gt;&lt;span&gt;the&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot; title=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;&lt;span&gt;Challenge forum&lt;/span&gt;&lt;/a&gt;&lt;span&gt;. However, if your question reveals information about your entry, then please&amp;nbsp;&lt;b&gt;email&amp;nbsp;&lt;i&gt;info [at]&amp;nbsp;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;a href=&quot;http://physionetchallenge.org/&quot; title=&quot;http://physionetchallenge.org/&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;span&gt;physionetchallenge.org&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/a&gt;&lt;b&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;span&gt;instead to help e&lt;/span&gt;&lt;span&gt;nsure each entry is as independent as possible (*)&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;We thank you for your continued interest and support, and we hope that you enjoy the 2026 Challenge!&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://physionetchallenges.org/&quot; title=&quot;https://physionetchallenges.org/&quot;&gt;&lt;span&gt;https://PhysioNetChallenges.org/&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;a href=&quot;../../../&quot; title=&quot;https://physionet.org/&quot;&gt;&lt;span&gt;https://PhysioNet.org/&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;[* The&amp;nbsp;&lt;/span&gt;&lt;b&gt;&lt;i&gt;&lt;span&gt;info [at]&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;a href=&quot;http://physionetchallenge.org/&quot; title=&quot;http://physionetchallenge.org/&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;span&gt;physionetchallenge.org&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/a&gt;&lt;b&gt;&lt;i&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span&gt;address is monitored by a team.&lt;/span&gt;&lt;span&gt;&amp;nbsp;We will not answer emails about the Challenge which are sent to&amp;nbsp;&lt;/span&gt;&lt;span&gt;individual organizers of the Challenge (or any other part of the PhysioNet Resource) or any affiliated events&amp;nbsp;(such as Computing in Cardiology)&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;We may share parts of our replies publicly if we feel that all Challengers should benefit from the information contained in our responses.&lt;/span&gt;&lt;span&gt;]&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">09625f3d-1edf-48a4-97b3-b7e2ba293fb8</guid>
+</item>
+
+<item>
+  <title>Bridge2AI Pediatric Dataset Raw Audio Data Access</title>
+  
+  <pubDate>23 Dec 2025 16:08 -0500</pubDate>
+  <description>&lt;p&gt;The published Bridge2AI-Voice Pediatric Dataset contains derived features from the audio waveforms. Interested users can request access to the original raw audio data by contacting: DACO@b2ai-voice.org&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;The raw audio data will be disseminated through controlled access only to protect participant&#x27;s privacy.&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">1c098ca4-9bbf-4cf2-94a2-794b4776d498</guid>
+</item>
+
+<item>
+  <title>Seeking Applications for Exceptional Candidates for the Director, National Institute of General Medical Sciences (NIGMS), NIH</title>
+  <link>https://hr.nih.gov/careers/open-positions/job-1f713322-ab9d-4820-9cd6-491cd605b18d</link>
+  <pubDate>10 Nov 2025 10:10 -0500</pubDate>
+  <description>&lt;p&gt;The National Institutes of Health (&lt;a href=&quot;https://www.nih.gov/&quot;&gt;NIH&lt;/a&gt;) is seeking applications for the position of Director, National Institute of General Medical Sciences (&lt;a href=&quot;https://www.nigms.nih.gov/&quot;&gt;NIGMS&lt;/a&gt;). The Director, NIGMS, provides leadership, and administers, fosters, and supports research in the basic and general medical sciences and in related natural or behavioral sciences. The Director develops Institute goals, priorities, policies, and program activities, and keeps the Director, NIH, abreast of NIGMS developments, accomplishments, and needs as they relate to the overall mission of the NIH. In exercising the Director&amp;rsquo;s responsibilities for program planning, implementation and evaluation, the incumbent works with and seeks the advice of a wide range of groups within the scientific community including investigators, institutions, scientific societies, and relevant commercial organizations.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The Director is responsible for managing a high-level, complex organization and serving as the chief visionary for the Institute. The Director actively engages others to create a shared vision of the purpose and direction of the organization and works collaboratively within the Institute, across the NIH, and with external entities to generate, gain commitment for, and accomplish NIGMS goals. The Director must demonstrate a keen awareness of the workings of the public sector and successfully navigate with that environment to promote and reach NIGMS and NIH objectives.&lt;/p&gt;
+&lt;p&gt;The position is open for application from Friday, November 7, 2025 &amp;ndash; Friday, December 12, 2025 [updated].&amp;nbsp; Additional information on the position and the application process can be found here: &lt;a href=&quot;https://hr.nih.gov/careers/open-positions/job-1f713322-ab9d-4820-9cd6-491cd605b18d&quot;&gt;Director, National Institute of General Medical Sciences | Office of Human Resources&lt;/a&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">3ce866e2-2e8b-4c64-8cbd-cf56161c4137</guid>
+</item>
+
+<item>
+  <title>Use of MIMIC Data with Large Language Models and Online Services</title>
+  
+  <pubDate>24 Sep 2025 15:31 -0400</pubDate>
+  <description>&lt;p&gt;We have received inquiries about the use of credentialed and restricted data on PhysioNet,&amp;nbsp;including&lt;b&gt; &lt;/b&gt;MIMIC-III, MIMIC-IV, MIMIC-CXR, and their derivatives, with large language models (LLMs) and online services. The&amp;nbsp;&lt;a href=&quot;../../../about/licenses/physionet-credentialed-health-data-license-150/&quot;&gt;PhysioNet Credentialed&amp;nbsp;Data Use Agreement&lt;/a&gt; explicitly prohibits sharing access to the data with third parties, including sending it through APIs or using it on online platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Requirements:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zero Data Retention&lt;/strong&gt;: MIMIC data must not be stored or retained by third-party LLM services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;User Responsibility&lt;/strong&gt;: Researchers are responsible for ensuring compliance with the Data Use Agreement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommendations:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Strongly Recommended&lt;/strong&gt;: Use locally deployed LLMs to maintain full control over the data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;If Using Cloud Services or APIs&lt;/strong&gt;: Verify that the service&amp;rsquo;s settings ensure zero data retention, no use of data for model training, and no human review. Many services retain data by default. Even when services claim &quot;zero data retention,&quot; their requirements may be insufficient due to internal processing, logging, or caching practices. Regularly review platform policies, as they may change without notice. If a service&amp;rsquo;s data handling practices are unclear or cannot be fully verified, do not use the service.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Important Disclaimer&lt;/strong&gt;: PhysioNet cannot verify the data practices of external services and does not endorse or recommend specific platforms.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">18fad336-4b6a-49e1-b29d-80ce4ae331cf</guid>
+</item>
+
+<item>
+  <title>Bridge2AI Raw Audio Data Access</title>
+  
+  <pubDate>11 Sep 2025 15:47 -0400</pubDate>
+  <description>&lt;p&gt;The published Bridge2AI-Voice dataset contains derived features from the audio waveforms. Interested users can request access to the original raw audio data by contacting: DACO@b2ai-voice.org&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;The raw audio data will be disseminated through controlled access only to protect participant&#x27;s privacy.&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">4948e645-cad3-449a-adef-4339f2b0c5a0</guid>
+</item>
+
+<item>
+  <title>Roger Mark and George Moody Receive the 2026 IEEE Biomedical Engineering Award</title>
+  
+  <pubDate>18 Aug 2025 14:01 -0400</pubDate>
+  <description>&lt;p&gt;Each year, the IEEE Awards Board selects a distinguished group of individuals to receive IEEE&amp;rsquo;s highest honors, recognizing exceptional achievements and significant contributions to technology, society, and the engineering profession.&lt;/p&gt;
+&lt;p&gt;We are honored to share that Professor Roger G. Mark and the late George B. Moody have been named co-recipients of the 2026 IEEE Biomedical Engineering Award for their leadership in ECG signal processing and the creation and distribution of curated biomedical and clinical data. &lt;a href=&quot;https://corporate-awards.ieee.org/recipients/current-recipients/&quot;&gt;View announcement on the IEEE website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This recognition highlights the profound and lasting impact that Roger Mark and George Moody have had on biomedical engineering and the global research community. Their vision and contributions continue to underpin our work on PhysioNet and databases such as MIMIC.&lt;/p&gt;
+&lt;h3&gt;About Roger G. Mark&lt;/h3&gt;
+&lt;p&gt;Roger G. Mark is Distinguished Professor of Health Sciences and Technology Emeritus at the Institute for Medical Engineering &amp;amp; Science at MIT. His work spans physiological signal processing, patient monitoring, and critical care decision support. He is the co-founder of PhysioNet, launched in 1999 to provide open access to physiologic signals, clinical data, and open-source software for the research community.&lt;/p&gt;
+&lt;h3&gt;About George B. Moody&lt;/h3&gt;
+&lt;p&gt;George B. Moody made transformative contributions to biomedical signal processing through his work in electrocardiography. He developed the &lt;a href=&quot;https://wfdb.io/&quot;&gt;WFDB libraries&lt;/a&gt; and much of the code available on PhysioNet, which remains essential for ECG signal processing worldwide. He also created and led the PhysioNet/Computing in Cardiology Challenges for 15 years, fostering global collaboration and innovation.&lt;/p&gt;</description>
+  <guid isPermaLink="false">cdeadf4f-2d9f-48b7-b15c-9c85128f7975</guid>
+</item>
+
+<item>
+  <title>Access Restrictions Under DOJ Data Security Program</title>
+  
+  <pubDate>15 Jul 2025 17:20 -0400</pubDate>
+  <description>&lt;p&gt;PhysioNet has introduced updated access policies for certain datasets to comply with the U.S. Department of Justice&amp;rsquo;s Data Security Program (DSP) under Executive Order 14117. The DSP final rule took effect on April 8, 2025 and full enforcement began July 8, 2025: &lt;a href=&quot;https://www.justice.gov/opa/media/1396351/dl&quot;&gt;https://www.justice.gov/opa/media/1396351/dl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The DSP imposes export-control&amp;ndash;style restrictions on U.S. persons sharing or transferring bulk sensitive personal data (e.g., genomic, biometric, health, financial, geolocation) and U.S. government-related data with specified countries or &quot;covered persons&quot;.&amp;nbsp;The rule applies to interactions with countries including: China (including Hong Kong and Macau), Cuba, Iran, North Korea, Russia, and Venezuela, as well as individuals or entities connected to them.&lt;/p&gt;
+&lt;p&gt;PhysioNet now prevents access to certain controlled-access datasets for users connecting from IP addresses or affiliations in those regions, or for those classified as &amp;ldquo;covered persons&amp;rdquo;. These steps are taken to satisfy legal obligations and are not a judgment on your work as researchers.&lt;/p&gt;
+&lt;p&gt;We understand these changes may affect ongoing research. PhysioNet is committed to supporting your efforts to understand the policy and explore compliant access options.&lt;/p&gt;
+&lt;h5&gt;Further information&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;DOJ DSP Compliance Guide and FAQs: &lt;a href=&quot;https://www.justice.gov/opa/media/1396351/dl&quot;&gt;https://www.justice.gov/opa/media/1396351/dl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NIH Notice NOT‑OD‑25‑083, which imposes similar NIH-specific restrictions: &lt;a href=&quot;https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html&quot;&gt;https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <guid isPermaLink="false">7c8b1f9b-3bd9-4d59-b3d5-e4b4cf56b8c3</guid>
+</item>
+
+<item>
+  <title>This repository is under review by NIH for potential modification in compliance with U.S. federal Administration directives.</title>
+  
+  <pubDate>27 Mar 2025 11:55 -0400</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;This repository is under review by NIH for potential modification in compliance with U.S. federal Administration directives.&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">234d5d35-122f-4570-a34d-67439086e0c5</guid>
+</item>
+
+<item>
+  <title>BioNLP @ACL 2025 Shared Task on Grounded Electronic Health Record Question Answering (ArchEHR-QA)</title>
+  <link>https://doi.org/10.13026/zzax-sy62</link>
+  <pubDate>26 Feb 2025 21:26 -0500</pubDate>
+  <description>&lt;p&gt;The overarching goal of the ArchEHR-QA 2025 &lt;em&gt;(pronounced &quot;Archer&quot;)&lt;/em&gt; shared task is to develop automated responses to patients&#x27; questions by generating answers that are grounded in key clinical evidence from their electronic health records (EHRs). The proposed dataset, ArchEHR-QA, comprises hand-curated, realistic patient questions (reflective of patient portal messages), relevant focus areas identified within these questions (as determined by a clinician), corresponding clinician-rewritten versions (crafted to aid in formulating responses), and note excerpts providing essential clinical context.&lt;/p&gt;</description>
+  <guid isPermaLink="false">6c7bad10-df21-427b-983e-eeed4b7a3249</guid>
+</item>
+
+<item>
+  <title>New Dataset: Bridge2AI-Voice v1.0 Now Available on PhysioNet</title>
+  <link>https://doi.org/10.13026/37yb-1t42</link>
+  <pubDate>4 Feb 2025 12:46 -0500</pubDate>
+  <description>&lt;p&gt;We are pleased to announce the release of Bridge2AI-Voice v1.0, a dataset designed to advance research into the use of voice as a biomarker of health. This dataset, developed as part of the &lt;a href=&quot;https://commonfund.nih.gov/bridge2ai&quot;&gt;NIH Bridge2AI initiative&lt;/a&gt;, aims to support artificial intelligence research by providing ethically sourced, high-quality voice-derived data linked to clinical information.&lt;/p&gt;
+&lt;p&gt;Bridge2AI-Voice v1.0 includes 12,523 voice-derived recordings from 306 participants across five North American sites. Participants were selected based on conditions known to affect vocal characteristics, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Voice disorders (e.g., laryngeal conditions affecting phonation)&lt;/li&gt;
+&lt;li&gt;Neurological and neurodegenerative disorders (e.g., Parkinson&amp;rsquo;s, ALS, stroke)&lt;/li&gt;
+&lt;li&gt;Mood and psychiatric disorders (e.g., depression, anxiety)&lt;/li&gt;
+&lt;li&gt;Respiratory disorders (e.g., asthma, chronic cough)&lt;/li&gt;
+&lt;li&gt;Pediatric voice and speech disorders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The initial release does not include raw voice recordings. Instead, it provides derived acoustic features, such as spectrograms, along with detailed demographic, clinical, and validated questionnaire data.&lt;/p&gt;</description>
+  <guid isPermaLink="false">10665bac-2167-4033-bc59-e614604a65ad</guid>
+</item>
+
+<item>
+  <title>The George B. Moody PhysioNet Challenge 2025 has begun</title>
+  
+  <pubDate>21 Jan 2025 15:35 -0500</pubDate>
+  <description>&lt;p&gt;&lt;a href=&quot;http://physionetchallenges.org/2025&quot;&gt;This year&#x27;s Challenge&amp;nbsp;&lt;/a&gt;focuses on detecting Chagas disease from ECGs. Chagas disease is a parasitic disease in Central and South America that affects an estimated 6.5 million people and causes nearly 10,000 deaths annually. Timely treatment may prevent or slow damage to the cardiovascular system, but serological testing capacity is limited, so detection through ECGs can help to identify potential Chagas patients for testing and treatment.&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">e973cfeb-bd46-4455-913e-e4f69cfef13e</guid>
+</item>
+
+<item>
+  <title>MIMIC-IV v3.1 is now available on BigQuery</title>
+  
+  <pubDate>12 Nov 2024 16:50 -0500</pubDate>
+  <description>&lt;p&gt;MIMIC-IV v3.1 is now available on BigQuery. Users may request access via PhysioNet. Currently, MIMIC-IV v3.1 is available on the &lt;code&gt;mimiciv_v3_1_hosp&lt;/code&gt; and &lt;code&gt;mimiciv_v3_1_icu&lt;/code&gt; schemas. MIMIC-IV v2.2 is available on the &lt;code&gt;mimiciv_v2_2_hosp&lt;/code&gt; and &lt;code&gt;mimiciv_v2_2_icu&lt;/code&gt; datasets as well as the &lt;code&gt;mimiciv_hosp&lt;/code&gt; and &lt;code&gt;mimiciv_icu&lt;/code&gt; datasets. On November 25th 2024, we will replace the data on &lt;code&gt;mimiciv_hosp&lt;/code&gt; and &lt;code&gt;mimiciv_icu&lt;/code&gt; with MIMIC-IV v3.1.&lt;/p&gt;</description>
+  <guid isPermaLink="false">6d7ec499-0d9b-43f2-948b-0cdff3e1b0c0</guid>
+</item>
+
+<item>
+  <title>Upgrading MIMIC-IV on BigQuery</title>
+  
+  <pubDate>28 Sep 2024 10:26 -0400</pubDate>
+  <description>&lt;p&gt;MIMIC-IV v3.0 is currently unavailable on BigQuery. Currently, the mimiciv_hosp and mimiciv_icu datasets on BigQuery contain MIMIC-IV v2.2, and access to these datasets is still available via PhysioNet by navigating to the v2.2 page. We plan to upgrade these BigQuery datasets in the near future, and will notify users when we do so.&lt;/p&gt;</description>
+  <guid isPermaLink="false">fa888329-5610-412e-9539-0796717a1f6f</guid>
+</item>
+
+<item>
+  <title>Delays in reviewing applications for credentialed access</title>
+  
+  <pubDate>17 Jun 2024 15:15 -0400</pubDate>
+  <description>&lt;p&gt;As a result of staffing changes in our research group, applications for&amp;nbsp;&lt;a href=&quot;/settings/credentialing/&quot;&gt;credentialed access&lt;/a&gt;&amp;nbsp;are&amp;nbsp;likely to be subject to significant delays. We are doing our best to deal with the waitlist quickly, handling applications in the order in which they are received. To help ensure that your application is successful, please remember to:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Include a copy of your CITI training report (&lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt;&amp;nbsp;the certificate).&lt;/li&gt;
+	&lt;li&gt;Remind your reference to reply promptly when contacted.&lt;/li&gt;
+	&lt;li&gt;Check your application details are correct before submitting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;/settings/emails/&quot;&gt;Add an institutional or educational email address&lt;/a&gt;&amp;nbsp;as your primary email.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We apologize for the inconvenience. Please bear with us during this busy time!&lt;/p&gt;</description>
+  <guid isPermaLink="false">72f3dad0-71a1-47d4-b7a8-d1eb7050eb0d</guid>
+</item>
+
+<item>
+  <title>George B. Moody PhysioNet Challenge 2024 is teaming up with Data Science Africa</title>
+  <link>https://moody-challenge.physionet.org/2024/</link>
+  <pubDate>18 May 2024 11:40 -0400</pubDate>
+  <description>&lt;p&gt;The George B. Moody PhysioNet Challenge 2024 is teaming up with&amp;nbsp;&lt;a href=&quot;https://www.datascienceafrica.org/aboutus/&quot;&gt;Data Science Africa&lt;/a&gt;&amp;nbsp;(DSA) to innovate cardiac care through signal processing &amp;amp; machine learning at Nyeri, Kenya, for DSA&amp;#39;s 10 year anniversary in June 2024.&lt;/p&gt;
+
+&lt;p&gt;DSA aims to create a hub in the network of data science researchers across Africa and strengthen the African data science community.&amp;nbsp;&lt;a href=&quot;https://twitter.com/dsa_org/status/1770036990500655228?s=08&quot;&gt;#DSA2024Nyeri&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://t.co/8Yz9AoVzrs&quot;&gt;https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school&lt;/a&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">8ca0f6d5-c9db-49dd-86b8-88f8567bc3c8</guid>
+</item>
+
+<item>
+  <title>Guidelines for creating datasets and models from MIMIC</title>
+  <link>https://mimic.mit.edu/docs/community/derived/</link>
+  <pubDate>24 Apr 2024 10:12 -0400</pubDate>
+  <description>&lt;p&gt;We recognize that there is value in creating datasets or models that are either derived from MIMIC or which augment MIMIC in some way (for example, by adding annotations). Here are some guidelines on creating these datasets and models:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Any derived datasets or models should be treated as containing sensitive information&lt;/strong&gt;. If you wish to share these resources, they should be shared on PhysioNet under the same agreement as the source data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If you would like to use the MIMIC acronym in your project&amp;nbsp;name&lt;/strong&gt;, please include the letters &amp;ldquo;Ext&amp;rdquo; (for example, MIMIC-IV-Ext-YOUR-DATASET&quot;). Ext may either indicate &amp;ldquo;extracted&amp;rdquo; (e.g. a derived subset) or &amp;ldquo;extended&amp;rdquo; (e.g. annotations), depending on your use case.&lt;/li&gt;
+&lt;li&gt;Please select the relevant &quot;Parent Projects&quot; in the Discovery tab of the submission portal when preparing your project for submission.&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <guid isPermaLink="false">4d269bfe-de5f-42a8-b2c4-d0280f74bae3</guid>
+</item>
+
+<item>
+  <title>Network issues at MIT, impacting the availability of PhysioNet</title>
+  
+  <pubDate>9 Apr 2024 15:15 -0400</pubDate>
+  <description>&lt;p&gt;We are currently experiencing network issues at MIT, impacting the availability of PhysioNet services. We apologize for any inconvenience this may cause and are working to resolve the issue as soon as we can.&lt;/p&gt;</description>
+  <guid isPermaLink="false">b80eccbb-2dc3-4219-adbe-cd89c8117c90</guid>
+</item>
+
+<item>
+  <title>George B. Moody PhysioNet Challenge 2024: Challenge Update</title>
+  <link>https://physionet.org/news/post/challenge-2024</link>
+  <pubDate>14 Mar 2024 10:05 -0400</pubDate>
+  <description>&lt;p&gt;We are delighted to announce that the&amp;nbsp;&lt;a href=&quot;https://physionetchallenges.org/2024/#conference-attendance&quot;&gt;George B. Moody PhysioNet Challenges&lt;/a&gt;&amp;nbsp;are partnering with&amp;nbsp;&lt;a href=&quot;https://www.datascienceafrica.org/&quot;&gt;Data Science Africa&lt;/a&gt;&amp;nbsp;(DSA) and the&amp;nbsp;&lt;a href=&quot;https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody&quot;&gt;IEEE Signal Processing Society&amp;#39;s Challenges and Data Collections Committee&lt;/a&gt;&amp;nbsp;(CDCC). The IEEE CDCC is supporting this year&amp;rsquo;s Challenge with additional cash prizes for participating teams from Africa and the Challenge organizers will be running a workshop at this year&amp;#39;s&lt;a href=&quot;https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school&quot;&gt;&amp;nbsp;annual DSA meeting in Kenya&lt;/a&gt;. In connection with this, the Challenge organizers will be running&amp;nbsp;&lt;a href=&quot;https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school&quot;&gt;a workshop&lt;/a&gt;&amp;nbsp;at DSA in Kenya from June 2-5th 2024. Please note that we are also accepting (and scoring) entries, and there&amp;nbsp;are&amp;nbsp;two deadlines coming up - April 8th to submit a&amp;nbsp;&lt;a href=&quot;https://moody-challenge.physionet.org/2024/submissions/&quot;&gt;preliminary entry to the Challenge&lt;/a&gt;&amp;nbsp;and April 15th to submit a (placeholder) abstract&amp;nbsp;&lt;a href=&quot;https://cinc.org/inf_authors/&quot;&gt;to CinC&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">adf147ef-4f4f-49d5-800d-803ed4e332a6</guid>
+</item>
+
+<item>
+  <title>Duke Critical Care Datathon:  13-14 April 2024</title>
+  <link>https://sites.duke.edu/datathon2024/</link>
+  <pubDate>7 Feb 2024 09:45 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Our colleagues at Duke are hosting a&amp;nbsp;Critical Care Datathon on April 13-14, 2024. T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;he &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Datathon is a collaborative two-day event that connects critical care clinicians with data scientists to develop pragmatic data-driven models &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;using de-identified critical care electronic health record datasets.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Using de-identified critical care electronic health record datasets (including &lt;a href=&quot;https://doi.org/10.13026/6mm1-ek67&quot;&gt;MIMIC&lt;/a&gt; and the &lt;a href=&quot;https://doi.org/10.13026/C2WM1R&quot;&gt;eICU Collaborative Research Database&lt;/a&gt;), participants will develop new projects in 36 hours, from &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;u&gt;&lt;span&gt;&lt;span&gt;problem&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; to &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;u&gt;&lt;span&gt;&lt;span&gt;abstract&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; (and more)!&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Participants will be organized into teams that are half-data science, half-clinical. &lt;strong&gt;You do not need to have a team; &lt;/strong&gt;the organizers will help you find a team. Questions will be crowdsourced. No experience is required.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;If you are a &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;clinician&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;, your &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;u&gt;&lt;span&gt;&lt;span&gt;interest&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;, but &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;em&gt;&lt;span&gt;not&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; expertise, in data science is required.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;If you are a &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;data scientist&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;, your &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;u&gt;&lt;span&gt;&lt;span&gt;interest&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;, but &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;em&gt;&lt;span&gt;not&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; expertise, in healthcare and critical care is required.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more information, see:&amp;nbsp;&lt;a href=&quot;https://sites.duke.edu/datathon2024/&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;u&gt;&lt;span&gt;&lt;span&gt;https://sites.duke.edu/datathon2024/&lt;/span&gt;&lt;/span&gt;&lt;/u&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">c2d42474-1821-4ea0-8514-c76ac9bc4259</guid>
+</item>
+
+<item>
+  <title>CHIL 2024: Submit your paper by Friday, 16 February</title>
+  <link>https://www.chilconference.org/call-for-papers.html</link>
+  <pubDate>6 Feb 2024 13:02 -0500</pubDate>
+  <description>&lt;p&gt;The 2024 Conference on Health, Inference, and Learning (CHIL) invites submissions focused on artificial intelligence and machine learning (AI/ML) techniques that address challenges in health, which includes clinical healthcare, public health, health economics, informatics, and more. For full details, refer to the online Call for Papers:&amp;nbsp;&lt;a href=&quot;https://www.chilconference.org/call-for-papers.html&quot;&gt;&lt;u&gt;https://www.chilconference.org/call-for-papers.html&lt;/u&gt;&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This year, CHIL 2024 will accept submissions for three distinct tracks:&amp;nbsp;&lt;strong&gt;Models and Methods&lt;/strong&gt;,&amp;nbsp;&lt;strong&gt;Applications and Practice&lt;/strong&gt;, and&amp;nbsp;&lt;strong&gt;Policy, Impact and Society&lt;/strong&gt;. Accepted papers will be published in the&amp;nbsp;&lt;strong&gt;Proceedings of Machine Learning Research (PMLR)&lt;/strong&gt;. We are also offering&amp;nbsp;&lt;strong&gt;Best Paper Awards&lt;/strong&gt;&amp;nbsp;to recognize outstanding work across all tracks.&lt;/p&gt;
+
+&lt;p&gt;The deadline for submissions has been extended to: &lt;strong&gt;Friday, 16 Feb&amp;nbsp;2024&lt;/strong&gt; at 11:59pm AoE.&amp;nbsp;Submit your paper at:&amp;nbsp;&lt;a href=&quot;https://openreview.net/group?id=chilconference.org/CHIL/2024/Conference&quot;&gt;https://openreview.net/group?id=chilconference.org/CHIL/2024/Conference&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">fef28922-7eca-4729-9748-8a495238b43a</guid>
+</item>
+
+<item>
+  <title>Conference on Health, Inference, and Learning (CHIL): Submit your paper by Mon 5 Feb, 2024!</title>
+  <link>https://chilconference.org/</link>
+  <pubDate>30 Jan 2024 10:27 -0500</pubDate>
+  <description>&lt;p&gt;The 2024 Conference on Health, Inference, and Learning (CHIL) invites submissions focused on artificial intelligence and machine learning (AI/ML) techniques that address challenges in health, which includes clinical healthcare, public health, health economics, informatics, and more. For full details, refer to the online Call for Papers:&amp;nbsp;&lt;a href=&quot;https://www.chilconference.org/call-for-papers.html&quot;&gt;&lt;u&gt;https://www.chilconference.org/call-for-papers.html&lt;/u&gt;&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This year, CHIL 2024 will accept submissions for three distinct tracks:&amp;nbsp;&lt;strong&gt;Models and Methods&lt;/strong&gt;,&amp;nbsp;&lt;strong&gt;Applications and Practice&lt;/strong&gt;, and&amp;nbsp;&lt;strong&gt;Policy, Impact and Society&lt;/strong&gt;. Accepted papers will be published in the&amp;nbsp;&lt;strong&gt;Proceedings of Machine Learning Research (PMLR)&lt;/strong&gt;. We are also offering&amp;nbsp;&lt;strong&gt;Best Paper Awards&lt;/strong&gt;&amp;nbsp;to recognize outstanding work across all tracks.&lt;/p&gt;
+
+&lt;p&gt;Submissions are due on&amp;nbsp;&lt;strong&gt;February 5th, 11:59 PM EST&amp;nbsp;&lt;/strong&gt;in the form of anonymized PDF files. All submissions for CHIL 2024 will be managed through the&amp;nbsp;&lt;strong&gt;OpenReview&lt;/strong&gt;&amp;nbsp;system. Similar to last year, we have a full author response period and reviewer discussion period to ensure proper feedback on the work.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Hosted by The Association of Health, Learning, and Inference (AHLI), the CHIL conferences have consistently served as premier scientific meetings, uniting clinicians and researchers from both industry and academia, and weaving a rich tapestry of knowledge and innovation.&lt;/p&gt;
+
+&lt;p&gt;Building on a series of conferences and events since 2019, CHIL has persistently set a benchmark in interdisciplinary research within the realms of machine learning and health, demonstrated through its impactful sessions (&lt;a href=&quot;https://dl.acm.org/doi/proceedings/10.1145/3368555&quot;&gt;&lt;u&gt;2020&lt;/u&gt;&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;https://dl.acm.org/doi/proceedings/10.1145/3450439&quot;&gt;&lt;u&gt;2021&lt;/u&gt;&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;https://proceedings.mlr.press/v174/&quot;&gt;&lt;u&gt;2022&lt;/u&gt;&lt;/a&gt;,&amp;nbsp;&lt;a href=&quot;https://proceedings.mlr.press/v209/&quot;&gt;&lt;u&gt;2023&lt;/u&gt;&lt;/a&gt;). Following the resounding success of CHIL 2023 at the Broad Institute, Cambridge, we are thrilled to announce that CHIL 2024 will continue fostering insightful discussions and collaborations in the field. The 5th annual conference will take place in-person from June 27-28 at the Verizon Executive Education Center at Cornell Tech in New York City.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important Dates&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Submissions due: Feb 5, 2024 at 11:59pm&lt;/li&gt;
+	&lt;li&gt;Bidding opens for reviewers: Feb 6, 2024 at 11:59pm&lt;/li&gt;
+	&lt;li&gt;Reviews released: Mar 4, 2024 by 11:59pm&lt;/li&gt;
+	&lt;li&gt;Author/Reviewer discussion period: Mar 10-21, 2024&lt;/li&gt;
+	&lt;li&gt;Author notification: Apr 3, 2024 by 11:59pm&lt;/li&gt;
+	&lt;li&gt;CHIL conference: June 27-28, 2024&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <guid isPermaLink="false">0d6b0cc9-56af-485c-ad2d-ac5d79d3bf43</guid>
+</item>
+
+<item>
+  <title>George B. Moody PhysioNet Challenge 2024: Challenge Opening</title>
+  
+  <pubDate>26 Jan 2024 13:24 -0500</pubDate>
+  <description>&lt;p&gt;We are delighted to announce the opening of the&amp;nbsp;&lt;a href=&quot;https://physionetchallenges.org/2024/&quot;&gt;George B. Moody PhysioNet Challenge 2024&lt;/a&gt;. The 2024 Challenge invites teams to develop algorithms for digitizing and classifying electrocardiograms (ECGs) captured from images or paper printouts.&lt;br&gt;
+&lt;br&gt;
+Despite recent advances in digital ECG devices, paper or physical ECGs remain common, especially in the Global South. These paper ECGs document the history and diversity of cardiovascular diseases (CVDs), and algorithms that can digitize and classify these images have the potential to improve our understanding and treatment of CVDs, especially for underrepresented and underserved populations.&lt;br&gt;
+&lt;br&gt;
+We have shared example code and scoring code in both MATLAB and Python and synthetic ECG generation code in Python. While last year&amp;rsquo;s Challenge had the largest dataset yet, this year&amp;rsquo;s Challenge begins with a much more tractable dataset that you may already have on your machine, and you can use the provided code to create ECG images with realistic artifacts. We will also augment these data to create a much richer and more representative dataset, so stay tuned for more announcements. We will open the scoring system in the coming days.&lt;br&gt;
+&lt;br&gt;
+See the Challenge website for more information, rules and deadlines:&amp;nbsp;&lt;a href=&quot;https://physionetchallenges.org/2024/&quot;&gt;https://physionetchallenges.org/2024/&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+As in previous years, we have divided the Challenge into two phases: an unofficial phase and an official phase. The unofficial phase solicits feedback from the research community (i.e., you) to help us to improve the Challenge for the official phase, so&amp;nbsp;&lt;u&gt;we require teams to register and&amp;nbsp;&lt;strong&gt;participate in the unofficial phase of the Challenge&lt;/strong&gt;&amp;nbsp;to be eligible for a prize&lt;/u&gt;. Please enter early and often &amp;ndash; we need you to look for quirks in our data, our scoring system, and otherwise. We are imperfect (and bandwidth-limited), so please send us suggestions via the forum (see below).&amp;nbsp;&lt;strong&gt;We rely on the community to help us to improve the quality of the Challenge each year.&lt;/strong&gt;&lt;br&gt;
+&lt;br&gt;
+More information will be posted on the&amp;nbsp;&lt;a href=&quot;https://physionetchallenges.org/2024/&quot;&gt;PhysioNet Challenge website&lt;/a&gt;&amp;nbsp;and the&amp;nbsp;&lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;Challenge forum&lt;/a&gt;&amp;nbsp;as it becomes available. Please post questions and comments to the Challenge forum as well. However, if your question reveals information about your entry, then please email info [at]&amp;nbsp;&lt;a href=&quot;http://physionetchallenge.org/&quot;&gt;physionetchallenge.org&lt;/a&gt;&amp;nbsp;instead to help us safeguard the diversity of approaches to the Challenge. We may post parts of our replies publicly if we feel that all Challengers should benefit from the information contained in our responses. We will not answer emails about the Challenge sent to other email addresses.&lt;br&gt;
+&lt;br&gt;
+Many thanks again for your continued support of this event, and we hope that you enjoy the 2024 Challenge!&lt;/p&gt;</description>
+  <guid isPermaLink="false">35012cf7-2d59-456c-9273-36dcf89eac02</guid>
+</item>
+
+<item>
+  <title>Call for Papers on Computational Tools for Physiological Time Series Analysis</title>
+  <link>https://iopscience.iop.org/collections/pmea-230825-336</link>
+  <pubDate>22 Jan 2024 15:48 -0500</pubDate>
+  <description>&lt;p&gt;On behalf of our colleagues, we are pleased to announce a call for papers for a focus collection in &lt;a href=&quot;https://iopscience.iop.org/collections/pmea-230825-336&quot;&gt;IOP Physiological Measurement&lt;/a&gt; on the topic of &amp;quot;Open Source and Validated Computational Tools for Physiological Time Series Analysis&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Physiological time series analysis plays a crucial role in understanding the complex dynamics of biological systems and their response to stimuli and interventions. The availability of reliable, open-source computational tools is essential for advancing research in this field, facilitating reproducibility, promoting collaboration, and accelerating scientific discoveries.&lt;/p&gt;
+
+&lt;p&gt;This focus collection aims to showcase the latest advancements in open-source tools and methodologies that have been rigorously validated for the analysis of physiological time series data.&lt;/p&gt;
+
+&lt;h3&gt;Guest Editors&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Joachim A. Behar, Technion Institute of Technology, Israel&lt;/li&gt;
+	&lt;li&gt;Peter H. Charlton, University of Cambridge, UK&lt;/li&gt;
+	&lt;li&gt;M&amp;aacute;rton &amp;Aacute;ron Goda, Technion Institute of Technology, Israel&lt;/li&gt;
+	&lt;li&gt;Maarten De Vos, KU Leuven, Belgium&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For questions, please contact Dr. Joachim A. Behar (jbehar@technion.ac.il).&lt;/p&gt;</description>
+  <guid isPermaLink="false">3cba51b4-2ff9-4148-90fa-1d230e7de90b</guid>
+</item>
+
+<item>
+  <title>Announcing the SNOMED CT Entity Linking Challenge</title>
+  <link>https://snomed.drivendata.org</link>
+  <pubDate>20 Dec 2023 11:53 -0500</pubDate>
+  <description>&lt;p&gt;We are pleased to announce the launch of the &lt;em&gt;SNOMED CT Entity Linking Challenge&lt;/em&gt; in collaboration with SNOMED International, Veratai, and DrivenData. Sponsored by SNOMED International, the challenge seeks to advance the development of Entity Linking models that operate on unstructured clinical text.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Participants are tasked with developing a model to annotate MIMIC-IV-Note discharge summaries with SNOMED CT concepts. Training data, comprising ~300 annotated discharge summaries, has been made available on PhysioNet at &lt;a href=&quot;https://doi.org/10.13026/s48e-sp45&quot;&gt;https://doi.org/10.13026/s48e-sp45&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sign up now at &lt;a href=&quot;https://snomed.drivendata.org&quot;&gt;https://snomed.drivendata.org&lt;/a&gt;!&lt;/p&gt;</description>
+  <guid isPermaLink="false">1db640f8-c3e7-408a-892d-d9246dd69f0b</guid>
+</item>
+
+<item>
+  <title>PhD opportunities at the European INSIDE-HEART consortium (deadline for applications: 31 Jan 2024)</title>
+  <link>https://www.inside-heart.eu/recruitment/</link>
+  <pubDate>11 Dec 2023 13:50 -0500</pubDate>
+  <description>&lt;p&gt;&lt;a href=&quot;https://www.inside-heart.eu&quot;&gt;INSIDE-HEART&lt;/a&gt;&amp;nbsp;brings together&amp;nbsp;universities,&amp;nbsp;companies&amp;nbsp;and&amp;nbsp;hospitals&amp;nbsp;from Italy, Finland, France, Israel, Netherlands, Spain, and Sweden to establish a multi-disciplinary network to tackle the&amp;nbsp;design&amp;nbsp;and early-phase&amp;nbsp;validation&amp;nbsp;of&amp;nbsp;digital biomarkers&amp;nbsp;targeting the diagnosis of&amp;nbsp;supraventricular&amp;nbsp;arrhythmias&amp;nbsp;(SVAs) and their associated potential for adverse risk assessment.&lt;/p&gt;
+
+&lt;p&gt;Our colleagues in the network are looking for 10 motivated PhD candidates, funded&amp;nbsp;by the European Union&amp;rsquo;s Horizon Europe program under the Marie Skłodowska Curie Actions. For further information and details on how to apply, see:&amp;nbsp;&lt;a href=&quot;https://www.inside-heart.eu/recruitment/&quot;&gt;https://www.inside-heart.eu/recruitment/&lt;/a&gt;.&amp;nbsp;The call for applications is open until 31 January 2024.&lt;br&gt;
+&lt;br&gt;
+The INSIDE-HEART project is coordinated by the Politecnico di Milano. Please direct questions to&amp;nbsp;&lt;a href=&quot;mailto:insideheart@polimi.it&quot;&gt;insideheart@polimi.it&lt;/a&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">a2562363-87db-4bcf-8f9b-003f2d28e833</guid>
+</item>
+
+<item>
+  <title>DARPA Triage Challenge: Qualification extended through Nov 27</title>
+  
+  <pubDate>6 Nov 2023 16:07 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Qualification for the DARPA Triage Challenge has been extended through&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;November 27, 2023 at 23:59. We encourage you to join the challenge as a&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;self-funded team for the Systems, Virtual and Data Competitions. You may&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;compete in one or more challenge tracks, where qualification must be entered&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;for each track individually.&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;To register, please visit the&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Team Qualification Portal at: &lt;a href=&quot;https://events.sa-meetings.com/DTCTeamPortal/&quot;&gt;https://events.sa-meetings.com/DTCTeamPortal/&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;For more information on the challenge, see:&amp;nbsp;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://triagechallenge.darpa.mil/&quot;&gt;https://triagechallenge.darpa.mil/&lt;/a&gt;&amp;nbsp;or contact&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;mailto:TriageChallenge@darpa.mil&quot;&gt;TriageChallenge@darpa.mil&lt;/a&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">1a842ffe-e1bb-43b8-ae2f-4b77529ca3a1</guid>
+</item>
+
+<item>
+  <title>Join the DARPA Triage Challenge! Deadline for registration: Monday 13 November, 2023</title>
+  <link>https://triagechallenge.darpa.mil/</link>
+  <pubDate>18 Oct 2023 11:10 -0400</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Defense Advanced Research Projects Agency (DARPA), a research and development agency within the Department of Defense, is seeking competitors for a new medical response challenge. The DARPA Triage Challenge aims to drive breakthrough innovations that improve medical response time during mass casualty incidents in complex military and civilian settings, especially when medical resources are limited relative to the need. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The challenge includes a series of technical challenge events to drive breakthrough innovations in the identification of physiological features (signatures) of injury, and help medical responders perform scalable, timely, and accurate triage. The challenge has two primary triage competitions&amp;nbsp;&amp;ndash; Systems and Virtual &amp;ndash; and a secondary triage Data competition. The Systems and Virtual competitions focus on stand-off sensing of physiological data using autonomous platforms &amp;ndash; uncrewed aerial and ground vehicles &amp;ndash; during primary triage. Competitors will conduct real-time sensor data analysis to identify casualties for urgent hands-on evaluation by medical personnel. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Relevant to the PhysioNet community, the Data competition seeks to identify physiological signatures of injury derived from data captured by non-invasive sensors (contact-based or stand-off). Such advances could accelerate responders&amp;rsquo; anticipatory decisions and prioritization for medical care during secondary triage. Competitors will attempt to develop algorithms that detect signatures in these data streams to provide decision support appropriate for austere and complex pre-hospital settings. Of particular interest are early signatures indicating a need for life-saving interventions against conditions that medics are trained and equipped to treat during secondary triage, such as hemorrhage and airway injuries.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Data competition will use DARPA-provided de-identified, multi-modal physiological data from trauma patients across diverse settings and cohorts provided by the DARPA Research&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;Infrastructure for Trauma with Medical Observations effort. Data types include, but are not limited, to: photoplethysmography (PPG) waveforms, medical procedures, imaging results and video footage during prehospital helicopter transport and in the trauma bay.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Prizes for year one: &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Systems Competition: Up to $200K Prize pool&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Virtual Competition: Up to $100K Prize pool&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Data Competition: Up to $200K Prize pool&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;Total Prizes $7M over three challenges &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;DARPA is currently seeking self-funded competitors. Join us by registering on the &lt;/span&gt;&lt;a href=&quot;https://events.sa-meetings.com/DTCTeamPortal/&quot;&gt;&lt;span&gt;Qualification Portal&lt;/span&gt;&lt;/a&gt;&lt;span&gt;, now through Nov. 13, 2023.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;For more information visit &lt;/span&gt;&lt;a href=&quot;https://triagechallenge.darpa.mil/&quot;&gt;&lt;span&gt;the DARPA Triage Challenge website&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">d2fea3bc-c163-4a60-9064-fa4d0b6d1652</guid>
+</item>
+
+<item>
+  <title>Call for partners interested in synthetic patient data</title>
+  
+  <pubDate>27 Sep 2023 15:44 -0400</pubDate>
+  <description>&lt;p&gt;The Google Research team is looking for partners to understand the needs and requirements for synthetic data. They have capabilities to generate both structured and unstructured patient data as well as images for infrastructure testing and medical research. Please &lt;a href=&quot;/about/#contact_us&quot;&gt;contact us&lt;/a&gt; if you are interested in the partnership.&lt;/p&gt;</description>
+  <guid isPermaLink="false">9a1531ed-ffd1-494e-8986-e054bbecebec</guid>
+</item>
+
+<item>
+  <title>MIMIC-IV-ECG module released</title>
+  
+  <pubDate>15 Sep 2023 16:14 -0400</pubDate>
+  <description>&lt;p&gt;The&amp;nbsp;&lt;a href=&quot;/content/mimic-iv-ecg/1.0/&quot; title=&quot;https://physionet.org/content/mimic-iv-ecg/0.1/&quot;&gt;MIMIC-IV-ECG&lt;/a&gt;&amp;nbsp;module is now available. This module contains approximately 800,000 diagnostic electrocardiograms across nearly 160,000 unique patients. The vast majority of ECGs for patients who appear in the MIMIC-IV Clinical Database are included. The patients in MIMIC-IV-ECG have been matched against the MIMIC-IV Clinical Database, making it possible to link to information across the MIMIC-IV modules. When a cardiologist report is available for a given ECG, we provide information for linking to it.&lt;/p&gt;</description>
+  <guid isPermaLink="false">19c5785e-2a65-4cba-8170-2d661d27b5fe</guid>
+</item>
+
+<item>
+  <title>FFA-IR dataset is unavailable until further notice</title>
+  
+  <pubDate>6 Sep 2023 15:48 -0400</pubDate>
+  <description>&lt;p&gt;The authors of the &lt;a href=&quot;https://doi.org/10.13026/ccbh-z832&quot;&gt;FFA-IR dataset&lt;/a&gt;&amp;nbsp;have asked for downloads to be disabled until further notice to adhere with local policy changes. We apologize for the inconvenience and hope to make the files available again in the future.&lt;/p&gt;</description>
+  <guid isPermaLink="false">68a5c87d-121b-4f0d-98d3-a75c186dcefb</guid>
+</item>
+
+<item>
+  <title>I-CARE is now available on Google Cloud</title>
+  <link>https://physionet.org/content/i-care/2.0/#files</link>
+  <pubDate>22 Jun 2023 13:23 -0400</pubDate>
+  <description>&lt;p&gt;&lt;a href=&quot;https://doi.org/10.13026/avek-0p97&quot;&gt;I-CARE v.2.0&lt;/a&gt; is now available on Google Cloud. For details on downloading the dataset or working with it directly in the cloud, see the &lt;a href=&quot;/content/i-care/2.0/#files&quot;&gt;Files section&lt;/a&gt; of the project description.&lt;/p&gt;</description>
+  <guid isPermaLink="false">c4cdd706-8443-42e8-a9b9-b386b683ab2b</guid>
+</item>
+
+<item>
+  <title>Announcing CXR-LT, a competition for long-tailed disease classification on chest X-rays</title>
+  <link>https://bionlplab.github.io/2023_ICCV_CVAMD/</link>
+  <pubDate>21 Jun 2023 09:47 -0400</pubDate>
+  <description>&lt;p&gt;We are pleased to announce &lt;a href=&quot;https://doi.org/10.13026/721s-vs37&quot;&gt;CXR-LT, a competition on Multi-Label Long-Tailed Classification on Chest X-Rays&lt;/a&gt;. Many real-world problems, including diagnostic medical imaging exams, are &amp;ldquo;long-tailed&amp;rdquo;: there are a few common findings followed by more relatively rare conditions. This competition will provide a challenging large-scale multi-label long-tailed learning task on chest X-rays (CXRs), encouraging community engagement with this emerging interdisciplinary topic.&lt;/p&gt;
+
+&lt;p&gt;CXR-LT is organized as a shared task for the workshop on &lt;a href=&quot;https://cvamd2023.github.io/&quot;&gt;Computer Vision for Automated Medical Diagnosis (CVAMD)&lt;/a&gt;&amp;nbsp;held in association with the &lt;a href=&quot;https://iccv2023.thecvf.com/)&quot;&gt;International Conference on Computer Vision (ICCV) 2023&lt;/a&gt;. Participants will be invited to submit their solutions for publication presentation at CVAMD 2023 and publication in the ICCV 2023 workshop proceedings.&lt;/p&gt;
+
+&lt;p&gt;The challenge uses an expanded version of &lt;a href=&quot;/content/mimic-cxr-jpg/2.0.0/&quot;&gt;MIMIC-CXR-JPG v2.0.0&lt;/a&gt;, a large benchmark dataset for automated thorax disease classification. Each CXR study in the dataset was labeled with 12 newly added disease findings extracted from the associated radiology reports. The resulting long-tailed (LT) dataset contains 377,110 CXRs, each labeled with at least one of 26 clinical findings (including a &amp;quot;No Finding&amp;quot; class).&lt;/p&gt;
+
+&lt;h3&gt;Important dates&lt;/h3&gt;
+
+&lt;p&gt;05/01/2023: Development Phase begins. Participants can begin making submissions and tracking results on the public leaderboard.&lt;br&gt;
+07/14/2023: Testing Phase begins. Unlabeled test data will be released to registered participants. The leaderboard will be kept private for this phase.&lt;br&gt;
+07/17/2023: Competition ends. Participants are invited to submit their solutions as 8-page papers to ICCV CVAMD 2023!&lt;br&gt;
+07/28/2023: ICCV CVAMD 2023 submission deadline. (Competition participants may receive an extension if needed.)&lt;br&gt;
+08/11/2023: ICCV CVAMD 2023 acceptance notification.&lt;br&gt;
+10/06/2023: ICCV CVAMD 2023 workshop.&lt;br&gt;
+&lt;br&gt;
+This competition is supported in part by the Artificial Intelligence Journal (AIJ). For any questions, please contact&amp;nbsp;&lt;a href=&quot;mailto:cxr.lt.competition.2023@gmail.com&quot;&gt;cxr.lt.competition.2023@gmail.&lt;wbr&gt;&lt;/wbr&gt;com&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">3bdd385d-590b-44ff-a6da-bf7279ca57fc</guid>
+</item>
+
+<item>
+  <title>I-CARE will shortly be available on Google Cloud</title>
+  
+  <pubDate>20 Jun 2023 12:07 -0400</pubDate>
+  <description>&lt;p&gt;We are aware that downloading the I-CARE dataset from PhysioNet is currently slow and we apologize for the inconvenience. To resolve this issue, we are currently transferring the dataset to Google Cloud. Once the transfer is complete, the dataset can be analyzed directly in the cloud or downloaded using &lt;a href=&quot;https://cloud.google.com/storage/docs/gsutil&quot;&gt;Google Cloud Utilities&lt;/a&gt;. Please check here for updates.&lt;/p&gt;</description>
+  <guid isPermaLink="false">b709a0ed-f587-4fa2-a86d-f382759f0c0a</guid>
+</item>
+
+<item>
+  <title>Google Health collaborate with PhysioNet to release open-source medical foundation models</title>
+  <link>https://ai.googleblog.com/2023/04/robust-and-efficient-medical-imaging.html</link>
+  <pubDate>25 Apr 2023 22:56 -0400</pubDate>
+  <description>&lt;p&gt;We are excited to announce the release of &lt;a href=&quot;https://doi.org/10.13026/psq3-vj24&quot;&gt;Medical AI Research Foundations&lt;/a&gt; &amp;mdash; a repository of open-source medical foundation models and a collaboration between &lt;a href=&quot;https://health.google/&quot;&gt;Google Health&lt;/a&gt; and PhysioNet. Our goal in releasing this collection of resources is to accelerate medical AI research and to democratize access to foundational medical AI models.&lt;/p&gt;
+
+&lt;p&gt;We are seeding &lt;u&gt;Medical AI Research Foundations with&lt;/u&gt; REMEDIS models for chest X-ray and pathology (with related &lt;a href=&quot;https://github.com/google-research/medical-ai-research-foundationshttps://github.com/google-research/medical-ai-research-foundations&quot;&gt;&lt;u&gt;Github&lt;/u&gt;&lt;/a&gt; code). We expect to add more models and resources for training medical foundation models such as datasets and benchmarks in the future. We also welcome contributions from the medical AI research community.&lt;/p&gt;</description>
+  <guid isPermaLink="false">5d5991c0-9b27-4fab-b171-1af1922f5f9a</guid>
+</item>
+
+<item>
+  <title>Responsible use of MIMIC data with online services like GPT</title>
+  
+  <pubDate>18 Apr 2023 15:07 -0400</pubDate>
+  <description>&lt;p&gt;We have received inquiries regarding the use of credentialed data (MIMIC-III, MIMIC-IV, MIMIC-CXR)&amp;nbsp;with online services such as GPT. The &lt;a href=&quot;../../../../about/licenses/physionet-credentialed-health-data-license-150/&quot;&gt;PhysioNet Credentialed&amp;nbsp;Data Use Agreement&lt;/a&gt; explicitly prohibits sharing access to the data with third parties, including sending it through APIs provided by companies like OpenAI, or using it in online platforms like ChatGPT.&lt;/p&gt;
+&lt;p&gt;If you are interested in using the GPT family of models, we suggest using one of the following services:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/&quot;&gt;Azure OpenAI service&lt;/a&gt;. You&#x27;ll need to opt out of human review of the data via &lt;a href=&quot;https://aka.ms/oai/additionalusecase&quot;&gt;this form&lt;/a&gt;.&amp;nbsp;Reasons for opting out are:&amp;nbsp;1)&amp;nbsp;you are processing sensitive data where the&amp;nbsp;likelihood of harmful outputs and/or misuse is low, and 2)&amp;nbsp;you do not have the right to permit Microsoft to process the data for abuse detection due to the data use agreement you have signed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/bedrock/&quot;&gt;Amazon Bedrock&lt;/a&gt;. Bedrock provides options for fine-tuning foundation models using private labeled data. After creating a copy of a base foundation model for exclusive use, data is not shared back to the base model for training.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/vertex-ai?hl=en/&quot;&gt;Google&#x27;s Gemini&lt;/a&gt;&amp;nbsp;via Vertex AI on Google Cloud Platform. Gemini doesn&#x27;t use your prompts or its responses as data to train its models. If making use of additional features offered through the Gemini for &lt;a href=&quot;https://cloud.google.com/gemini-for-cloud/ttp/welcome&quot;&gt;Google Cloud Trusted Tester Program&lt;/a&gt;, you should obtain the appropriate opt-outs for data sharing, or otherwise not perform tasks that require the sharing of data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.anthropic.com/claude&quot;&gt;Anthropic Claude&lt;/a&gt;. Claude does not use your prompts or its responses as data to train its models by default, and routine human review of data is not performed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have any questions about this policy, feel free to reach out:&amp;nbsp;&lt;a href=&quot;../../../../about/#contact_us&quot;&gt;https://physionet.org/about/#contact_us&lt;/a&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">dd9c7747-47fa-40c4-b67a-a2ef731d4ca5</guid>
+</item>
+
+<item>
+  <title>Opportunity to join the KCL EnPRO Lab on a music-physiology data science PhD scholarship</title>
+  
+  <pubDate>17 Apr 2023 09:27 -0400</pubDate>
+  <description>&lt;p&gt;The EnPRO Lab in the Department of Engineering and School of Biomedical Engineering &amp;amp; Imaging Sciences at King&amp;#39;s College London is looking to fill a music-physiology data science doctoral scholarship which is now open to international applicants for October 2023 entry. The successful applicant will join the research team of the ERC COSMOS project (&lt;a href=&quot;https://cosmos.isd.kcl.ac.uk/&quot; title=&quot;https://cosmos.isd.kcl.ac.uk&quot;&gt;cosmos.isd.kcl.ac.uk&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The research investigates the impact of music expressivity on the autonomic nervous system. The project focuses on developing individualized, explanatory computational models for modulating autonomic responses through music that can be used in digital therapeutics for cardiovascular health. The scientific approach will be based on studying the interactions between musical prosody (acoustic variations introduced in musical communication) and autonomic parameters such as heart rate, heart rate variability, respiration, and blood pressure. The methods build on software tools developed in the COSMOS project.&lt;/p&gt;
+
+&lt;p&gt;The research activities will include study design, ethics application, data collection, data processing, computational modelling, and analysis and interpretation of results, and disseminating results through publications and conference presentations.&amp;nbsp;The ideal candidate will be knowledgeable in Python, Matlab, or R, and have a Bachelors or Masters degree in&amp;nbsp;biomedical engineering, mathematical and computational sciences, music information research, or a related discipline. Experience in analysis of biosignals and/or music signals, or industrial experience is desirable.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Funding is available for 3.5 years, covers fees and stipend, and standard computing/travel support. For further details, please see the&amp;nbsp;&lt;a href=&quot;https://www.findaphd.com/phds/project/digital-music-therapeutics-for-precision-cardiovascular-medicine/?p153116&quot; title=&quot;https://www.findaphd.com/phds/project/digital-music-therapeutics-for-precision-cardiovascular-medicine/?p153116&quot;&gt;job posting&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">ff0135f9-7e7a-4a18-a4a5-43b25b7ad926</guid>
+</item>
+
+<item>
+  <title>Competition announced: Detecting Parkinson&#x27;s freezing of gait using wearable sensor data</title>
+  <link>https://www.kaggle.com/competitions/tlvmc-parkinsons-freezing-gait-prediction</link>
+  <pubDate>28 Mar 2023 21:44 -0400</pubDate>
+  <description>&lt;p&gt;An estimated 7 to 10 million people around the world have Parkinson&amp;rsquo;s disease, many of whom suffer from freezing of gait (FOG). FOG are unpredictable, unexpected, involuntary episodic events. During a FOG episode, patients report that their feet are inexplicably &amp;ldquo;glued&amp;rdquo; to the ground, preventing them from moving forward despite their attempts.&lt;/p&gt;
+
+&lt;p&gt;PhysioNet contributor Jeff Hausdorff and his colleagues at the Tel Aviv Sourasky Medical Center, KU Leuven, and Harvard Medical School, have contributed a large dataset to a machine learning contest that was recently launched to automatically detect FOG episodes and to address the shortcomings of existing methods.&lt;/p&gt;
+
+&lt;p&gt;This work has the potential to help advance the evaluation, understanding, and treatment of FOG, and, ultimately, to improve the lives of the many people who suffer from this debilitating Parkinson&amp;rsquo;s disease symptom. To join the competition, visit &lt;a href=&quot;https://www.kaggle.com/competitions/tlvmc-parkinsons-freezing-gait-prediction&quot;&gt;Kaggle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Timeline&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;June 1, 2023&lt;/strong&gt;: Entry Deadline. You must accept the competition rules before this date in order to compete.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;June 1, 2023&lt;/strong&gt;: Team Merger Deadline. This is the last day participants may join or merge teams.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;June 8, 2023&lt;/strong&gt;: Final Submission Deadline.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Prizes&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;1st Place: $40,000&lt;/li&gt;
+	&lt;li&gt;2nd Place: $25,000&lt;/li&gt;
+	&lt;li&gt;3rd Place: $20,000&lt;/li&gt;
+	&lt;li&gt;4th Place: $10,000&lt;/li&gt;
+	&lt;li&gt;5th Place: $5,000&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <guid isPermaLink="false">cfab680f-aa9b-45f1-80be-afd99433409b</guid>
+</item>
+
+<item>
+  <title>Toronto Health Datathon (23-24 February 2023)</title>
+  <link>https://datathon.healthdatanexus.ai/</link>
+  <pubDate>10 Mar 2023 11:22 -0500</pubDate>
+  <description>&lt;p&gt;Over 45 students, academics, clinicians, and engineers gathered at the Google Canada offices on 23-24 February for the &lt;a href=&quot;https://datathon.healthdatanexus.ai/&quot;&gt;Toronto Health Datathon 2023&lt;/a&gt;. Participants used anonymized real-world data from &lt;a href=&quot;https://healthdatanexus.ai/&quot;&gt;Health Data Nexus&lt;/a&gt; to develop machine learning models aimed at solving real-world problems facing Canadian healthcare.&lt;/p&gt;
+
+&lt;p&gt;Over the past two years, PhysioNet has been collaborating with Temerty Centre for Artificial Intelligence Research and Education in Medicine (&lt;a href=&quot;https://tcairem.utoronto.ca/&quot;&gt;T-CAIREM&lt;/a&gt;) at the University of Toronto to develop the software that underpins both Health Data Nexus and PhysioNet. We look forward to continuing this collaboration, working towards tight integration between the two platforms.&lt;/p&gt;</description>
+  <guid isPermaLink="false">7cd24024-6541-4c04-9f68-5267fbcf091f</guid>
+</item>
+
+<item>
+  <title>Tokyo Datathon on Machine Learning in Healthcare (1-3 Sept 2023)</title>
+  
+  <pubDate>9 Mar 2023 11:13 -0500</pubDate>
+  <description>&lt;p&gt;We are excited to be supporting the 3rd Tokyo Datathon on Machine Learning in Healthcare, co-organized by Tokyo Medical and Dental University and MIT Critical Data. The event will be held on 1-3 September 2023 and will bring together experts from across healthcare and data science to tackle clinical questions.&lt;/p&gt;
+
+&lt;p&gt;Registration and event details will be posted on the &lt;a href=&quot;https://datathon-japan.jp/2023tokyo/&quot;&gt;Datathon Website&lt;/a&gt;. If you are a Japanese-language speaker with experience with the MIMIC dataset and would be interested in helping as a mentor at the event, please reach out to &lt;a href=&quot;mailto:lceli@mit.edu?subject=Tokyo%20Datathon&quot;&gt;Leo Anthony Celi&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">b75c079c-fa6f-40fd-95cf-af3b9fee0137</guid>
+</item>
+
+<item>
+  <title>PhysioNet 2023 Challenge Opening</title>
+  <link>https://physionetchallenges.org/2023/</link>
+  <pubDate>22 Feb 2023 11:34 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;We are delighted to announce the opening of the&amp;nbsp;&lt;a href=&quot;https://physionetchallenges.org/2023/&quot;&gt;George B. Moody PhysioNet Challenge 2023&lt;/a&gt;. This year&amp;rsquo;s Challenge invites teams to use&amp;nbsp;electroencephalogram (EEG) recordings&amp;nbsp;to predict the neurological recovery of patients from coma in the hours following resuscitation from cardiac arrest. This Challenge leverages a&amp;nbsp;&lt;u&gt;&lt;a href=&quot;/content/i-care/1.0/&quot;&gt;novel database&lt;/a&gt;&lt;/u&gt;&amp;nbsp;of over 1,000 subjects from seven hospitals who together underwent over 50,000 hours of EEG monitoring.&amp;nbsp;As always, the team with the best score for this task on the hidden test set wins the Challenge.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;span&gt;&lt;span&gt;&lt;span&gt;We have shared&amp;nbsp;&lt;u&gt;&lt;a href=&quot;/content/i-care/1.0/#description&quot;&gt;data&lt;/a&gt;&lt;/u&gt;, example code, and&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://github.com/physionetchallenges/evaluation-2023&quot;&gt;scoring&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&amp;nbsp;code in both&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://github.com/physionetchallenges/matlab-example-2023&quot;&gt;MATLAB&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&amp;nbsp;and&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://github.com/physionetchallenges/python-example-2023&quot;&gt;Python&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;, and we will open the scoring system in the coming weeks.&amp;nbsp;As in previous years, we have divided the Challenge into two phases: an unofficial phase and an official phase. The unofficial phase solicits feedback from the research community (i.e., you) to help us to improve the Challenge for the official phase, so we require teams to register and participate in the unofficial phase of the Challenge to be eligible for a prize. Please enter early and often &amp;ndash; we need you to look for and share the quirks in our data, our scoring system, and otherwise.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;span&gt;&lt;span&gt;&lt;span&gt;Please see the Challenge website and the Challenge forum for more information, rules and deadlines:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://physionetchallenges.org/2023/&quot;&gt;&lt;span&gt;https://physionetchallenges.org/2023/&lt;/span&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;https://groups.google.com/g/physionet-challenges/&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;span&gt;&lt;span&gt;&lt;span&gt;Many thanks again for your continued support of this event, and we hope that you enjoy the 2023 Challenge.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">ef4a0828-4cd7-479f-841f-e9aa780415c8</guid>
+</item>
+
+<item>
+  <title>Dataworks! Prizes Awarded to PhysioNet Challenge and MIT Critical Data teams</title>
+  <link>https://datascience.nih.gov/director/directors-blog-dataworks-winners-2023</link>
+  <pubDate>22 Feb 2023 11:32 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;We are delighted&amp;nbsp;to announce&amp;nbsp;that the&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__http:/physionetchallenges.org/__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcH89D-24w$&quot;&gt;&lt;span&gt;George B. Moody PhysioNet Challenges&lt;/span&gt;&lt;/a&gt;&amp;nbsp;were awarded the &amp;quot;Distinguished Achievement Award for&amp;nbsp;Data&amp;nbsp;Reuse,&amp;nbsp;as part of the&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__https:/nexus.od.nih.gov/all/2022/06/06/dataworks-prize-incentives-for-building-a-culture-of-data-sharing-and-reuse/__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcFVbadeEg$&quot;&gt;&lt;span&gt;DataWorks! Prize&lt;/span&gt;&lt;/a&gt;, while &lt;a href=&quot;https://criticaldata.mit.edu/&quot;&gt;&lt;span&gt;MIT Critical Data&lt;/span&gt;&lt;/a&gt; was awarded &amp;quot;Significant Achievement Award for Data Sharing&amp;quot;.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Launched on May 11, 2022,&amp;nbsp;the Data Works! Prize was created in&amp;nbsp;partnership between the NIH Office of&amp;nbsp;Data&amp;nbsp;Science Strategy and the Federation of American Societies for Experimental Biology (FASEB) to&amp;nbsp;highlight the&amp;nbsp;critical&amp;nbsp;role of&amp;nbsp;data&amp;nbsp;sharing and reuse in scientific discovery.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://urldefense.com/v3/__https:/physionet.org/news/post/355__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcEj3VJzZw$&quot;&gt;&lt;span&gt;George B. Moody&lt;/span&gt;&lt;/a&gt;&amp;nbsp;designed and led the Challenges from 2000 to 2015.&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__http:/gdclifford.info/__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcHThgtz5w$&quot;&gt;&lt;span&gt;Prof. Clifford&lt;/span&gt;&lt;/a&gt;&amp;nbsp;has led the Challenges since 2015 and has been a key contributor to its parent resource,&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__https:/physionet.org/__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcHbL13zlQ$&quot;&gt;&lt;span&gt;PhysioNet&lt;/span&gt;&lt;/a&gt;&amp;nbsp;(The Research Resource for Complex Physiologic Signals), for over two decades.&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__https:/reynalab.org/__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcE-3E9P5w$&quot;&gt;&lt;span&gt;Prof. Reyna&lt;/span&gt;&lt;/a&gt;&amp;nbsp;has co-led the&amp;nbsp;PhysioNet Challenges since 2019, and has been instrumental in the development of its repeatable science standards.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;https://criticaldata.mit.edu/&quot;&gt;&lt;span&gt;MIT Critical Data&lt;/span&gt;&lt;/a&gt;, led by the Laboratory for Computational Physiology, builds communities around the world across disciplines to derive knowledge from data routinely collected in the process of care in order to understand health and disease better, and in the local context. Its flagship project is the Medical Information Mart for Intensive Care, or the MIMIC database.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;More on the&amp;nbsp;DataWorks! Prize here: &lt;a href=&quot;https://datascience.nih.gov/director/directors-blog-dataworks-winners-2023&quot;&gt;&lt;span&gt;https://datascience.nih.gov/director/directors-blog-dataworks-winners-2023&lt;/span&gt;&lt;/a&gt; and the PhysioNet Challenges here:&amp;nbsp;&lt;a href=&quot;https://urldefense.com/v3/__https:/physionetchallenges.org/faq__;!!AIv8Mrc!-AvPGw3K6GzFWr-6vqaiK0A9Icy_GrmqJVXn7U5JN1zo-71DhrhTR4ifYiNz1LOdF03PIo4uvYBBJLIjUcGO2HoOpQ$&quot;&gt;&lt;span&gt;https://physionetchallenges.org/faq&lt;/span&gt;&lt;/a&gt; and MIT Critical Data here: &lt;a href=&quot;https://criticaldata.mit.edu/&quot;&gt;&lt;span&gt;https://criticaldata.mit.edu/&lt;/span&gt;&lt;/a&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;PhysioNet and MIMIC are supported by the National Institute of Biomedical Imaging and Bioengineering.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">1234708c-8f66-4b9c-9d16-582b257fee6c</guid>
+</item>
+
+<item>
+  <title>Opportunity to join the UCSF Hypoxia Lab as Data Analyst</title>
+  <link>https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&amp;siteid=5861#jobDetails=3342577_5861</link>
+  <pubDate>8 Feb 2023 14:30 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Our colleagues at UCSF Department of Anesthesia, The UCSF Hypoxia Lab (hypoxialab.org) and the UCSF Center for Health Equity in Surgery and Anesthesia (chesa.ucsf.edu) are seeking a full-time Data Analyst (with data engineering skills) to join their Open Oximetry project. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;This project seeks to understand the potential impact of skin color on accuracy of pulse oximetry and other medical diagnostic devices. The Data Analyst will work at the intersection of health diagnostics, health equity and AI in the world&amp;rsquo;s leading lab (hypoxialab.org) for this type of research along with a team of experts who have published some of the seminal research on this topic. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;As part of the project, the team will be setting up robust data collection systems in the lab and the hospital settings as well as creating and managing an open access data repository for diagnostics device data. This repository will contain data from our lab as well as data from collaborating study groups. The data will be shared via portals that facilitate raw data utilization for researchers and industry, as well as visualized data to help lay persons and consumers better understand device technology performance and standards. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Data Analyst will work closely with the laboratory-based clinical research team to gather, analyze, and interpret a wide variety of research data; Design and conduct research including selecting data, developing research instruments, analyzing collected information according to established statistical methods, and developing recommendations based on research findings; Prepare reports, charts, tables, and other visual aids to interpret and communicate data and results; Create and manage data repositories; work with our AI/ML team to test novel analytic methods with our data. The ideal candidate will be k&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;nowledgeable in SQL and Python or R and have a Bachelors or Masters degree in Statistics, Data Science, or adjacent technical field. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;This position is for a period of 12 months, though may be longer contingent on further funding. For further details, see the &lt;a href=&quot;https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&amp;amp;siteid=5861#jobDetails=3342577_5861&quot;&gt;job posting&lt;/a&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">745e3eeb-344f-4170-a3b0-3f3f1218f98d</guid>
+</item>
+
+<item>
+  <title>BioNLP Workshop 2023: Problem List Summarization</title>
+  
+  <pubDate>19 Jan 2023 13:03 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;We are excited to announce the launch of a shared task on problem list summarization at the BioNLP Workshop 2023. The goal for participants is to generate a list of diagnoses and problems in a patient&amp;rsquo;s daily care plan using input from the provider&amp;rsquo;s progress notes during hospitalization. The task contains 768 progress notes for training, and 300 progress notes for evaluation. The goal of this shared task is to attract future research efforts in building NLP models for real-world decision support applications, where a system generating relevant and accurate diagnoses will assist the healthcare providers&amp;rsquo; decision-making process and improve the quality of care for patients. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Participants will be tasked with developing NLP systems for EHR summarization. Participants who design novel systems and achieve competitive performance in the shared task, running from January to April 2023, will be invited to present their results at the BioNLP Workshop, which will be held in Toronto, Canada and co-located with ACL 2023. The challenge is open to anyone interested in clinical NLP and medical AI. We encourage individuals, teams, and organizations to participate. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;To register for the challenge, please visit: &lt;a href=&quot;https://forms.gle/geTXN6Z1pyfC55Fn8&quot;&gt;https://forms.gle/geTXN6Z1pyfC55Fn8&lt;/a&gt;. More information about the challenge, including the official rules and guidelines, can be found at:&amp;nbsp;&lt;a href=&quot;/content/bionlp-workshop-2023-task-1a/1.0.0/&quot;&gt;https://physionet.org/content/bionlp-workshop-2023-task-1a/.&lt;/a&gt; You are welcome to join our google discussion group for newest update: &lt;a href=&quot;https://groups.google.com/g/bionlp2023problemsumm&quot;&gt;https://groups.google.com/g/bionlp2023problemsumm&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">2ea95a76-c667-43c2-a60d-8ea84d89491c</guid>
+</item>
+
+<item>
+  <title>SOAP Note Tagging and Problem List Summarization dataset: Files unavailable until July 13th, 2023</title>
+  
+  <pubDate>19 Jan 2023 12:59 -0500</pubDate>
+  <description>&lt;p&gt;The SOAP Note Tagging and Problem List Summarization dataset dataset is temporarily unavailable as it is part of an ongoing shared task of BioNLP Workshop 2023: 1A (Problem List Summarization). The dataset will be made available on July 13th, 2023. More details about the workshop and shared task can be found at: &lt;a href=&quot;https://doi.org/10.13026/s8wk-ja78&quot;&gt;https://doi.org/10.13026/s8wk-ja78&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We apologize for any inconvenience this may cause and appreciate your understanding. We will provide updates as soon as more information becomes available. A new test set with 300 progress notes will be released along with the original set of 768 notes when the embargo is lifted. If you are interested in signing up the shared task, register here:&amp;nbsp;&lt;a href=&quot;https://forms.gle/geTXN6Z1pyfC55Fn8&quot;&gt;https://forms.gle/geTXN6Z1pyfC55Fn8&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">c893f4bd-4e8d-4b74-a82e-d8f49f34d33c</guid>
+</item>
+
+<item>
+  <title>MIMIC-IV-ECG module released to consortium members</title>
+  
+  <pubDate>23 Dec 2022 15:02 -0500</pubDate>
+  <description>&lt;p&gt;A beta release of the&amp;nbsp;&lt;a href=&quot;/content/mimic-iv-ecg/0.1/&quot;&gt;MIMIC-IV-ECG&lt;/a&gt;&amp;nbsp;module is now available to &lt;a href=&quot;http://criticaldata.mit.edu/consortium/&quot;&gt;MIT Critical Data Consortium&lt;/a&gt; members. The MIMIC-IV-ECG module contains approximately 800,000 diagnostic electrocardiograms across nearly 160,000 unique patients. All of the ECGs for patients who appear in the MIMIC-IV Clinical Database are included. When a cardiologist report is available for a given ECG, it is also provided. The patients in MIMIC-IV-ECG have been matched against the MIMIC-IV Clinical Database, making it possible to link to information across the MIMIC-IV modules.&lt;/p&gt;
+
+&lt;p&gt;A public version of this dataset will be released in approximately six months. During the embargo period we will be carrying out additional tests and data quality checks.&lt;/p&gt;</description>
+  <guid isPermaLink="false">4725c52f-6d96-4d21-9582-3b07af0e50ca</guid>
+</item>
+
+<item>
+  <title>Support Our Colleagues in the NIH DataWorks Challenge!</title>
+  <link>https://www.herox.com/dataworks</link>
+  <pubDate>6 Dec 2022 13:18 -0500</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Congratulations to our colleagues who have been selected as finalists for the National Institutes of Health DataWorks Challenge!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Please support one of these teams working to share and reuse data in research and scientific discovery (The link will take you directly to the page to submit a vote). Voting is open until December 21, 2022.&amp;nbsp; Unfortunately, you may only vote for one team, but they can both be awarded prizes.&amp;nbsp; Please share and promote awareness to increase our colleagues&amp;rsquo; chances!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.herox.com/dataworks/round/2457/entry/41104&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;MIT Critical Data&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.herox.com/dataworks/round/2457/entry/41104&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.herox.com/dataworks/round/2457/entry/41104&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;MIT Critical Data builds communities across disciplines to derive knowledge from health records to understand health and disease better. Help them continue to build valuable research resources such as &lt;a href=&quot;https://mimic.mit.edu&quot;&gt;MIMIC &lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&amp;nbsp;and freely accessible educational resources.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.herox.com/dataworks/round/2457/entry/41376&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;PhysioNet Challenges&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;span&gt;&lt;span&gt;&lt;span&gt;https://www.herox.com/dataworks/round/2457/entry/41376&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The PhysioNet Challenges are annual data science competitions that ask what we can learn from data to improve health and healthcare. Help the team draw out unrealized value from data and advance data reuse and algorithm development.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&lt;span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The Federation of American Societies for Experimental Biology (FASEB) and the National Institutes of Health (NIH) are championing a bold vision of data sharing and reuse. &lt;a href=&quot;https://nexus.od.nih.gov/all/2022/06/06/dataworks-prize-incentives-for-building-a-culture-of-data-sharing-and-reuse/&quot;&gt;The DataWorks! Prize&lt;/a&gt; fuels this vision with an annual challenge that showcases the benefits of research data management while recognizing and rewarding teams whose research demonstrates the power of data sharing or reuse practices to advance scientific discovery and human health.&amp;nbsp; The future of biological and biomedical research hinges on researchers&amp;rsquo; ability to share and reuse data. Sharing and reuse had a sizable, catalytic impact on the development of COVID-19 vaccines and treatment protocols. The DataWorks! Prize is an opportunity for the research community to share their stories about the practices, big and small, that lead to scientific discovery.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">1a6c3031-58de-41df-8a0b-dfd7d5a7dc56</guid>
+</item>
+
+<item>
+  <title>PhysioNet receives inaugural MIT Prize for Open Data</title>
+  <link>https://libraries.mit.edu/opendata/open-data-mit-home/mit-prize/</link>
+  <pubDate>10 Nov 2022 12:11 -0500</pubDate>
+  <description>&lt;p&gt;The PhysioNet team were recipients of the inaugural &lt;a href=&quot;https://libraries.mit.edu/opendata/open-data-mit-home/mit-prize/&quot;&gt;MIT Prize for Open Data&lt;/a&gt; in recognition of their work to support health research and education. The award - established to highlight the value of open data at MIT - was presented by School of Science Dean Nergis Mavalvala and MIT Libraries Director Chris Bourg on October 28 in the MIT Hayden Library.&lt;/p&gt;</description>
+  <guid isPermaLink="false">ed273090-86ca-48e0-b181-41fe78c68c61</guid>
+</item>
+
+<item>
+  <title>Multimodal Physiological Monitoring During Virtual Reality Piloting Tasks: CogPilot Data Challenge</title>
+  
+  <pubDate>8 Sep 2022 09:54 -0400</pubDate>
+  <description>&lt;p&gt;We are pleased to announce the &lt;a href=&quot;https://doi.org/10.13026/azwa-ge48&quot;&gt;publication of a dataset&lt;/a&gt; comprising&amp;nbsp;multimodal physiologic, flight performance, and user interaction data streams, collected as participants performed virtual-reality flight tasks of varying difficulty.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;With over an hour of highly multimodal physiological and behavioral signals collected on each of the thirty-five participants, the dataset represents a unique opportunity to develop analytics and models linking an individual&amp;rsquo;s physiology to their behavior and performance in tasks of varying difficulty.&lt;/p&gt;
+
+&lt;p&gt;More data are being collected and will be uploaded to PhysioNet periodically. The data underpins the&amp;nbsp;&lt;a href=&quot;https://pilotperformance.mit.edu&quot;&gt;CogPilot Data Challenge&lt;/a&gt;, which explores how performance measurements and physiological data can be used to assess the competency of student pilots. To participate in the CogPilot Challenge, visit: &lt;a href=&quot;https://pilotperformance.mit.edu/&quot;&gt;https://pilotperformance.mit.edu/&lt;/a&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">5b288529-1cd9-46a8-8ebf-bbff854e4606</guid>
+</item>
+
+<item>
+  <title>Announcing the MIMIC-IV Waveforms</title>
+  
+  <pubDate>9 Aug 2022 09:44 -0400</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;We are pleased to announce an initial release of a version (0.1.0) of the&amp;nbsp;&lt;a href=&quot;/content/mimic4wdb/0.1.0/&quot;&gt;MIMIC-IV-Waveform&lt;/a&gt;&amp;nbsp;module. These waveforms are a rich source of patient information - including ECG, PPG, and Blood Pressure signals - and can be linked to the clinical information in MIMIC-IV. This initial release contains 200 records from 198 patients. An upcoming release will include around 10,000 records.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;The dataset was the subject of a workshop at&amp;nbsp;&lt;a href=&quot;https://embc.embs.org/2022/&quot;&gt;IEEE EMBC&lt;/a&gt;&amp;nbsp;in July of 2022, led by&amp;nbsp;&lt;a href=&quot;https://peterhcharlton.github.io/&quot;&gt;Peter Charlton&lt;/a&gt;, which demonstrated how to use the WFDB-Python package to extract and analyze waveform features. Executable notebooks and tutorial materials are available at:&amp;nbsp;&lt;a href=&quot;https://mimic.mit.edu/docs/iv/tutorials/waveform/ieee_workshop/&quot;&gt;https://mimic.mit.edu/docs/iv/tutorials/waveform/ieee_workshop/&lt;/a&gt; .&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">ef1bf3fc-d495-487c-93bb-474ec41a67c1</guid>
+</item>
+
+<item>
+  <title>Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine</title>
+  
+  <pubDate>29 Jul 2022 16:09 -0400</pubDate>
+  <description>&lt;p&gt;&lt;a href=&quot;http://gdclifford.info/&quot;&gt;Gari Clifford&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=&quot;https://reynalab.org/&quot;&gt;Matthew Reyna&lt;/a&gt;&amp;nbsp;from Emory University and&amp;nbsp;&lt;a href=&quot;https://www.bu.edu/sph/profile/elaine-nsoesie/&quot;&gt;Elaine Nsoesie&lt;/a&gt;&amp;nbsp;from Boston University recently&amp;nbsp;published an invited viewpoint&amp;nbsp;in The Journal of&amp;nbsp;the American Medical Association on &amp;quot;&lt;a href=&quot;https://jamanetwork.com/journals/jama/article-abstract/2794258&quot;&gt;Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine&lt;/a&gt;&amp;quot;. The&amp;nbsp;viewpoint focuses on how we often use the wrong optimization targets when applying machine learning to medical data, and how we&amp;nbsp;can address this issue, and is part of the Gordon and Betty Moore Foundation&amp;#39;s&amp;nbsp;&lt;a href=&quot;https://www.moore.org/news&quot;&gt;broader series on Diagnostic Excellence&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">add37649-abcf-4c64-b67c-fc2f2fc34a05</guid>
+</item>
+
+<item>
+  <title>Server maintenance between 15-18 July 2022 (https://archive.physionet.org/ will be unavailable)</title>
+  
+  <pubDate>17 Jul 2022 20:15 -0400</pubDate>
+  <description>&lt;p&gt;Our servers at MIT are undergoing and testing and maintenance work between Friday 15th and Monday 18th July 2022. PhysioNet (&lt;a href=&quot;/&quot;&gt;https://physionet.org/&lt;/a&gt;) will remain active during this period, but some services may be affected (for example, the archive website&amp;nbsp;&lt;a href=&quot;https://archive.physionet.org/&quot;&gt;https://archive.physionet.org/&lt;/a&gt;).&lt;/p&gt;</description>
+  <guid isPermaLink="false">3b053119-7eea-4f6c-b32d-e4638187ed51</guid>
+</item>
+
+<item>
+  <title>Trust Markers with ORCID</title>
+  <link>https://info.orcid.org/a-use-case-for-trust-markers-in-orcid-records-streamlining-the-credentialing-process/</link>
+  <pubDate>30 Jun 2022 13:42 -0400</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Linking an ORCID&amp;nbsp;to your PhysioNet profile can help us to&amp;nbsp;quickly verify your identity, speeding up the process of gaining access to datasets such as MIMIC.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;When reviewing an ORCID profile, we look out for &amp;ldquo;&lt;a href=&quot;https://info.orcid.org/interpreting-the-trustworthiness-of-an-orcid-record/&quot;&gt;Trust Markers&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&amp;rdquo; which are pieces of information added to the profile by groups such publishers and employers.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;To find out more about how PhysioNet is working with ORCID, see their &lt;a href=&quot;https://info.orcid.org/a-use-case-for-trust-markers-in-orcid-records-streamlining-the-credentialing-process/&quot;&gt;blog post on how we are using the Trust Markers to streamline the data credentialing process&lt;/a&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">11f6c56d-d6fd-4057-9c49-0e2feff17a84</guid>
+</item>
+
+<item>
+  <title>Significant delays are expected to applications for credentialed access to PhysioNet.</title>
+  
+  <pubDate>7 Apr 2022 09:47 -0400</pubDate>
+  <description>&lt;p&gt;We are currently dealing with a high volume of applications for&amp;nbsp;&lt;a href=&quot;/settings/credentialing/&quot;&gt;credentialed access&lt;/a&gt;&amp;nbsp;to PhysioNet, so please expect significant delays (up to 45 days)&amp;nbsp;in the review process. We are doing our best to deal with the waitlist quickly, handling applications in the order in which they are received. To help ensure that your application is successful, please remember to:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Include a copy of your CITI training report (&lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt;&amp;nbsp;the certificate).&lt;/li&gt;
+	&lt;li&gt;Remind your reference to reply promptly when contacted.&lt;/li&gt;
+	&lt;li&gt;Check your application details are correct before submitting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;/settings/emails/&quot;&gt;Add an institutional or educational email address&lt;/a&gt;&amp;nbsp;as your primary email.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We apologize for the inconvenience. Please bear with us during this busy time!&lt;/p&gt;</description>
+  <guid isPermaLink="false">9c430715-1dd3-4022-8ee7-9d0634bd2484</guid>
+</item>
+
+<item>
+  <title>Interruption to the PhysioNet mail server between the 30th and 31st March 2022</title>
+  
+  <pubDate>31 Mar 2022 18:09 -0400</pubDate>
+  <description>&lt;p&gt;Between&amp;nbsp;Wednesday 30 March and Thursday 31 March&amp;nbsp;the PhysioNet mail server suffered an interruption. As a result,&amp;nbsp;if you attempted to register for a new account or&amp;nbsp;reset a password, you may not have received an email.&lt;/p&gt;
+
+&lt;p&gt;We&amp;nbsp;are now&amp;nbsp;in the process of resending emails, so please check your mailbox&amp;nbsp;if an expected email did not arrive. We apologize for the inconvenience and we will be taking steps to prevent similar issues issue in the future.&lt;/p&gt;</description>
+  <guid isPermaLink="false">c99ecb74-c377-417a-9942-e776c3dd0bea</guid>
+</item>
+
+<item>
+  <title>Applying for access to protected datasets such as MIMIC is now a three step process</title>
+  
+  <pubDate>18 Mar 2022 20:41 -0400</pubDate>
+  <description>&lt;p&gt;Applying for access to protected datasets such as &lt;a href=&quot;https://doi.org/10.13026/C2XW26&quot;&gt;MIMIC&lt;/a&gt; is now a three step&amp;nbsp;process:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Submit your&amp;nbsp;personal details via the &lt;a href=&quot;/settings/credentialing/&quot;&gt;&amp;quot;Credentialing&amp;quot; page of your user profile&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Submit your training report via the &lt;a href=&quot;/settings/training/&quot;&gt;&amp;quot;Training&amp;quot; page of your user profile&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Once the steps above&amp;nbsp;are complete, sign the Data Use Agreement in the &amp;quot;Files&amp;quot; section of the relevant project. You can view your signed agreements on the &lt;a href=&quot;/settings/agreements/&quot;&gt;&amp;quot;Agreements&amp;quot; page of your user profile&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The change helps us to review data access requests more efficiently and gives us the flexibility to support additional&amp;nbsp;training courses in future.&lt;/p&gt;</description>
+  <guid isPermaLink="false">1c0f9e68-1a07-4271-9b8c-074b318b238f</guid>
+</item>
+
+<item>
+  <title>Forthcoming changes to the credentialing process</title>
+  
+  <pubDate>28 Feb 2022 10:38 -0500</pubDate>
+  <description>&lt;p&gt;When applying for access to datasets such as MIMIC, you are currently required to submit a single &lt;a href=&quot;/settings/credentialing/&quot;&gt;&amp;quot;credentialing&amp;quot; application&lt;/a&gt; that allows us to check both CITI training status and identity.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;We will soon be releasing updates to PhysioNet that will require training and identity details to be submitted independently. As a result, a&amp;nbsp;new &amp;quot;Training&amp;quot; tab will be added to your &lt;a href=&quot;/settings/profile/&quot;&gt;user profile&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This change&amp;nbsp;will allow us to support different types of training for different datasets (for example, an Australian dataset may require&amp;nbsp;training on&amp;nbsp;specific issues relating to Australia). The change will also&amp;nbsp;help us to streamline the review process.&lt;/p&gt;</description>
+  <guid isPermaLink="false">277f9db3-83da-4c6c-aca3-4548c93fe258</guid>
+</item>
+
+<item>
+  <title>PhysioNet Challenge 2022 Announcement</title>
+  
+  <pubDate>31 Jan 2022 18:31 -0500</pubDate>
+  <description>&lt;p&gt;Dear Community,&lt;/p&gt;
+
+&lt;p&gt;We have two big announcements today. First, at last year&amp;rsquo;s Computing in Cardiology (CinC) Conference, the Board voted to rename the PhysioNet/Computing in Cardiology Challenges in honor of &lt;a href=&quot;/news/post/355&quot;&gt;George Moody&lt;/a&gt;, and his life-long contributions to the field, and specifically PhysioNet, the Challenges and CinC. The Challenge is now called the &amp;ldquo;The George B. Moody PhysioNet Challenge&amp;rdquo;. For consistency, we will still abbreviate this to the PhysioNet Challenge. We continue to partner with CinC, and will be awarding prizes in Finland in September this year.&lt;/p&gt;
+
+&lt;p&gt;Second, we are delighted to also announce the opening of the &lt;a href=&quot;https://moody-challenge.physionet.org/2022/&quot;&gt;George B. Moody PhysioNet Challenge 2022&lt;/a&gt;. This year&amp;rsquo;s Challenge aims to identify the presence, absence, or unclear cases of murmur waves in heart sound recordings collected from multiple auscultation locations on the body using a digital stethoscope. Building on our successful Challenge from 2016, together with our generous collaborators at the Universidade Portucalense and Universidade do Porto, we have &lt;a href=&quot;/content/circor-heart-sound/1.0.1/&quot;&gt;sourced a database&lt;/a&gt; of 5272 recordings from 1568 inhabitants of Pernambuco state, Brazil during two independent cardiac screening campaigns which were designed to support the development of a telemedicine network. More details on the data can be found in a recent publication in the &lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=9658215&quot;&gt;IEEE Journal of Biomedical and Health Informatics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Demo code in Python and MATLAB is available, and the scoring system will be open later in February - Look out for the announcement very soon!&lt;/p&gt;
+
+&lt;p&gt;See here for more information, rules and deadlines: &lt;a href=&quot;https://moody-challenge.physionet.org/2022/&quot;&gt;https://moody-challenge.physionet.org/2022/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As with previous years, we have divided the Challenge into two phases. The first (unofficial phase) is to enable the research community (i.e. you) to help us improve the Challenge. We value your input, and it is therefore compulsory to enter the Challenge in this unofficial phase (before 9th April) to be eligible for a prize. This is very important - we need your help! Please enter early and often - the score doesn&amp;rsquo;t matter and will be wiped from the board for the official phase. We need you to look for quirks in our scoring system, data formats, or anomalies in the raw data that do not make sense to you. We are not perfect, and are bandwidth-limited, and so we rely on the peer-review of our community to improve the quality of the Challenge every year. In particular, this year we strongly encourage suggestions for modifying our scoring function, which we are sure will be controversial.&lt;/p&gt;
+
+&lt;p&gt;Please note that you *must* re-register for this Challenge (using the link below) even if you competed last year and have no team changes, and to be eligible for a prize, you must submit at least one successful entry during the unofficial phase.&lt;/p&gt;
+
+&lt;p&gt;Quick links for this year&amp;#39;s Challenge:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdADXQw3OW9Kvhc4xay_ua3Q9_A8O1d-JbAoW_aS-a9RjWutw/viewform?usp=sf_link&quot;&gt;Registration form&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://groups.google.com/forum/#!forum/physionet-challenges&quot;&gt;Public discussion forum&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://moody-challenge.physionet.org/2022/#rules-and-deadlines&quot;&gt;Rules and deadlines&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;/content/circor-heart-sound/1.0.1/&quot;&gt;Data&lt;/a&gt; and &lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=9658215&quot;&gt;Data Description&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More information will be posted on &lt;a href=&quot;https://moody-challenge.physionet.org/2022/&quot;&gt;the PhysioNet Challenge website&lt;/a&gt; as it is available. Please check the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/?pli=1&quot;&gt;Challenge forum&lt;/a&gt; for real-time updates. Please also post questions and comments in the forum. However, if your question reveals information about your entry, then please email Info [at] physionetchallenge.org. We may post parts of our reply publicly if we feel that all Challengers should benefit from the information contained in our responses. We will not answer emails about the Challenge sent to other email addresses.&lt;/p&gt;
+
+&lt;p&gt;Many thanks again for your continued support of this event, and we hope that you enjoy the 2022 Challenge&lt;/p&gt;
+
+&lt;p&gt;-Gari, Matt, Ali and the PhysioNet Challenge Team&lt;/p&gt;</description>
+  <guid isPermaLink="false">92be32a3-74fc-466f-a7dd-6d4c52371329</guid>
+</item>
+
+<item>
+  <title>2020 and 2021 Challenges are complete</title>
+  
+  <pubDate>26 Jan 2022 00:00 -0500</pubDate>
+  <description>Both the 2020 Challenge and the &lt;a href=&#x27;/content/challenge-2021&#x27;&gt;2021 Challenge&lt;/a&gt;, which extended the 2020 Challenge, are now complete. The CinC articles for both Challenges are available on the CinC website &lt;a href=&#x27;https://cinc.org/archives/2020/&#x27;&gt;here&lt;/a&gt; and &lt;a href=&#x27;https://cinc.org/archives/2021/&#x27;&gt;here&lt;/a&gt;. The final scores can be found &lt;a href=&#x27;https://moody-challenge.physionet.org/2020/results/&#x27;&gt;here&lt;/a&gt;. Please cite &lt;a href=&#x27;https://iopscience.iop.org/article/10.1088/1361-6579/abc960&#x27;&gt;Perez Alday EA, Gu A, J Shah A, Robichaux C, Ian Wong AK, Liu C, Liu F, Bahrami Rad A, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD&lt;sup&gt;*&lt;/sup&gt; Reyna MA&lt;sup&gt;*&lt;/sup&gt;. Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2021 Jan 1;41(12):124003. doi: 10.1088/1361-6579/abc960&lt;/a&gt; to refer to the 2020 Challenge. Please also cite the standard &lt;a href=&#x27;https://archive.physionet.org/citations.shtml&#x27;&gt;PhysioNet citation&lt;/a&gt;. You can find followup articles to the 2020 Challenge in the &lt;a href=&#x27;https://physionet.org/content/challenge-2021&#x27;&gt;2021 Challenge&lt;/a&gt; and in the &lt;a href=&#x27;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&#x27;&gt;Journal of Physiological Measurement Focus Issue on Classification of Multilead ECGs&lt;/a&gt;.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-1</guid>
+</item>
+
+<item>
+  <title>2020 and 2021 Challenges are complete</title>
+  
+  <pubDate>26 Jan 2022 00:00 -0500</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;January 26, 2022:&lt;/strong&gt; Both the &lt;a href=&quot;/content/challenge-2020&quot;&gt;2020 Challenge&lt;/a&gt; and the 2021 Challenge, which extended the 2020 Challenge, are now complete. The CinC articles for both Challenges are available on the CinC website &lt;a href=&quot;https://cinc.org/archives/2020/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://cinc.org/archives/2021/&quot;&gt;here&lt;/a&gt;. The final scores can be found &lt;a href=&quot;https://moody-challenge.physionet.org/2021/results/&quot;&gt;here&lt;/a&gt;. Please cite &lt;a href=&quot;https://iopscience.iop.org/article/10.1088/1361-6579/abc960&quot;&gt;Perez Alday EA, Gu A, J Shah A, Robichaux C, Ian Wong AK, Liu C, Liu F, Bahrami Rad A, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD&lt;sup&gt;*&lt;/sup&gt; Reyna MA&lt;sup&gt;*&lt;/sup&gt;. Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2021 Jan 1;41(12):124003. doi: 10.1088/1361-6579/abc960&lt;/a&gt; to refer to the 2020 Challenge. Please also cite &lt;a href=&quot;/content/challenge-2021/1.02/papers/CinC2021-134.pdf&quot;&gt;Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4&lt;/a&gt; and &lt;a href=&quot;/content/challenge-2021/1.02/papers/2021ChallengePaperPMEA.pdf&quot;&gt;Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Preprint. 2022&lt;/a&gt; to refer to the 2021 Challenge. Finally, please also cite the standard &lt;a href=&quot;https://archive.physionet.org/citations.shtml&quot;&gt;PhysioNet citation&lt;/a&gt;. You can find followup articles to the &lt;a href=&quot;/content/challenge-2020&quot;&gt;2020 Challenge&lt;/a&gt; and the 2021 Challenge in the &lt;a href=&quot;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&quot;&gt;Journal of Physiological Measurement Focus Issue on Classification of Multilead ECGs&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-1</guid>
+</item>
+
+<item>
+  <title>Announcing BRAX, a Brazilian chest x-ray dataset labelled with 14 radiological findings</title>
+  <link>https://doi.org/10.13026/ae9a-f727</link>
+  <pubDate>5 Jan 2022 17:08 -0500</pubDate>
+  <description>&lt;p&gt;We are pleased to announce publication of BRAX, a Brazilian chest x-ray dataset labelled with 14 radiological findings derived from Portuguese medical reports using NLP.&amp;nbsp;BRAX contains 24,959 chest radiography exams and 40,967 images acquired in a large general Brazilian hospital.&lt;/p&gt;
+
+&lt;p&gt;Dr Eduardo Pontes Reis, co-author and Radiologist at&amp;nbsp;Hospital Israelita Albert Einstein, notes the importance of datasets&amp;nbsp;from underrepresented regions for evaluating how well clinical applications of deep learning can generalize to new populations and for reducing&amp;nbsp;the lack of geographic diversity in publicly available chest x-ray data.&lt;/p&gt;</description>
+  <guid isPermaLink="false">153cf536-a2e6-48a2-835c-b13ea756d2f5</guid>
+</item>
+
+<item>
+  <title>KURIAS-ECG is unavailable until further notice</title>
+  
+  <pubDate>30 Nov 2021 14:47 -0500</pubDate>
+  <description>&lt;p&gt;As a result of an internal audit at the Korea University Medical Center, the authors of the KURIAS-ECG dataset (&lt;a href=&quot;https://doi.org/10.13026/kga0-0270&quot;&gt;https://doi.org/10.13026/kga0-0270&lt;/a&gt;) have asked for downloads to be disabled until further notice. We apologize for the inconvenience and hope to make the files available again in the future.&lt;/p&gt;</description>
+  <guid isPermaLink="false">d22366e2-34a4-4e23-8699-bc636b0f476e</guid>
+</item>
+
+<item>
+  <title>The PhysioNet/Computing in Cardiology Challenge entries are being evaluated</title>
+  
+  <pubDate>25 Oct 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;October 25, 2021:&lt;/strong&gt; We are currently evaluating entries on the 2021 Challenge test data in support of the Physiological Measurement &lt;a href=&quot;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&quot;&gt;focus issue&lt;/a&gt; on multilead ECG classification. The deadline to submit your code and a preprint is 1 December 2021, and the deadline to submit your article is 11 January 2022. See this &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/9X3N8FLEGE4&quot;&gt;forum announcement&lt;/a&gt; for details.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-2</guid>
+</item>
+
+<item>
+  <title>Winners of the PhysioNet/Computing in Cardiology Challenge 2021 announced</title>
+  
+  <pubDate>20 Sep 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;September 20, 2021:&lt;/strong&gt; The winners of the 2021 Challenge were announced on 15 September 2021 at CinC in Brno, Czech Republic. Congratulations, teams! See this &lt;a href=&quot;https://moody-challenge.physionet.org/2021/results/&quot;&gt;page&lt;/a&gt; for the results and the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/klq1R7QsC00&quot;&gt;full announcement&lt;/a&gt; for the final steps in this year&amp;rsquo;s Challenge, including details about the &lt;a href=&quot;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&quot;&gt;focus issue&lt;/a&gt; (deadline: 11 January 2022).&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-3</guid>
+</item>
+
+<item>
+  <title>The challenges have been renamed to the George B. Moody PhysioNet Challenge in honor of George Moody</title>
+  
+  <pubDate>15 Sep 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;September 15, 2021:&lt;/strong&gt; In honor of the contributions of &lt;a href=&quot;/news/post/355&quot;&gt;George Moody&lt;/a&gt; to PhysioNet and Computing in Cardiology, the Board of CinC voted to rename the Challenges to the George B. Moody PhysioNet Challenge.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-4</guid>
+</item>
+
+<item>
+  <title>Preparing CinC papers for the PhysioNet/Computing in Cardiology Challenge 2021</title>
+  
+  <pubDate>21 Jul 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;July 21, 2021:&lt;/strong&gt; As you prepare your CinC papers, please follow the &lt;a href=&quot;https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/&quot;&gt;CinC preparation and submission instructions&lt;/a&gt; and use either our LaTeX (&lt;a href=&quot;https://www.overleaf.com/read/qqsvqvyrqkzr&quot;&gt;Overleaf&lt;/a&gt; or &lt;a href=&quot;https://moody-challenge.physionet.org/2021/cinc_template.zip&quot;&gt;download&lt;/a&gt;) or &lt;a href=&quot;https://moody-challenge.physionet.org/2021/cinc_template.docx&quot;&gt;Word&lt;/a&gt; templates, which include important instructions, advice, and references. Please see &lt;a href=&quot;https://moody-challenge.physionet.org/2021/papers/&quot;&gt;here&lt;/a&gt; for more information, including our draft paper and important citation information.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-5</guid>
+</item>
+
+<item>
+  <title>MIMIC-IV demo available in the OMOP Common Data Model</title>
+  <link>https://doi.org/10.13026/p1f5-7x35</link>
+  <pubDate>28 Jun 2021 12:36 -0400</pubDate>
+  <description>&lt;p&gt;We are pleased to announce that a 100-patient demo of MIMIC-IV has been made available in the OMOP Common Data Model.&amp;nbsp;The dataset&amp;nbsp;is currently&amp;nbsp;undergoing user testing and has known limitations (for example, the inputevents and outputevents tables are not yet incorporated). For more detail, please visit the &lt;a href=&quot;https://doi.org/10.13026/p1f5-7x35&quot;&gt;project page on PhysioNet&lt;/a&gt;&amp;nbsp;and the &lt;a href=&quot;https://github.com/OHDSI/MIMIC/wiki&quot;&gt;associated GitHub repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This&amp;nbsp;work builds on previous efforts by Nicolas Paris, Adrien Parrot and colleagues on&amp;nbsp;MIMIC-III.&amp;nbsp;The&amp;nbsp;project was&amp;nbsp;in part&amp;nbsp;supported by grants from Bill and Melinda Gates foundation and National Library of Medicine (NLM), National Institutes of Health.&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">54e98f11-5520-439b-a3cb-4bf89bd80373</guid>
+</item>
+
+<item>
+  <title>PhysioNet is experiencing temporary network issues due to a power outage</title>
+  
+  <pubDate>25 Jun 2021 12:17 -0400</pubDate>
+  <description>&lt;p&gt;An&amp;nbsp;overnight&amp;nbsp;power outage (24-25 June 2021) appears to have resulted in some&amp;nbsp;network issues. Functionality such as&amp;nbsp;integration with external services (e.g. ORCID and Google Cloud) may be affected.&amp;nbsp;We are investigating! [UPDATE: the network&amp;nbsp;has been restored.]&lt;/p&gt;</description>
+  <guid isPermaLink="false">36feeecb-a86d-400d-8188-7be2184707e1</guid>
+</item>
+
+<item>
+  <title>PhysioNet/Computing in Cardiology Challenge 2021 accepted abstracts</title>
+  
+  <pubDate>23 Jun 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;June 23, 2021:&lt;/strong&gt; CinC has &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/qvYNaJvCaBw&quot;&gt;released&lt;/a&gt; its abstract decisions for the Challenge track of the conference. Congratulations to those with accepted abstracts. Those without an accepted abstract can still compete for a wildcard entry as outlined &lt;a href=&quot;/content/challenge-2021/1.02/#wild-card&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-6</guid>
+</item>
+
+<item>
+  <title>Announcing the integration of PhysioNet with ORCID</title>
+  
+  <pubDate>4 May 2021 12:22 -0400</pubDate>
+  <description>&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;We are pleased to announce the integration of PhysioNet with&amp;nbsp;&lt;a href=&quot;https://orcid.org/&quot;&gt;ORCID&lt;/a&gt;,&amp;nbsp;the unique digital identifier for researchers. Adding your ORCID iD to PhysioNet will help you to connect professional works &amp;mdash; datasets, software, etc. &amp;mdash; to your public ORCID profile.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;If you are applying for &amp;quot;credentialed&amp;quot; access to PhysioNet resources, we highly recommend&amp;nbsp;&lt;a href=&quot;/settings/orcid/&quot;&gt;linking your ORCID iD&lt;/a&gt;&amp;nbsp;to your profile prior to submitting the application. Doing so makes it easier for us to establish your identity, helping to expedite the review process.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;In the future, we will be adding new features to enhance the ORCID integration, for example syncing your PhysioNet publications with your ORCID profile. Please let us know if you have suggestions for additional improvements at contact@physionet.org.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;Head to &lt;a href=&quot;/settings/orcid/&quot;&gt;https://physionet.org/settings/orcid/&lt;/a&gt; to link your ORCID iD to PhysioNet.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+  <guid isPermaLink="false">650b11a4-531c-4af9-b133-d5e4dcb6542b</guid>
+</item>
+
+<item>
+  <title>The official phase of the PhysioNet/Computing in Cardiology Challenge 2021 has reopened</title>
+  
+  <pubDate>1 May 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;May 1, 2021:&lt;/strong&gt; The official phase of the Challenge reopens today. Due to your engagement, we have enormously expanded the training data, modified the lead combination, and modified the example code and scoring function. Please see &lt;a href=&quot;https://groups.google.com/u/4/g/physionet-challenges/c/ICEtUoEFppM&quot;&gt;our announcement&lt;/a&gt; on the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges&quot;&gt;Challenge forum&lt;/a&gt; for more details. We will update and clarify these changes in response to your questions in the coming days.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-7</guid>
+</item>
+
+<item>
+  <title>CinC deadline for the PhysioNet/Computing in Cardiology Challenge 2021 extended</title>
+  
+  <pubDate>19 Apr 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;April 19, 2021:&lt;/strong&gt; CinC has extended its abstract submission deadline to April 24, 2021. Please &lt;a href=&quot;https://www.softconf.com/l/cinc2021/&quot;&gt;submit your abstract&lt;/a&gt; if you have not done so already. Like last year, CinC will host a hybrid conference with both in-person and remote attendance. Please see our &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/3dNhVvor5Lg&quot;&gt;announcement&lt;/a&gt; on the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges&quot;&gt;Challenge forum&lt;/a&gt; for more details.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-8</guid>
+</item>
+
+<item>
+  <title>PhysioNet/Computing in Cardiology Challenge 2021 submissions are due soon</title>
+  
+  <pubDate>13 Apr 2021 01:00 -0400</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;April 13, 2021:&lt;/strong&gt; Only two days left to &lt;a href=&quot;http://www.cinc.org/information-for-computing-in-cardiology-authors/&quot;&gt;submit an abstract to CinC&lt;/a&gt;! Please find the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/gchqYjCv5Kk&quot;&gt;abstract submission announcement&lt;/a&gt; and the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/wnCAoqZxFAI&quot;&gt;instructions announcement&lt;/a&gt; on the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges&quot;&gt;Challenge forum&lt;/a&gt;. Please see the &lt;a href=&quot;https://moody-challenge.physionet.org/2021/leaderboard/&quot;&gt;leaderboard&lt;/a&gt; for the final scores of the unofficial phase, and please submit your abstract today!&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-9</guid>
+</item>
+
+<item>
+  <title>Leaderboard for the PhysioNet/Computing in Cardiology Challenge 2021 is available</title>
+  
+  <pubDate>24 Feb 2021 00:00 -0500</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;February 24, 2021:&lt;/strong&gt; The &lt;a href=&quot;https://moody-challenge.physionet.org/2021/leaderboard/&quot;&gt;leaderboard&lt;/a&gt; is now live! Please see the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/LPstJNLo-NQ&quot;&gt;announcement&lt;/a&gt; on the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges&quot;&gt;Challenge forum&lt;/a&gt;. Please see the timing and priority of entries section &lt;a href=&quot;/content/challenge-2021/1.02/#timing&quot;&gt;here&lt;/a&gt; regarding the number of submissions allowed per day, so please submit early!&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-10</guid>
+</item>
+
+<item>
+  <title>A tribute to George Moody</title>
+  <link>https://physionet.org/users/gmoody/</link>
+  <pubDate>15 Feb 2021 17:18 -0500</pubDate>
+  <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;We are deeply saddened to announce the passing of George Moody, one of the original PhysioNet team. George passed away as a consequence of COVID-19 on February 13, 2021, surrounded by his family, Edna, Benjamin, Jeremy and Melissa.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;George has been a fundamental part of PhysioNet since the beginning, stretching back into the late 70s and early 1980&amp;#39;s. George developed the WFDB libraries, and much of code that can be found on PhysioNet today, which underpins the Research Resource for Complex Physiologic Signals, and the fundamentals of ECG signal processing. George&amp;#39;s work spanned state-of-the-art QRS detection, beat classification, noise assessment, and heart rate variability, among other areas. A pioneer and stalwart of open source principles, his work has blazed a trail in the field of physiological signal processing. This was acknowledged in 2016 by the AAMI, which awarded him (jointly with Ary Goldberger and Roger Mark) its most prestigious prize, &lt;a href=&quot;https://archive.physionet.org/award2016.shtml&quot;&gt;the Laufman-Greatbatch Award&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;George is perhaps best known for his design and implementation of the PhysioNet/CinC Challenges, which he ran for 15 years, from inception in 2000, until 2014, after which he retired due to ill health. These Challenges have pushed the field forward, stimulating research and translation, long before most, if not all, other public data science competitions began.&lt;/p&gt;
+
+&lt;p&gt;George was generous with his time and took pride in answering almost every email he received. He tirelessly devoted himself to the field, supporting everyone, from the newest student, to the giants of industry. At Computing in Cardiology, which he attended every year from 1979 to 2014, he was often the star of the show, generating a unique buzz around the Challenges. He also served on the board of the conference for longer than anyone, and was an active member of that community for over 30 years, contributing over 70 articles to the proceedings.&lt;/p&gt;
+
+&lt;p&gt;George began his career as an undergraduate at MIT, studying physics. His (sometimes supernatural) skill at C coding led him to work on the seminal MIT-BIH Arrhythmia Database with Roger Mark and Ary Goldberger. Still today, this database is at the core of many FDA applications.&amp;nbsp;After his student days George became a research scientist at MIT in Roger Mark&amp;#39;s group and remained there until retirement. George was a polymath. You could talk to him about any subject and realize his depth of thought was exceptional. There wasn&amp;#39;t a subject on which he couldn&amp;#39;t offer a genuinely deep and informed opinion. Yet he listened to everyone and treated all ideas and views with the utmost respect.&lt;/p&gt;
+
+&lt;p&gt;George was a man who appreciated life to its fullest. Perhaps his most impressive characteristic was that he always put his family first. A wonderful father and husband, he always made time for those he loved. Edna mentioned that George&amp;#39;s favorite charity was Partners In Health (&lt;a href=&quot;https://www.pih.org/&quot;&gt;pih.org&lt;/a&gt;), and requested that anyone wishing to make a gesture in remembrance of him, to please direct it there. George was loved by us all, and we miss him enormously. He leaves an enduring legacy for the next generation, although he would be too humble to ever acknowledge that fact.&lt;/p&gt;</description>
+  <guid isPermaLink="false">94efc73f-5762-4d42-bc34-ad76c7866225</guid>
+</item>
+
+<item>
+  <title>Accepting submissions for the PhysioNet/Computing in Cardiology Challenge 2021</title>
+  
+  <pubDate>30 Jan 2021 00:00 -0500</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;January 30, 2021:&lt;/strong&gt; We are now accepting submissions for the 2021 Challenge! See below for &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/7i-rTHFSSV4&quot;&gt;details&lt;/a&gt;. Please &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSc52DgT5dy_rqZioxbEdRF5Dd2sTx-MesnK8viJP457bYiWrw/viewform?usp=sf_link&quot;&gt;register&lt;/a&gt; your team (even if you registered last year), check the &lt;a href=&quot;https://moody-challenge.physionet.org/2021/submissions/&quot;&gt;submission instructions&lt;/a&gt;, and &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link&quot;&gt;submit your code&lt;/a&gt; when ready. As always, please join the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;Challenge forum&lt;/a&gt; to discuss this year&amp;rsquo;s Challenge.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-11</guid>
+</item>
+
+<item>
+  <title>The PhysioNet/Computing in Cardiology Challenge 2021 is now open</title>
+  
+  <pubDate>24 Dec 2020 00:00 -0500</pubDate>
+  <description>&lt;p&gt;&lt;strong&gt;December 24, 2020:&lt;/strong&gt; The NIH-funded 2021 Challenge is now open! See below for &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/isPy636jOMg&quot;&gt;details&lt;/a&gt;. Please read this website for details and share questions and comments on &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;Challenge forum&lt;/a&gt;. This year&amp;rsquo;s Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2021-12</guid>
+</item>
+
+<item>
+  <title>New applications for credentialed access to PhysioNet have been paused until January</title>
+  
+  <pubDate>17 Dec 2020 11:36 -0500</pubDate>
+  <description>&lt;p&gt;We have taken the difficult decision to pause all new applications for&amp;nbsp;&lt;a href=&quot;https://physionet.org/settings/credentialing/&quot;&gt;credentialed access&lt;/a&gt; to PhysioNet until 4th&amp;nbsp;January 2021. We apologize for this&amp;nbsp;inconvenience&amp;nbsp;and we will be working hard to clear the backlog of applications in time for opening again in the New Year. Over the coming months, we will also be implementing changes to PhysioNet that we hope will streamline the process for future applications.&lt;/p&gt;</description>
+  <guid isPermaLink="false">f13eabc1-d3fd-45e1-86a0-54aa980b327a</guid>
+</item>
+
+<item>
+  <title>PhysioNet/Computing in Cardiology Challenge 2020 paper published</title>
+  
+  <pubDate>11 Nov 2020 00:00 -0500</pubDate>
+  <description>&lt;a href=&#x27;/files/challenge-2020/1.0.1/papers/2020ChallengePaper.pdf&#x27;&gt;The Organizers of the 2020 PhysioNet Challenge&lt;/a&gt; have published a paper describing Challenge. The paper is now available at &lt;a href=&#x27;https://iopscience.iop.org/article/10.1088/1361-6579/abc960&#x27;&gt;Physiological Measurement&lt;/a&gt; as part of the &lt;a href=&#x27;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&#x27;&gt;focus issue on multilead ECG classification&lt;/a&gt;. Please cite this paper to describe the Challenge, consider submitting your work to the focus issue, and stay tuned for the launch of next year’s Challenge!</description>
+  <guid isPermaLink="false">physionet-challenge-2020-2</guid>
+</item>
+
+<item>
+  <title>Computing in Cardiology 2020 proceedings will appear on the IEEE website</title>
+  
+  <pubDate>18 Oct 2020 01:00 -0400</pubDate>
+  <description>The &lt;a href=&#x27;/files/challenge-2020/1.0.1/papers/index.html&#x27;&gt;conference papers&lt;/a&gt; for &lt;a href=&#x27;https://www.cinc2020.org/&#x27;&gt;Computing in Cardiology 2020&lt;/a&gt; will appear on the &lt;a href=&#x27;https://www.cinc.org/cinc-papers-on-line/&#x27;&gt;CinC&lt;/a&gt; and &lt;a href=&#x27;https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings&#x27;&gt;IEEE&lt;/a&gt; websites.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-3</guid>
+</item>
+
+<item>
+  <title>Computing in Cardiology 2020 proceedings</title>
+  
+  <pubDate>28 Sep 2020 01:00 -0400</pubDate>
+  <description>The organizers of the 2020 PhysioNet Challenge have submitted their paper to Physiological Measurement for review. Please cite &lt;a href=&#x27;/files/challenge-2020/1.0.1/papers/2020ChallengePaper.pdf&#x27;&gt;Perez Alday EA, Gu A, J Shah A, Robichaux C, Ian Wong AK, Liu C, Liu F, Bahrami Rad A, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD&lt;sup&gt;*&lt;/sup&gt; Reyna MA&lt;sup&gt;*&lt;/sup&gt;. Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2021 Jan 1;41(12):124003. doi: 10.1088/1361-6579/abc960&lt;/a&gt; to refer to this year’s Challenge.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-4</guid>
+</item>
+
+<item>
+  <title>Physiological Measurement special issue</title>
+  
+  <pubDate>24 Sep 2020 01:00 -0400</pubDate>
+  <description>The &lt;a href=&#x27;https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs&#x27;&gt;focus issue in Physiological Measurement&lt;/a&gt; is now open for submissions! To submit, &lt;a href=&#x27;https://mc04.manuscriptcentral.com/pmea-ipem&#x27;&gt;create an account&lt;/a&gt; and choose “Special Issue Article” and then “Classification of Multilead ECGs”. Please do not use the phrases “PhysioNet Challenge”, “Computing in Cardiology”, or “classification of multilead ECGs” in your title, which should be specific to your contributions.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-5</guid>
+</item>
+
+<item>
+  <title>Winners of the PhysioNet/Computing in Cardiology Challenge 2020 announced</title>
+  
+  <pubDate>21 Sep 2020 01:00 -0400</pubDate>
+  <description>The winners of the 2020 Challenge were announced at &lt;a href=&#x27;https://www.cinc2020.org/&#x27;&gt;CinC&lt;/a&gt; in Rimini, Italy on September 16. From 1395 entries (707 successful) by 217 teams, 110 abstracts were accepted for presentation and 41 teams were officially ranked. Results can be found &lt;a href=&#x27;https://moody-challenge.physionet.org/2020/results/&#x27;&gt;here&lt;/a&gt;.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-6</guid>
+</item>
+
+<item>
+  <title>Official phase of the PhysioNet/Computing in Cardiology Challenge 2020 now over</title>
+  
+  <pubDate>24 Aug 2020 01:00 -0400</pubDate>
+  <description>The official phase of the Challenge is now over. We will contact teams scores for recent entries over the next few days, and we encourage teams to &lt;a href=&#x27;https://forms.gle/CM9LZPMhnw28wSfh7&#x27;&gt;choose their favorite entry&lt;/a&gt; for evaluation on the full test set. Please see the &lt;a href=&#x27;https://groups.google.com/g/physionet-challenges/c/-VcOItba7Ys&#x27;&gt;full announcement&lt;/a&gt; on the Challenge forum for details, including important information about preparing for CinC.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-7</guid>
+</item>
+
+<item>
+  <title>MIMIC-IV is now available!</title>
+  
+  <pubDate>17 Aug 2020 14:15 -0400</pubDate>
+  <description>&lt;p&gt;We are delighted to announce that MIMIC-IV has been &lt;a href=&quot;https://doi.org/10.13026/a3wn-hq05&quot;&gt;published on PhysioNet&lt;/a&gt;! MIMIC-IV, the latest version of&amp;nbsp;MIMIC, is a database comprising comprehensive clinical information on hospital stays for patients admitted to a tertiary academic medical center in Boston, MA, USA.&lt;/p&gt;
+
+&lt;p&gt;Major changes from &lt;a href=&quot;https://doi.org/10.13026/C2XW26&quot;&gt;MIMIC-III&lt;/a&gt; include: (1) a modular structure that links core hospital data to multiple data sources, including chest x-ray images; (2) an approach to date shifting that provides approximate year of admission; (3) new sources of data; such as the electronic medicine administration record.&lt;/p&gt;
+
+&lt;p&gt;The dataset is available from PhysioNet, and access is managed in the same way as MIMIC-III. If you already have access to MIMIC-III, then you will be granted access after signing the Data Use Agreement in the &lt;a href=&quot;https://physionet.org/content/mimiciii/1.4/#files&quot;&gt;&amp;quot;Files&amp;quot; section&lt;/a&gt; of the project. New users will need to complete the credentialing process first (see: &lt;a href=&quot;https://mimic-iv.mit.edu/docs/access/&quot;&gt;https://mimic-iv.mit.edu/docs/access/&lt;/a&gt; for more details). For detailed guidelines on using MIMIC-IV, see &lt;a href=&quot;https://mimic-iv.mit.edu/&quot;&gt;the documentation&lt;/a&gt;!&lt;/p&gt;</description>
+  <guid isPermaLink="false">93f000cf-73a9-472c-b2ca-3605d22ac2ab</guid>
+</item>
+
+<item>
+  <title>Opportunity to join the PhysioNet team [Update: this position is no longer available.]</title>
+  
+  <pubDate>11 Aug 2020 13:25 -0400</pubDate>
+  <description>&lt;p&gt;The MIT Laboratory for Computational Physiology is seeking a Post-Doctoral Associate to conduct independent research in health care informatics. The Laboratory is an NIH-supported multi-disciplinary group of clinicians, data scientists and engineers that produced the publicly distributed and growing &lt;a href=&quot;https://doi.org/10.13026/C2XW26&quot;&gt;MIMIC database&lt;/a&gt;. It is a rich and open research resource that supports signal processing and machine learning research leading to new knowledge and patient-specific prognostic and therapeutic guidance for critical care.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The Postdoc will contribute to the design and management of the current and future MIMIC databases, and will conduct multidisciplinary original research together with clinicians. The position provides the opportunity to interact with a world-class laboratory comprised of engineers, mathematicians and clinical staff working at the frontiers of translational medicine and advanced research in the domain of critical care informatics and machine learning. The Research Fellow will both contribute to ongoing research projects and propose innovative new projects suitable for research grant funding.&lt;/p&gt;
+
+&lt;p&gt;The ideal candidate has a doctoral degree in science or engineering, or a related discipline to assure high level understanding of the research environment. Experience in relational database development and administration is important, ideally in a medical environment. Competence and experience in a subset of the following is expected: Linux, Python, data&amp;nbsp;management. Knowledge of medical terminology is desirable. Strong interpersonal and communication skills are essential.&amp;nbsp;[Update: this position is no longer available.]&lt;/p&gt;</description>
+  <guid isPermaLink="false">5fab5706-8257-4c90-8857-a2e56968fde6</guid>
+</item>
+
+<item>
+  <title>Teams invited to join the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>29 Jul 2020 01:00 -0400</pubDate>
+  <description>&lt;p&gt;We have invited two &amp;ldquo;wild card&amp;rdquo; teams to the 2020 PhysioNet Challenge and increased the resources available for training your models.&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2020-8</guid>
+</item>
+
+<item>
+  <title>Now accepting entries for the official phase of the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>1 Jul 2020 01:00 -0400</pubDate>
+  <description>&lt;p&gt;We are now accepting entries for the official phase of the Challenge. For the first time, we are requiring teams to submit their pretrained models and code for training their models. See the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/c/CS-XVt6vrVE&quot;&gt;full announcement&lt;/a&gt; on the &lt;a href=&quot;https://groups.google.com/g/physionet-challenges/&quot;&gt;Challenge forum&lt;/a&gt; and the previous two announcements for details.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2020-9</guid>
+</item>
+
+<item>
+  <title>Updated SNOMED-CT mapping posted for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>24 Jun 2020 01:00 -0400</pubDate>
+  <description>We have posted an updated SNOMED CT code mapping &lt;a href=&#x27;https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_scored.csv&#x27;&gt;here&lt;/a&gt; and &lt;a href=&#x27;https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_unscored.csv&#x27;&gt;here&lt;/a&gt; and an updated scoring metric in Python &lt;a href=&#x27;https://github.com/physionetchallenges/evaluation-2020&#x27;&gt;here&lt;/a&gt;.  See the &lt;a href=&#x27;https://groups.google.com/g/physionet-challenges/c/HKX8YQ36l2w&#x27;&gt;full announcement&lt;/a&gt; on the &lt;a href=&#x27;https://groups.google.com/g/physionet-challenges/&#x27;&gt;Challenge forum&lt;/a&gt; for details.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-10</guid>
+</item>
+
+<item>
+  <title>Additional data released for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>8 Jun 2020 01:00 -0400</pubDate>
+  <description>We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days. See the &lt;a href=&#x27;https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y&#x27;&gt;full&lt;/a&gt; on the &lt;a href=&#x27;https://groups.google.com/g/physionet-challenges/&#x27;&gt;Challenge forum&lt;/a&gt; for details.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-11</guid>
+</item>
+
+<item>
+  <title>New on PhysioNet: the HiRID critical care dataset</title>
+  <link>https://physionet.org/content/hirid/</link>
+  <pubDate>5 Jun 2020 12:29 -0400</pubDate>
+  <description>&lt;p&gt;We are pleased to announce the release of the HiRID critical care dataset, developed as part of a collaboration between Bern University Hospital and the Swiss Federal Institute of Technology (ETH). HiRID is a freely accessible critical care dataset containing data relating to more than 33 thousand admissions to the Department of Intensive Care Medicine of the Bern University Hospital, Switzerland, an interdisciplinary 60-bed unit admitting &amp;gt;6,500 patients per year.&amp;nbsp;&lt;/p&gt;</description>
+  <guid isPermaLink="false">b559f3b3-d446-4f49-b5f7-b3592043f87f</guid>
+</item>
+
+<item>
+  <title>Acceptances announced for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>3 Jun 2020 01:00 -0400</pubDate>
+  <description>All abstract acceptances and rejections have been announced. Please check the &lt;a href=&#x27;https://groups.google.com/forum/#!topic/physionet-challenges/xC3y-rH-EWU&#x27;&gt;Google Group announcement&lt;/a&gt; for more details.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-12</guid>
+</item>
+
+<item>
+  <title>Diagnoses posted for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>27 May 2020 01:00 -0400</pubDate>
+  <description>The full list of diagnoses for the Challenge have now been posted &lt;a href=&#x27;https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv&#x27;&gt;here&lt;/a&gt;. See the full announcement on the Challenge Google Group &lt;a href=&#x27;https://groups.google.com/forum/#!topic/physionet-challenges/CMBOS7USKbw&#x27;&gt;here&lt;/a&gt;.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-13</guid>
+</item>
+
+<item>
+  <title>Review complete for the PhysioNet/Computing in Cardiology Challenge 2020 abstracts</title>
+  
+  <pubDate>26 May 2020 01:00 -0400</pubDate>
+  <description>Abstract reviews are now complete and will be announced within the next week. Please see the updated key dates/deadlines and details on the wild card entries below. See the full announcement on the Challenge Google Group &lt;a href=&#x27;https://groups.google.com/forum/#!topic/physionet-challenges/KBzTLnxdwzY&#x27;&gt;here&lt;/a&gt;.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-14</guid>
+</item>
+
+<item>
+  <title>Abstracts are under review for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>12 May 2020 01:00 -0400</pubDate>
+  <description>Your abstracts are under review, and we hope to release acceptances and rejections by early June. For those who missed the abstract deadline, we will provide an opportunity to qualify as a wild card participant over the summer, so please don’t give up!</description>
+  <guid isPermaLink="false">physionet-challenge-2020-15</guid>
+</item>
+
+<item>
+  <title>New data for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>11 May 2020 01:00 -0400</pubDate>
+  <description>&lt;p&gt;We have begun the official phase of the Challenge. Please find a new tranche of data with SNOMED-CT codes as diagnoses. Please note that there are some errors or debatable labels in some of the data. Part of the Challenge will be working out how to deal with these issues. In the next few weeks, we will release more data and reopen the scoring system with a new scoring metric.&lt;/p&gt;</description>
+  <guid isPermaLink="false">physionet-challenge-2020-16</guid>
+</item>
+
+<item>
+  <title>Submission system reopened for the PhysioNet/Computing in Cardiology Challenge 2020</title>
+  
+  <pubDate>25 Apr 2020 01:00 -0400</pubDate>
+  <description>We have reopened the submission system for 5 more days (until 30 April 2020 at 23:59 GMT) to help teams who are able to submit bug-free entries qualify for the Challenge.</description>
+  <guid isPermaLink="false">physionet-challenge-2020-17</guid>
+</item>
+
+
+</channel>
+</rss>

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Checking the environment and the sample record</TITLE>
+<META NAME="description" CONTENT="Checking the environment and the sample record">
+<META NAME="keywords" CONTENT="wug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="wug.css">
+
+<LINK REL="next" HREF="node14.htm">
+<LINK REL="previous" HREF="node12.htm">
+<LINK REL="up" HREF="node10.htm">
+<LINK REL="next" HREF="node14.htm">
+</HEAD>
+
+<BODY bgcolor="FFFFFF" >
+
+<DIV CLASS="navigation">
+<A NAME="tex2html620"
+  HREF="node14.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html614"
+  HREF="node10.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html608"
+  HREF="node12.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html616"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html618"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html621"
+  HREF="node14.htm">Starting WAVE</A>
+<B>Up:</B> <A NAME="tex2html615"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B> Previous:</B> <A NAME="tex2html609"
+  HREF="node12.htm">If you need to run WAVE remotely</A>
+<BR> <P>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00323000000000000000">
+Checking the environment and the sample record</A>
+</H2>
+
+<P>
+<A NAME="sec:wfdb-path"></A>In common with all programs built using the WFDB library, <I CLASS="sans">WAVE</I>  finds its
+input files in any of the directories specified by the <EM>WFDB path</EM>
+(the value of the <TT>WFDB</TT> environment variable, if set, or a compiled-in
+default path as given in the WFDB library source file <TT>wfdblib.h</TT>
+otherwise; see the discussion of the
+<A NAME="tex2html14"
+  HREF="../wpg/database-path.htm">database path</A>
+in the <A NAME="tex2html15"
+  HREF="../wpg/wpg.htm"><I>WFDB Programmer's Guide</I></A>
+for details).  Verify that the sample record is accessible on the WFDB
+path using the command ``<TT>wfdbwhich 100s.hea</TT>''.  If the response
+begins with
+<PRE>
+    `100s.hea': not found
+</PRE>
+
+type the command needed to initialize the database environment (item 2 from
+the worksheet).
+<A NAME="362"></A><A NAME="363"></A>
+
+<P>
+In this exercise, you will use <I CLASS="sans">WAVE</I>  to examine record <TT>100s</TT>, a
+sample record containing one minute of annotated two-channel ECG.  Record
+<TT>100s</TT> is distributed with all versions of <I CLASS="sans">WAVE</I>  and should be
+available on any <I CLASS="sans">WAVE</I>  host.  Check that it is available by typing
+<PRE>
+    rdsamp -r 100s -f 59.99; rdann -r 100s -a atr -f 59
+</PRE>
+<A NAME="4925"></A>
+<A NAME="4926"></A>
+The output should be
+<PRE>
+      21596    982     995
+      21597    978     989
+      21598    975     988
+      21599    975     989
+         0:59.508    21423     N    0    0    0
+</PRE>
+If you do not obtain this output, see your system administrator.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<A NAME="tex2html620"
+  HREF="node14.htm">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html614"
+  HREF="node10.htm">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html608"
+  HREF="node12.htm">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html616"
+  HREF="node2.htm">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html618"
+  HREF="node147.htm">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> <BR>
+<B> Next:</B> <A NAME="tex2html621"
+  HREF="node14.htm">Starting WAVE</A>
+<B>Up:</B> <A NAME="tex2html615"
+  HREF="node10.htm">A quick look at WAVE</A>
+<B> Previous:</B> <A NAME="tex2html609"
+  HREF="node12.htm">If you need to run WAVE remotely</A>
+</DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I><A HREF="mailto:george@mit.edu">George B. Moody (<tt>george@mit.edu</tt>)</A><BR>
+2019-03-08</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on June 10, 2022 by texi2html 1.82
+texi2html was written by: 
+            Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people.
+Send bugs and suggestions to <texi2html-bug@nongnu.org>
+-->
+<head>
+<title>WFDB Programmer's Guide: 1.4 The Database Path and Other Environment Variables</title>
+
+<meta name="description" content="WFDB Programmer's Guide: 1.4 The Database Path and Other Environment Variables">
+<meta name="keywords" content="WFDB Programmer's Guide: 1.4 The Database Path and Other Environment Variables">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.82">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.smallquotation {font-size: smaller}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.roman {font-family:serif; font-weight:normal;}
+span.sansserif {font-family:sans-serif; font-weight:normal;}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="WFDB-path"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg_10.htm#Matlab-toolbox" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_12.htm#running-example" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg.htm#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_toc.htm#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_82.htm#Concept-Index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="wpg_abt.htm#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<a name="The-Database-Path-and-Other-Environment-Variables"></a>
+<h2 class="section">1.4 The Database Path and Other Environment Variables</h2>
+<!-- link: database-path.htm --><a name="index-database-path-_0028setting_0029"></a>
+<a name="index-path-_0028database_0029"></a>
+<a name="index-directories-for-WFDB-files"></a>
+<a name="index-WFDB-files-_0028finding_0029"></a>
+<a name="index-finding-WFDB-files"></a>
+<a name="index-WFDB-_0028environment-variable_0029"></a>
+<a name="index-WFDBCAL-_0028environment-variable_0029"></a>
+<a name="index-WFDBGVMODE-_0028environment-variable_0029"></a>
+<a name="index-WFDBANNSORT-_0028environment-variable_0029"></a>
+<a name="index-WFDB-path"></a>
+
+<p>WFDB applications make use of several <em>environment variables</em>, which are
+named <code>WFDB</code>, <code>WFDBCAL</code>, <code>WFDBGVMODE</code>, and <code>WFDBANNSORT</code>.
+If these variables have not been otherwise defined by the user, their values
+are those given by <code>DEFWFDB</code>, <code>DEFWFDBCAL</code>, <code>DEFWFDBGVMODE</code>,
+and <code>DEFWFDBANNSORT</code> (defined in &lsquo;<tt>wfdblib.h</tt>&rsquo; at the
+time the WFDB library was compiled).  Unless you have a non-standard
+setup, you may not need to set these variables, but it will be helpful
+to read this section to understand how they influence the behavior of
+WFDB applications.
+</p>
+<p>When WFDB applications <em>read</em> database files, they must be able to
+find them in various locations that may vary from system to system.  The
+WFDB library refers to a character string that consists of an ordered
+list of locations to be searched <em>for input files</em>.  This string is
+called the <em>database path</em>, or the <em>WFDB path</em>.
+</p>
+<p>On most systems, the environment variable <code>WFDB</code>, if set, specifies
+the value of the WFDB path, and overrides the default value.  If you
+need to use a non-default WFDB path, you must set the <code>WFDB</code>
+environment variable appropriately before running any WFDB applications,
+so that the WFDB path can be examined by the running program.  The WFDB
+software package includes easily customizable shell scripts (batch
+files) that illustrate how to do this for popular shells and command
+interpreters; see <em>setwfdb</em>(1), in the <cite>WFDB Applications
+Guide</cite>.  (Under classic Mac OS, for which the concept of environment
+variables is foreign, the WFDB path may be set only by using
+<code>DEFWFDB</code>.)  For further information, see section <a href="wpg_14.htm#WFDB-path-syntax">More About the WFDB Path</a>.
+</p>
+<a name="index-calibration-file"></a>
+<a name="index-WFDBCAL-_0028environment-variable_0029-1"></a>
+<p>The shell scripts that set <code>WFDB</code> also set the <code>WFDBCAL</code>
+environment variable, which is important if you make use of records that
+contain signals other than ECGs.  <code>WFDBCAL</code> names a
+<em>calibration file</em> located in one of the directories named by
+<code>WFDB</code>.  (The symbol <code>DEFWFDBCAL</code> is usually defined in
+&lsquo;<tt>wfdblib.h</tt>&rsquo; to specify the name of a default calibration file, to
+be used by the WFDB library if <code>WFDBCAL</code> has not been set.)  Each
+signal type may be represented by an entry in the calibration file.
+Entries specify the characteristics of any calibration pulses that may
+be present, and customary scales for plotting the signals.
+</p>
+<a name="index-annotation-_0028canonical-order_0029"></a>
+<a name="index-canonical-order-of-annotations"></a>
+<p>The other environment variables are less frequently used than <code>WFDB</code>
+and <code>WFDBCAL</code>, and in most cases, the compiled-in defaults will be
+appropriate (see section <a href="wpg_48.htm#Annotation-Order">Annotation Order</a>, and see section <a href="wpg_42.htm#Multi_002dFrequency-Records">Multi-Frequency Records</a>,
+for details).
+</p>
+<hr size="6">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="wpg_10.htm#Matlab-toolbox" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_12.htm#running-example" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_7.htm#Usage" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="wpg_16.htm#Functions" title="Next chapter"> &gt;&gt; </a>]</td>
+</tr></table>
+<p>
+<p><address>
+<a href="mailto:wfdb@physionet.org"><em>PhysioNet
+ (<tt>wfdb@physionet.org</tt>)</em></A>
+</address>
+</body>
+</html>
